@@ -1,1 +1,1 @@
-# yep-mp-components
+# yep-mp-com
