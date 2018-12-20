@@ -1,0 +1,93 @@
+<!--pages/dialog/dialog.wxml-->
+<view>
+  <view bindtap="toggleDialog">
+    <view data-index="1" class="btn-item">两行提示，单按钮</view>
+    <view data-index="2" class="btn-item">输入框，双按钮</view>
+    <view data-index="3" class="btn-item">单行提示，双按钮</view>
+    <view data-index="4" class="btn-item">自定义按钮文案</view>
+    <view data-index="5" class="btn-item">自定义按钮样式</view>
+    <view data-index="6" class="btn-item">超长自定义内容</view>
+    <view data-index="7" class="btn-item">个性化按钮</view>
+    <view data-index="8" class="btn-item">定制按钮及内容</view>
+  </view>
+  <!--demo 1-->
+  <dialog id="dialogBox1" bind:dialogConfirm="_dialogConfirm" bind:dialogCancel="_dialogCancel">
+    <view slot="title">人均不能低于一元~</view>
+    <view slot="cont">请输入金额</view>
+  </dialog>
+  <!--demo 2-->
+  <dialog id="dialogBox2">
+    <view slot="title">请输入自定义面额</view>
+    <view slot="cont">
+       <input class='input-con' type='number' placeholder='1-1000的整数' placeholder-style='color:#ccc' maxlength="4" focus></input>
+    </view>
+  </dialog>
+  <!--demo 3-->
+  <dialog id="dialogBox3" btn-type="2">
+    <view slot="title">即将推出当前账号?</view>
+    <view slot="cont" class="block"></view>
+  </dialog>
+  <!--demo 4-->
+  <dialog id="dialogBox4" firstBtn="不保存" secondBtn="保存">
+    <view slot="title">您尚未发布</view>
+    <view slot="cont">是否对已编辑内容进行保存</view>
+  </dialog>
+  <!--demo 5-->
+  <dialog id="dialogBox5" isSpecialBtn='true'>
+    <view slot="title">确定删除您的爱车吗？</view>
+    <view slot="cont" class="block"></view>
+    <view slot='firstBtn' class='dialog5_cancle'>取消</view>
+    <view slot='secondBtn' class='dialog5_confirm'>确定</view>
+  </dialog>
+  <!--demo 6-->
+  <dialog id="dialogBox6" btn-type="1" firstBtn="确定">
+    <view slot="title">订单7111924324保价退款总明细</view>
+    <view slot="cont" class="cont-main">
+      <view class="cont-top">
+        <view class="cont-top-item">
+          <view class="cont-top-item-left">申请时间：</view>
+          <view class="cont-top-item-right">2018-02-06 23:44:11</view>
+        </view>
+        <view class="cont-top-item">
+          <view class="cont-top-item-left">退款金额：</view>
+          <view class="cont-top-item-right">￥8.00</view>
+        </view>
+        <view class="cont-top-item">
+          <view class="cont-top-item-left">退款状态：</view>
+          <view class="cont-top-item-right">已退款成功</view>
+        </view>
+        <view class="cont-top-item">
+          <view class="cont-top-item-left">返还方式：</view>
+          <view class="cont-top-item-right">原返</view>
+        </view>
+        <view class="cont-top-item">
+          <view class="cont-top-item-left">到账周期：</view>
+          <view class="cont-top-item-right">1-3个工作日</view>
+        </view>
+        <view class="cont-top-line"></view>
+      </view>
+      <view class="cont-bottom">
+        说明：如果您的统一订单如果您的统一订单如果您的统一订单如果您的统一订单如果您的统一订单如果您的统一订单如果您的统一订单如果您的统一订单如果您的统一订单
+      </view>
+    </view>
+  </dialog>
+  <!--demo 7-->
+  <dialog id="dialogBox7" btn-type="0">
+    <view slot="title">您的会员有效天数已达上限啦~</view>
+    <view slot="cont">
+      <view class="cont-info">2018-7-7后方可进行续费操作</view>
+      <view class="cont-btn" data-index="7">我知道了</view>
+    </view>
+  </dialog>
+  <!--demo 8-->
+  <dialog id="dialogBox8" btn-type="0">
+    <view slot="title">收藏店铺，做任务申请适用品</view>
+    <view slot="cont">
+      <view class="cont-btn-list">
+        <view class="cont-btn-item" >关注店铺</view>
+        <view class="cont-btn-item">纯靠人品</view>
+      </view>
+      <view class="cont-close" data-index="8"></view>
+    </view>
+  </dialog>
+</view>

@@ -1,0 +1,48 @@
+/**app.wxss**/
+page{
+  background-color: #f9f9f9;
+}
+.container {
+  padding: 20rpx;
+  font-size: 24rpx;
+}
+
+.content-body{
+  padding: 10rpx 20rpx;
+}
+
+.tip{
+  padding: 20rpx;
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+}
+
+.tip .title{
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.tip .content{
+  white-space: pre-wrap;
+  text-align: left;
+}
+
+
+.box {
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  /*border: 1rpx solid #ddd;*/
+  border-radius: 10rpx;
+  background-color: #FFF;
+}
+
+.box .title{
+  font-size: 28rpx;
+  font-weight: 600;
+  line-height: 50rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+  margin-bottom: 20rpx;
+}
+
+
+

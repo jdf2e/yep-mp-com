@@ -1,18 +1,18 @@
-const path = require('path')
+const path = require("path");
 
-const webpack = require('webpack')
-const nodeExternals = require('webpack-node-externals')
+const webpack = require("webpack");
+const nodeExternals = require("webpack-node-externals");
 
-const isDev = process.argv.indexOf('--develop') >= 0
-const isWatch = process.argv.indexOf('--watch') >= 0
-const demoSrc = path.resolve(__dirname, './demo')
-const demoDist = path.resolve(__dirname, '../miniprogram_dev')
-const src = path.resolve(__dirname, '../src')
-const dev = path.join(demoDist, 'components')
-const dist = path.resolve(__dirname, '../miniprogram_dist')
+const isDev = process.argv.indexOf("--develop") >= 0;
+const isWatch = process.argv.indexOf("--watch") >= 0;
+const demoSrc = path.resolve(__dirname, "./demo");
+const demoDist = path.resolve(__dirname, "../example");
+const src = path.resolve(__dirname, "../src");
+const dev = path.join(demoDist, "components");
+const dist = path.resolve(__dirname, "../miniprogram_dist");
 
 module.exports = {
-  entry: ['index'],
+  entry: ["index"],
 
   isDev,
   isWatch,
@@ -24,45 +24,46 @@ module.exports = {
 
   wxss: {
     less: false, // compile wxss with less
-    sourcemap: false, // source map for less
+    sourcemap: false // source map for less
   },
 
   webpack: {
-    mode: 'production',
+    mode: "production",
     output: {
-      filename: '[name].js',
-      libraryTarget: 'commonjs2',
+      filename: "[name].js",
+      libraryTarget: "commonjs2"
     },
-    target: 'node',
+    target: "node",
     externals: [nodeExternals()], // ignore node_modules
     module: {
-      rules: [{
-        test: /\.js$/i,
-        use: [
-          //         'eslint-loader',
-          'babel-loader'
-
-        ],
-        exclude: /node_modules/
-      }],
+      rules: [
+        {
+          test: /\.js$/i,
+          use: [
+            //         'eslint-loader',
+            "babel-loader"
+          ],
+          exclude: /node_modules/
+        }
+      ]
     },
     resolve: {
-      modules: [src, 'node_modules'],
-      extensions: ['.js', '.json'],
+      modules: [src, "node_modules"],
+      extensions: [".js", ".json"]
     },
     plugins: [
       new webpack.DefinePlugin({}),
-      new webpack.optimize.LimitChunkCountPlugin({maxChunks: 1}),
+      new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 1 })
     ],
     optimization: {
-      minimize: false,
+      minimize: false
     },
     // devtool: 'nosources-source-map', // source map for js
     performance: {
-      hints: 'warning',
-      assetFilter: assetFilename => assetFilename.endsWith('.js')
+      hints: "warning",
+      assetFilter: assetFilename => assetFilename.endsWith(".js")
     }
   },
 
-  copy: ['./wxml', './wxss', './wxs', './images'], // will copy to dist
-}
+  copy: ["./wxml", "./wxss", "./wxs", "./images"] // will copy to dist
+};

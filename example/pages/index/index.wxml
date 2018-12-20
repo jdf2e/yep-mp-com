@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">
+    <image class="icon" src="http://yep.jd.com/index/1.0.0/img/logo.de07a48.png"></image>
+    <view class="intro">
+      JDC前端小程序组件库，为用户提供简洁、易用的小程序组件，方便应用到自己的开发中。
+    </view>
+  </view>
+
+  <view class="list">
+    <view class="item" bindtap="gotoUIDemos">
+      <view>Yep UI</view>
+      <image src="http://img11.360buyimg.com/uba/jfs/t24691/98/510863943/530/73c51921/5b739f8bN18b7f193.png"></image>
+    </view>
+  </view>
+
+</view>

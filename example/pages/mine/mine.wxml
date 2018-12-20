@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="container">
+  <!--<view class="title">-->
+  	<!--<image class="img" src=""></image>-->
+  <!--</view>-->
+  <view class="cont">
+  	<!-- <view class="cont-title">JDC前端 小程序组件库</view> -->
+  	<view class="cont-list">
+  		<view class="cont-item">
+  			<view class="label">应用案例</view>
+  			<view class="list">
+  				<view class="item">
+  					<image class="item-img" src="http://img14.360buyimg.com/uba/jfs/t27121/62/2109388937/46195/cefeb92a/5bf68827N1647cdf7.jpg"></image>
+  					<view class="item-label">京东有礼</view>
+  				</view>
+  				<view class="item">
+  					<image class="item-img" src="http://img11.360buyimg.com/uba/jfs/t26929/61/2047750333/70547/d9ccab85/5bf68829Nb025230e.jpg"></image>
+  					<view class="item-label">京东图书</view>
+  				</view>
+  				<view class="item">
+  					<image class="item-img" src="http://img12.360buyimg.com/uba/jfs/t30721/219/525045299/27313/86dfedae/5bf68830N8046ef9e.jpg"></image>
+  					<view class="item-label">petPaw</view>
+  				</view>
+					<view class="item">
+						<image class="item-img" src="http://img14.360buyimg.com/uba/jfs/t29065/101/541193575/14874/cabdd452/5bf68969N3ba0a8da.jpg"></image>
+						<view class="item-label">拍卖</view>
+					</view>
+					<!--<view class="item">-->
+						<!--<image class="item-img" src="http://img12.360buyimg.com/uba/jfs/t30721/219/525045299/27313/86dfedae/5bf68830N8046ef9e.jpg"></image>-->
+						<!--<view class="item-label">petPaw</view>-->
+					<!--</view>-->
+  			</view>
+  		</view>
+  		<!--<view class="cont-item">-->
+  			<!--<view class="label">贡献者（排名不分先后）</view>-->
+  			<!--<view class="list">-->
+  				<!--<view class="item">-->
+  					<!--<view class="item-label">寒雨心亭</view>-->
+  				<!--</view>-->
+  				<!--<view class="item">-->
+  					<!--<view class="item-label">石文帅</view>-->
+  				<!--</view>-->
+  				<!--<view class="item">-->
+  					<!--<view class="item-label">刘新金</view>-->
+  				<!--</view>-->
+  				<!--<view class="item">-->
+  					<!--<view class="item-label">刘佳</view>-->
+  				<!--</view>-->
+  				<!--<view class="item">-->
+  					<!--<view class="item-label">丁岳</view>-->
+  				<!--</view>-->
+  				<!--<view class="item">-->
+  					<!--<view class="item-label">周金秀</view>-->
+  				<!--</view>-->
+  				<!--<view class="item">-->
+  					<!--<view class="item-label">李阳</view>-->
+  				<!--</view>-->
+  			<!--</view>-->
+  		<!--</view>-->
+  		<view class="cont-item">
+  			<view class="label">联系我们</view>
+  			<view class="list">
+  				<view class="item">
+  					<image class="item-img2" src="http://img13.360buyimg.com/uba/jfs/t30514/8/530381613/27572/cb8489fd/5bf689e3N2d11a6f3.jpg"></image>
+  					<view class="item-label">JDC-前端开发部</view>
+  				</view>
+  			</view>
+  		</view>
+  	</view>
+  </view>
+</view>

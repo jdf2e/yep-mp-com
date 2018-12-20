@@ -1,0 +1,50 @@
+/**index.wxss**/
+
+.container{
+  padding-top: 128rpx;
+  font-size: 28rpx;
+}
+
+.title{
+  text-align: center;
+  margin: 0 auto;
+  width: 600rpx;
+  margin-bottom: 40rpx;
+}
+
+.title .icon{
+  width: 256rpx;
+  height: 256rpx;
+  margin-bottom: 80rpx;
+}
+
+.list{
+  /*border: 1rpx solid #b8b8b8;*/
+  padding: 20rpx;
+  text-align: left;
+}
+
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  border: 1rpx solid #efefef;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.item image{
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.footer{
+  /*position: fixed;*/
+  /*bottom: 40rpx;*/
+  text-align: center;
+}
+

@@ -1,0 +1,23 @@
+<!--弹框组件-->
+<view class='box' wx:if="{{!isClose}}">
+  <view class='box-container'>
+    <view class='box-info'>
+      <view class='box-info-title'>
+        <slot name="title"></slot>
+      </view>
+      <view class='box-info-cont'>
+        <slot name="cont"></slot>
+      </view>
+    </view>
+    <view class="box-btn"  wx:if="{{btnType !== 0}}">
+      <view class="btn-item btn-item-lf {{btnType == 1?'singleBtn':''}}" bindtap="cancel" >
+        <block wx:if="{{!isSpecialBtn}}">{{firstBtn}}</block>
+        <block wx:else><slot name="firstBtn"></slot></block>
+      </view>
+      <view class="btn-item btn-item-rt" bindtap="confirm" wx:if="{{btnType == 2}}">
+        <block wx:if="{{!isSpecialBtn}}">{{secondBtn}}</block>
+        <block wx:else><slot name="secondBtn"></slot></block>
+      </view>
+    </view>
+  </view>
+</view>

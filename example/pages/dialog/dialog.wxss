@@ -1,0 +1,128 @@
+/* pages/dialog/dialog.wxss */
+.btn-item{
+  width:100%;
+  border-radius:10rpx;
+  height:100rpx;
+  background-color:#ddd;
+  color:#fff;
+  margin-top:30rpx;
+  line-height:100rpx;
+  text-align:center;
+}
+/*demo1*/
+.box1-first-btn{
+  color:red;
+}
+/*demo2*/
+.input-con{
+  margin-left:50%;
+  transform:translateX(-50%);
+  width:490rpx;
+  height:90rpx;
+  border:1px solid #999999;
+  text-align:center;
+}
+/*demo3*/
+.box3-first-btn{
+  color:#909cb3;
+}
+.secondBtn{
+  color:#448aff;
+  background-color:#fff;
+  border-bottom-right-radius:20rpx;
+}
+
+
+/*demo5*/
+.block{
+  width:100%;
+  height:1rpx;
+}
+.box6-first-btn{
+  background-color:red;
+  color:#fff;
+  border-bottom-left-radius:20rpx;
+  border-bottom-right-radius:20rpx;
+}
+.dialog5_cancle{
+  color:#909cb3;
+}
+.dialog5_confirm{
+  color:#448aff;
+  background-color:#fff;
+  border-bottom-right-radius:20rpx;
+}
+/*demo6*/
+.cont-main{
+  box-sizing:border-box;
+  width:100%;
+  padding:0 20rpx 0 20rpx;
+}
+.cont-top{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:nowrap;
+}
+.cont-top-item{
+  width:100%;
+  font-size:28rpx;
+  line-height:40rpx;
+  height:40rpx;
+}
+.cont-top-item-left{
+  width:35%;
+  float:left;
+}
+.cont-top-item-right{
+  float:left;
+}
+.cont-top-line{
+  width:100%;
+  height:1px;
+  background-color:#eee;
+  margin-top:10rpx;
+  margin-bottom:50rpx;
+}
+.cont-bottom{
+  font-size:28rpx;
+}
+/*demo7*/
+.cont-info{
+  font-size:28rpx;
+}
+.cont-btn{
+  margin-top:40rpx;
+  font-size:26rpx;
+  width:200rpx;
+  height:60rpx;
+  background:#f6cb46;
+  line-height:60rpx;
+  border-radius:8rpx;
+  margin-left:185rpx;
+}
+/*demo8*/
+.cont-btn-item{
+  width:200rpx;
+  height:90rpx;
+  line-height:95rpx;
+  text-align:center;
+  font-size:26rpx;
+  color:#fff;
+  background-color:#e45469;
+}
+.cont-close{
+  position:absolute;
+  top:-420rpx;
+  right:-10rpx;
+  width:40rpx;
+  height:40rpx;
+  background-color:red;
+}
+.cont-btn-list{
+  box-sizing:border-box;
+  padding:0 40rpx;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-item:center;
+}
