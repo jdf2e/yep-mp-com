@@ -31,7 +31,7 @@ Page({
       list: '../list/list',
 
       showToast: '../toast/toast',
-      showModelDialog: '../../src/dialog/dialog',
+      showModelDialog: '../dialog/dialog',
       showMask: '../mask/mask',
       popup: '../popup/popup',
 

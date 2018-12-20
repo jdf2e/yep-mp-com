@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "ModalDialog",
   "usingComponents": {
-    "dialog":"@jdcfe/yep-mp-com/dialog"
+    "dialog":"../../components/dialog/index"
   }
 }
