@@ -1,0 +1,19 @@
+page {
+  background-color: #f0f2f5;
+}
+
+.item-wrap {
+  margin-top: 20rpx;
+}
+
+.item {
+	height: 80rpx;
+	line-height: 80rpx;
+}
+
+.item-content {
+  padding: 0 20rpx;
+	height: 100%;
+	background-color: #fff;
+	font-size: 30rpx;
+}

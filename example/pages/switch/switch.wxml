@@ -1,0 +1,29 @@
+<!--切换按钮-->
+<view class="con">
+    <!--demo 1-->
+    <view class="item">
+        <view class="title">普通按钮</view>
+        <switch bind:statusChange="_statusChange"></switch>
+    </view>
+    <!--demo 2-->
+    <view class="item">
+        <view class="title">按钮失效</view>
+        <switch id="switchEnable"></switch>
+        <button bindtap="btnTap">enable</button>
+    </view>
+    <!--demo 3-->
+    <view class="item">
+        <view class="title">内容类型1</view>
+        <switch id="switchEnable" contType="char"></switch>
+    </view>
+    <!--demo 4-->
+    <view class="item">
+        <view class="title">内容类型2</view>
+        <switch id="switchEnable" contType="number"></switch>
+    </view>
+    <!--demo 5-->
+    <view class="item">
+        <view class="title">内容类型3</view>
+        <switch id="switchEnable" contType="sign"></switch>
+    </view>
+</view>

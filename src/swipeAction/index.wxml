@@ -1,0 +1,12 @@
+<view class="yep-swipe-action">
+  <view bindtouchstart="_touchS" bindtouchmove="_touchM" bindtouchend="_touchE" class="main" style="{{mainStyle}}">
+    <slot></slot>
+  </view>
+  <view wx:if="{{right && right.length}}" class="btn-list btn-list-right">
+    <view wx:for="{{right}}" wx:key="right-{{index}}" class= "swipe-btn" style="{{item.style}}" bindtap="onTap" data-btnevent="{{item.btnEvent}}" data-autoclose="{{item.autoClose}}">{{item.text}}</view>
+  </view>
+  <view  wx:if="{{left && left.length}}" class="btn-list btn-list-left">
+    <view wx:for="{{left}}" wx:key="left-{{index}}" class="swipe-btn" style="{{item.style}}" bindtap="onTap" data-btnevent="{{item.btnEvent}}" data-autoclose="{{item.autoClose}}">{{item.text}}</view>
+  </view>
+</view>
+

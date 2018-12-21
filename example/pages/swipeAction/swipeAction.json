@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "滑动操作",
+  "usingComponents": {
+    "swipe-action": "../../components/swipeAction/index"
+  }
+}

@@ -1,0 +1,37 @@
+<view class="item-wrap">
+  <view class="item">
+    <swipe-action right="{{btnList1}}" left="{{btnList4}}" bindsubmitClick="submitClick" bindcancelClick="cancelClick" binddeleteClick="deleteClick">
+	  <!-- slot begin -->
+      <view class="item-content">左右两侧都有按钮</view>
+	  <!-- slot end -->
+    </swipe-action>
+    <swipe-action right="{{btnList1}}" bindcancelClick="cancelClick" binddeleteClick="deleteClick">
+      <view class="item-content">只有右侧有按钮</view>
+    </swipe-action>
+    <swipe-action left="{{btnList4}}" bindsubmitClick="submitClick" bindcancelClick="cancelClick">
+      <view class="item-content">只有左侧有按钮</view>
+    </swipe-action>
+    <swipe-action right="{{btnList2}}" bindcancelClick="cancelClick" binddeleteClick="deleteClick">
+      <view class="item-content">不同宽度的按钮</view>
+    </swipe-action>
+    <swipe-action right="{{btnList3}}" binddeleteClick="deleteClick">
+      <view class="item-content">只有一个按钮</view>
+    </swipe-action>
+  </view>
+</view>
+
+<!-- 
+参数说明
+| 参数      | 说明                   | 类型    | 默认值    |
+| --------- | ---------------------- | ------- | --------- |
+| left      | 左侧按钮组             | Array   | []         |
+| right     | 右侧按钮组             | Array   | []         |
+
+按钮left/right参数（Array）
+| 参数      | 说明                                                             | 类型    | 默认值 |
+| --------- | --------------------------------------------------------------- | ------- | ----- |
+| text      | 按钮文案                                                         | String  | -     |
+| style     | 按钮样式                                                         | String  | -     |
+| autoClose | 点击按钮后自动隐藏按钮                                             | Boolean | false |
+| btnEvent  | 按钮点击事件名称（例如，指定为xxx后可在组件事件绑定中指定bindxxxx=""）| String  | -     | 
+-->

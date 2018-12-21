@@ -1,0 +1,5 @@
+<view class="container cont-status-{{isClose?'open':'close'}} cont-{{isEnable?'enable':'disable'}} " bindtap="changeStatus" >
+  <view class="open-title" wx:if="{{isClose}}">{{content.openTip}}</view>
+  <view class="inner inner-status-{{isClose?'open':'close'}}"></view>
+  <view class="close-title" wx:if="{{!isClose}}">{{content.closeTip}}</view>
+</view>

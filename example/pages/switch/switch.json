@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "YEPUI switch",
+  "usingComponents": {
+    "switch": "../../components/switch/index"
+  }
+}

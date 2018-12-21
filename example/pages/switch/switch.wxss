@@ -1,0 +1,7 @@
+/* pages/switch/switch.wxss */
+.item{
+    display:block;
+    text-align:left;
+    padding:40rpx;
+    border-bottom:1rpx solid #ddd;
+}
