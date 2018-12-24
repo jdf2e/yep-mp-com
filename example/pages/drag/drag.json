@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "拖拽组件",
+    "usingComponents": {
+      "drag": "../../components/drag/index"
+    }
+}

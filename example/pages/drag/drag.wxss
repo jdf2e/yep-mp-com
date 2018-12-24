@@ -1,0 +1,5 @@
+/* pages/drag/drag.wxss */
+.drag-title{
+  font-size: 32rpx;
+  margin-bottom: 40rpx;
+}

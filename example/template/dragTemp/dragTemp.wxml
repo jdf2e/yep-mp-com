@@ -1,0 +1,13 @@
+<!--拖拽组件item样式-->
+<template name="dragTemp">
+  <view  class="dragTemp">
+    <image src="{{image}}" class="drag-img"/>
+    <view class="drag-text">
+      <view  class="drag-text-title">
+        <view class="title-name">{{name}}</view>
+        <image src="/images/move.png" class="title-flag"/>
+      </view>
+      <view class="drag-text-desc">{{desc}}</view>
+    </view>
+  </view>
+</template>

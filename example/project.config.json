@@ -37,12 +37,18 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
 					"name": "弹框页面",
-					"pathName": "pages/dialog/dialog"
+					"pathName": "pages/dialog/dialog",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "拖拽排序",
+					"pathName": "pages/drag/drag"
 				}
 			]
 		}

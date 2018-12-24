@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/mine/mine",
     "pages/demos_ui/demos_ui",
-    "pages/dialog/dialog"
+    "pages/dialog/dialog",
+    "pages/drag/drag"
   ],
   "window": {
     "backgroundTextStyle": "light",

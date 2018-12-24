@@ -1,0 +1,11 @@
+<!--拖拽组件-->
+<!--
+  1.规定在template文件夹下有 dragTemp 文件 存在 dragTemp.wxml和 dragTemp.wxss
+  2.需要drag组件下增加 view 并指定class为dragBottom
+-->
+<view class="drag-title">
+  拖拽组件实例如下：
+</view>
+<drag items="{{items}}" class="drag"></drag>
+<view class="dragBottom"></view>
+

@@ -1,0 +1,16 @@
+<!--components/drag.wxml-->
+<import src='../../template/dragTemp/dragTemp.wxml' />
+<view class="border">
+    <!--拖拽事件触发区域-->
+    <view class="touchView" catchtouchstart="draggleTouch" catchtouchmove="draggleTouch" catchtouchend="draggleTouch"></view>
+    <!--滑块滚动区域-->
+    <movable-area class="moveable_row {{movableView.className}}">
+      <movable-view class="moveable_item" style="height:{{itemHeight}}px" direction="vertical" x="0"
+       y="{{movableView.y}}"  inertia="false" damping="9999"  friction="9999">
+          <template is="dragTemp" data="{{...movableView.item}}"></template>
+      </movable-view>
+    </movable-area>
+    <!--数据列表-->
+    <template is="dragTemp" data="{{...item}}" wx:for="{{items}}"  wx:key="index"></template>
+</view>
+
