@@ -39,7 +39,8 @@ Page({
       search: '../searchbar/searchbar',
       keyboard: '../keyboard/keyboard',
 
-      switch: '../switch/switch'
+      switch: '../switch/switch',
+      drag:'../drag/drag'
       // live: '../../liveplay/pages/index/index',
 
     }

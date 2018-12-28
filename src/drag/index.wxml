@@ -1,5 +1,5 @@
 <!--components/drag.wxml-->
-<import src='../../template/dragTemp/dragTemp.wxml' />
+<import src='/template/dragTemp/dragTemp.wxml' />
 <view class="border">
     <!--拖拽事件触发区域-->
     <view class="touchView" catchtouchstart="draggleTouch" catchtouchmove="draggleTouch" catchtouchend="draggleTouch"></view>
