@@ -1,0 +1,8 @@
+.box-body{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.box-body-item{
+    margin-right: 30rpx;
+}

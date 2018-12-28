@@ -1,0 +1,10 @@
+{
+	"navigationBarBackgroundColor": "#ffffff",
+	"navigationBarTextStyle": "black",
+	"navigationBarTitleText": "Avatar",
+	"backgroundColor": "#eeeeee",
+	"backgroundTextStyle": "light",
+	"usingComponents": {
+		"yep-avatar": "/yepCom/avatar/avatar"
+	  }
+}
