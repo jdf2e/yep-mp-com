@@ -1,0 +1,50 @@
+<view class="content-body">
+
+  <view class="tip">
+    <view class="title">Button 按钮</view>
+    <!--<view class="content">-->
+    <!--提供普通按钮normal、焦点按钮primary、不可用按钮disabled及透明按钮ghost; \n-->
+    <!--提供大、中、小三种尺寸; \n-->
+    <!--提供搜索按钮，及自定义图标按钮； \n-->
+    <!--按钮文案可自定义。-->
+    <!--</view>-->
+  </view>
+  <view class="box">
+    <view class="title">小尺寸的各类图标</view>
+    <yepButton type="normal" size="small" bindBtnEvent="onMyEvent" value="点这里">按这里</yepButton>
+    <yepButton type="primary" size="small" bindBtnEvent="onMyEvent">你好</yepButton>
+    <yepButton type="disabled" size="small" bindBtnEvent="onMyEvent">按钮</yepButton>
+    <view style="background-color: #f23030; padding: 20rpx 0; margin-top: 10rpx;">
+      <yepButton type="ghost" size="small" bindBtnEvent="onMyEvent">透明的</yepButton>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">中尺寸的各类图标</view>
+    <yepButton type="normal" bindBtnEvent="onMyEvent">ok</yepButton>
+    <yepButton type="primary" bindBtnEvent="onMyEvent">确认</yepButton>
+    <yepButton type="disabled" bindBtnEvent="onMyEvent">知道了</yepButton>
+    <view style="background-color: #f23030; padding: 20rpx 0; margin-top: 10rpx;">
+      <yepButton type="ghost" bindBtnEvent="onMyEvent">取消</yepButton>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">大尺寸的各类图标</view>
+    <yepButton type="normal" size="large" bindBtnEvent="onMyEvent">好的</yepButton>
+    <yepButton type="primary" size="large" bindBtnEvent="onMyEvent">再看看</yepButton>
+    <yepButton type="disabled" size="large" bindBtnEvent="onMyEvent">看一看</yepButton>
+    <view style="background-color: #f23030; padding: 20rpx 0; margin-top: 10rpx;">
+      <yepButton type="ghost" size="large" bindBtnEvent="onMyEvent">去绑定</yepButton>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">自定义图标</view>
+    <yepButton type="search" bindBtnEvent="onMyEvent">type=search搜索</yepButton>
+    <yepButton bindBtnEvent="onMyEvent">
+      <view class="icon"></view>
+      <view class="txt">自定义图标搜索</view>
+    </yepButton>
+  </view>
+</view>

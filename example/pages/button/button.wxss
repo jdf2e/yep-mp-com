@@ -1,0 +1,21 @@
+/**loadmore.wxss**/
+
+yepButton{
+  margin: 10rpx 5rpx;
+}
+
+.icon{
+  display: inline-block;
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+  background-image: url('http://img11.360buyimg.com/uba/jfs/t24649/2/2684526444/453/688f845d/5bed2a70Nf4033c58.png');
+  background-repeat: no-repeat;
+  background-size: 32rpx 32rpx;
+}
+
+.txt{
+  display: inline-block;
+  vertical-align: middle;
+}

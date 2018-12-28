@@ -1,0 +1,45 @@
+<block wx:if="{{type=='message'}}">
+  <view class="yep-tabs yepc-tabs">
+    <block wx:for="{{_tabs}}" wx:for-item="itemTab" wx:for-index="itemIdx">
+      <view class="yep-tab yepc-tab yep-tab-message yepc-tab-message {{itemIdx == _currIdx ? 'curr' : ''}}" bindtap="selectTab" data-idx="{{itemIdx}}">
+        <view class="yep-tab-txt yepc-tab-txt">
+          <view class="title">{{itemTab.name}}</view>
+          <view wx:if="{{itemTab.count}}" class="count">{{itemTab.count > 99 ? '99+' : itemTab.count}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="yep-tab-panel yepc-tab-panel">
+    <slot></slot>
+  </view>
+</block>
+
+<block wx:if="{{type=='text' && _tabs.length<=5}}">
+  <view class="yep-tabs yepc-tabs">
+    <block wx:for="{{_tabs}}" wx:for-item="itemTab" wx:for-index="itemIdx">
+      <view class="yep-tab yep-tab-message yepc-tab yepc-tab-message {{itemIdx == _currIdx ? 'curr' : ''}}" bindtap="selectTab" data-idx="{{itemIdx}}">
+        <view class="yep-tab-txt yepc-tab-txt">
+          <view class="title">{{itemTab.name}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="yep-tab-panel yepc-tab-panel">
+    <slot></slot>
+  </view>
+</block>
+
+<block wx:if="{{type=='text' && _tabs.length>5}}">
+  <scroll-view class="yep-tabs-scroll yepc-tabs-scroll" scroll-x="true">
+    <block wx:for="{{_tabs}}" wx:for-item="itemTab" wx:for-index="itemIdx">
+      <view class="yep-tab yepc-tab {{itemIdx == _currIdx ? 'curr' : ''}}" bindtap="selectTab" data-idx="{{itemIdx}}">
+        <view class="yep-tab-txt yepc-tab-txt">
+          <view class="title">{{itemTab.name}}</view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="yep-tab-panel yepc-tab-panel">
+    <slot></slot>
+  </view>
+</block>

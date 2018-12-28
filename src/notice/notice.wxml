@@ -1,0 +1,16 @@
+
+<view  wx:if="{{_isShow}}" class="yep-notice yepc-notice">
+  <view class="yep-notice-icon-wrap yepc-notice-icon-wrap">
+    <image wx:if="{{icon}}" class="yep-notice-icon yepc-notice-icon" src="{{icon}}"></image>
+  </view>
+  <view class="yep-notice-content-wrap yepc-notice-content-wrap" style="width: {{wrapWidth}}px">
+    <view class="yep-notice-content {{loop ? 'yep-notice-loop' : ''}}"
+          style="--marqueeWidth--:-{{_width}}%; --speed--:{{speed}}s;"
+    >
+      <slot></slot>
+    </view>
+  </view>
+
+	<view class="yep-notice-close yepc-notice-close" wx:if="{{_isClosable}}" bindtap="onTap"></view>
+</view>
+

@@ -1,0 +1,209 @@
+.yep-btn{
+  font-size: 26rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  background-image: none;
+  border: 1rpx solid #ddd;
+  white-space: nowrap;
+  padding: 0 30rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  color: #000;
+}
+
+.normal{
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 26rpx;
+}
+
+.large{
+  height: 65rpx;
+  line-height: 65rpx;
+  padding: 0 60rpx;
+  font-size: 30rpx;
+}
+
+.small{
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 0 20rpx;
+  font-size: 20rpx;
+}
+
+.yep-btn .hover-class{
+  background-color: #f23030;
+  color: #FFF;
+}
+
+.yep-btn-primary{
+  border: 1rpx solid #f23030;
+  background-color: #f23030;
+  color: #FFF;
+}
+
+.yep-btn-disabled{
+  border: 1rpx solid #f5f5f5;
+  background-color: #f5f5f5;
+  color: #bbb;
+}
+
+.yep-btn-ghost{
+  background: transparent;
+  color: #fff;
+}
+
+.yep-btn-search{
+  /*background-color: #ccc;*/
+}
+
+.yepicon-search{
+  display: inline-block;
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+  background-image: url('http://img20.360buyimg.com/uba/jfs/t20203/353/214397736/1784/ec282c48/5b03d51dNc8449dcd.png');
+  background-repeat: no-repeat;
+  background-size: 120rpx 30rpx;
+}
+
+.yep-txt{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.yep-btn-cart{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  height: 106rpx;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.yep-btn-cart .btn-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  border-top: 1rpx solid #e3e5e9;
+}
+
+.yep-btn-cart .btn-info-hd {
+  margin-bottom: 10rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.yep-btn-cart .btn-info-bd {
+  font-size: 28rpx;
+}
+
+.yep-btn-cart .btn-info-bd .emphaz {
+  display: inline-block;
+  font-size: 36rpx;
+}
+
+.yep-btn-cart .btn-box {
+  width: 250rpx;
+  line-height: 106rpx;
+  text-align: center;
+  background-color: #bfbfbf;
+  font-size: 36rpx;
+  color: #fff;
+  font-family: 'PingFangSC-Medium';
+}
+
+.yep-btn-cart .btn-box-active {
+  background-color: #f23030;
+}
+
+
+
+.go-to-customer-service .cart-icon {
+  background: url(http://commonst.360buyimg.com/common/wx-images/item/chat.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 36rpx 36rpx;
+  width: 36rpx;
+  height: 36rpx;
+  margin: 20rpx auto 8rpx;
+}
+
+.go-to-cart,.go-to-customer-service {
+  width: 120rpx;
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.cart-icon {
+  background: url(http://commonst.360buyimg.com/common/wx-images/item/item-cart.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 44rpx 39rpx;
+  width: 44rpx;
+  height: 39rpx;
+  margin: 20rpx auto 8rpx;
+}
+
+.cart-num {
+  position: absolute;
+  top: 14rpx;
+  right: 33rpx;
+  background-color: #fff;
+  line-height: 20rpx;
+  height: 24rpx;
+  box-sizing: border-box;
+  font-style: normal;
+  border-radius: 16rpx;
+  padding: 0 6rpx;
+  font-size: 16rpx;
+  color: #f23030;
+  border: 2rpx solid #f23030;
+  min-width: 24rpx;
+}
+
+.cart-text {
+  font-size: 18rpx;
+  color: #232326;
+  line-height: 18rpx;
+}
+
+.add-cart, .directorder {
+  flex: 1;
+  font-size: 36rpx;
+  line-height: 100rpx;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.add-cart {
+  background-color: #febf14;
+}
+.add-cart:active {
+  background-color: #E8AC07;
+}
+.directorder:active {
+  background-color: #CE2727;
+}
+.directorder {
+  background-color: #f23030;
+}
+
+.grey-btn {
+  background-color: #bfbfbf;
+  border-left: 1px solid #fff;
+}
+.grey-btn:active{
+  background-color: #bfbfbf;
+}

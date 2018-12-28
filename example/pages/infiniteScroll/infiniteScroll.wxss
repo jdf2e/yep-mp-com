@@ -1,0 +1,11 @@
+/* pages/infiniteScroll/infiniteScroll.wxss */
+.pd-20 {
+  padding: 0 20rpx;
+  background: #eee;
+  height: 600rpx;
+  box-sizing: border-box;
+}
+.li-item {
+  height: 200rpx;
+  background: linear-gradient(hsl(200, 10%, 100%), hsl(208, 20%, 80%));
+}

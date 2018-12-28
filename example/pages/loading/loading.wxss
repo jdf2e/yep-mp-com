@@ -1,0 +1,8 @@
+.box {
+  margin: 50rpx 0;
+  position: relative;
+}
+
+.box-body {
+  height: 100rpx;
+}

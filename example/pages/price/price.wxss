@@ -1,0 +1,54 @@
+.box-body{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.box-body-item{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  font-size: 24rpx;
+}
+
+.my-price{
+  color: #999;
+}
+
+.my-price .my-price-symbol{
+  color: #999;
+  font-size: 20rpx;
+  font-weight: 400;
+  text-decoration: line-through;
+  padding-right: 0;
+}
+.my-price .my-price-value{
+  color: #999;
+  font-size: 20rpx;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+.my-price .my-price-decimal{
+  color: #999;
+  font-size: 20rpx;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+.my-price2{
+  background-color: #999;
+  color: #FFF;
+  padding: 0 10rpx;
+}
+.my-price2 .my-price-symbol2{
+  padding-right: 0;
+  color: #FFF;
+}
+.my-price2 .my-price-value2{
+  color: #FFF;
+}
+.my-price2 .my-price-decimal2{
+  color: #FFF;
+}
+.my-price3 .my-price-decimal3{
+  font-size: 30rpx;
+  font-weight: 400;
+}

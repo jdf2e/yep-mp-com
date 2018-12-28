@@ -1,0 +1,7 @@
+<!--yepCom/bottomBar/bottomBar.wxml-->
+<view style="height: {{height}}rpx;"></view>
+<view wx:if="{{isIPhoneX}}" style="height: 68rpx;"></view>
+<view class="bar-wrap" style="background:{{bgColor||'#fff'}};height: {{height}}rpx;bottom:{{isIPhoneX?68:0}}rpx;z-index:{{zIndex}}">
+  <slot></slot>
+</view>
+<view wx:if="{{isIPhoneX}}" class="ipx-holder" style="background:{{bgColor||'#fff'}};height:68rpx;z-index:{{zIndex}}"></view>

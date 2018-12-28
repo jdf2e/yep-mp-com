@@ -1,0 +1,78 @@
+
+<view class="content-body content-page">
+
+    <view class="tip">
+        <view class="title">Notice 通告</view>
+    </view>
+
+    <view class="box">
+        <view class="title">全文字</view>
+        <view class="box-body">
+            <view class="box-body-item">
+                <yepNotice>我是公告我是通知我是想告诉用户的信息</yepNotice>
+            </view>
+        </view>
+    </view>
+
+    <view class="box">
+        <view class="title">图标+文字</view>
+        <view class="box-body">
+            <view class="box-body-item">
+                <yepNotice icon="https://img30.360buyimg.com/uba/jfs/t20662/29/2276596986/938/7836381b/5b4d6358N837fbb06.png">我是公告我是通知我是想告诉用户的信息</yepNotice>
+            </view>
+        </view>
+    </view>
+
+    <view class="box">
+        <view class="title">图标+文字+关闭按钮</view>
+        <view class="box-body">
+            <view class="box-body-item">
+                <yepNotice closable bindnoticechange="closeNotice" icon="https://img30.360buyimg.com/uba/jfs/t20662/29/2276596986/938/7836381b/5b4d6358N837fbb06.png">我是公告我是通知我是想告诉用户的信息</yepNotice>
+            </view>
+        </view>
+    </view>
+
+    <view class="box">
+        <view class="title">自定义</view>
+        <view class="box-body">
+            <view class="box-body-item">
+                <yepNotice yepc-notice="my-notice" yepc-notice-icon-wrap="my-notice-icon-box" yepc-notice-icon="my-notice-icon" yepc-notice-close="my-notice-close" closable bindnoticechange="closeNotice" icon="http://img20.360buyimg.com/uba/jfs/t27499/139/1940799907/575/ca0fc4f9/5bf262f5N51d464a6.png">
+                    我是公告我是通知我是想告诉用户的信息
+                </yepNotice>
+            </view>
+        </view>
+    </view>
+
+    <view class="box">
+        <view class="title">文字+跑马灯</view>
+        <view class="box-body">
+            <view class="box-body-item">
+                <!--<view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx"></view>-->
+
+                <yepNotice loop yepc-notice-content-wrap="my-notice-content-wrap" speed="5" icon="https://img30.360buyimg.com/uba/jfs/t20662/29/2276596986/938/7836381b/5b4d6358N837fbb06.png">
+                    <view>我是公告我是通知我是想告诉用户的信息</view>
+                    <view>aaa告诉用户的信息</view>
+                    <view>bbb知我是想告诉用户的信息</view>
+                </yepNotice>
+                <yepNotice loop speed="3" yepc-notice="my-notice" yepc-notice-icon-wrap="my-notice-icon-box" yepc-notice-icon="my-notice-icon" yepc-notice-close="my-notice-close" bindnoticechange="closeNotice" icon="http://img20.360buyimg.com/uba/jfs/t27499/139/1940799907/575/ca0fc4f9/5bf262f5N51d464a6.png">
+                    我是公告我是通知我是想告诉用户的信息
+                </yepNotice>
+                <yepNotice loop speed="8" bindnoticechange="closeNotice">
+                    我是公告我是通知我是想告诉用户的信息
+                </yepNotice>
+            </view>
+        </view>
+    </view>
+
+    <!--<view class="box">-->
+        <!--<view class="title">多段文字+上下轮播</view>-->
+        <!--<view class="box-body">-->
+            <!--<view class="box-body-item">-->
+                <!--<yepNotice content="我是公告我是通知我是想告诉用户的信息" loop icon="https://img30.360buyimg.com/uba/jfs/t20662/29/2276596986/938/7836381b/5b4d6358N837fbb06.png"></yepNotice>-->
+                <!--<yepNotice content="我是公告我是通知我是想告诉用户的信息" loop speed="3" yepc-notice="my-notice" yepc-notice-icon-box="my-notice-icon-box" yepc-notice-icon="my-notice-icon" yepc-notice-close="my-notice-close" closable bindnoticechange="closeNotice" icon="http://img20.360buyimg.com/uba/jfs/t27499/139/1940799907/575/ca0fc4f9/5bf262f5N51d464a6.png"></yepNotice>-->
+                <!--<yepNotice content="我是公告我是通知我是想告诉用户的信息" loop speed="8" bindnoticechange="closeNotice"></yepNotice>-->
+            <!--</view>-->
+        <!--</view>-->
+    <!--</view>-->
+
+</view>

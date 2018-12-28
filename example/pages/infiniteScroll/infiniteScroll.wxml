@@ -1,0 +1,29 @@
+<!--pages/infiniteScroll/infiniteScroll.wxml-->
+
+
+
+<view class="content-body content-page">
+
+  <view class="tip">
+    <view class="title">Infinite Scroll 无限加载</view>
+  </view>
+
+  <view class="box">
+    <view class="title">默认</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <infinite-scroll
+            yepc-scroll="pd-20"
+            loading="{{loading}}"
+            is-end="{{isEnd}}"
+            loading-slot="{{true}}"
+            bindrefreshing="resetFetch"
+            bindscrollend="scrollToFetch">
+          <text slot="loading">自定义加载中动画</text>
+          <view wx:for="{{list}}" wx:key="{{index}}" class="li-item"></view>
+        </infinite-scroll>
+      </view>
+    </view>
+  </view>
+</view>
+

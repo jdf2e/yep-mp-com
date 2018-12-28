@@ -1,0 +1,46 @@
+<view class="content-body content-page">
+
+  <view class="tip">
+    <view class="title">Tabs 标签页</view>
+  </view>
+
+  <view class="box">
+    <view class="title">带有消息数字的 Tabs</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepTab id="yepcom-tab" type="{{tabMessage.type}}" tabs="{{tabMessage.tabs}}" bindtabchange="selectMessageTab" data-idx="0">
+          <block wx:for="{{tabMessage.tabs}}" wx:for-item="tabItem" wx:for-index="idx" wx:if="{{tabMessage.currIdx == idx}}">
+            <view class="tab-content">{{tabItem.tabContent}}</view>
+          </block>
+        </yepTab>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">只有文本的 Tabs</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepTab id="yepcom-tab" type="{{tabText.type}}" tabs="{{tabText.tabs}}" bindtabchange="selectTextTab" data-idx="1">
+          <block wx:for="{{tabText.tabs}}" wx:for-item="tabItem" wx:for-index="idx" wx:if="{{tabText.currIdx == idx}}">
+            <view class="tab-content">{{tabItem.tabContent}}</view>
+          </block>
+        </yepTab>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">横向滚动的 Tabs</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepTab id="yepcom-tab" type="{{tabText.type}}" tabs="{{tabText.tabs}}" bindtabchange="selectTextTab" data-idx="1">
+          <block wx:for="{{tabText.tabs}}" wx:for-item="tabItem" wx:for-index="idx" wx:if="{{tabText.currIdx == idx}}">
+            <view class="tab-content">{{tabItem.tabContent}}</view>
+          </block>
+        </yepTab>
+      </view>
+    </view>
+  </view>
+
+</view>

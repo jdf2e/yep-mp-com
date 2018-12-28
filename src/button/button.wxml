@@ -1,0 +1,47 @@
+
+<block wx:if="{{type == 'search'}}">
+  <view class="yep-btn yep-btn-search {{size}}" hover-class="{{hoverclass}}" bindtap="onTap">
+    <view class="yepicon-search"></view>
+    <view class="yep-txt"><slot></slot></view>
+  </view>
+</block>
+
+<view wx:else class="yep-btn {{type == 'disabled' ? 'yep-btn-disabled' : ''}} {{type == 'primary' ? 'yep-btn-primary' : ''}} {{type == 'ghost' ? 'yep-btn-ghost' : ''}} {{size}}" hover-class="{{hoverclass}}" bindtap="onTap">
+  <slot></slot>
+</view>
+
+<!--
+
+<block wx:if="{{type == 'easybuy'}}">
+  <view class="yep-btn-cart">
+    <view class="btn-info">
+      <view>
+        <view wx:if="{{cardData.themeType != 3}}" class="btn-info-hd">共199份</view>
+        <view class="btn-info-bd">¥<view class="emphaz">99.00</view></view>
+      </view>
+    </view>
+    <view class="btn-box btn-box-active" bindtap="buyCard">立即购买</view>
+  </view>
+</block>
+
+<block wx:if="{{type == 'addcart'}}">
+  <view class="yep-btn-cart">
+    <view class="go-to-customer-service">
+      <view class="cart-icon"></view>
+      <view class="cart-text">联系卖家</view>
+      <view class="cart-text">供应商</view>
+    </view>
+    <view class="go-to-cart">
+      <view class="cart-icon"></view>
+      <view class="cart-num" style="display:'block'">{{cartNum}}</view>
+      <view class="cart-text">购物车</view>
+    </view>
+    <form bindsubmit="addCartFn" class="add-cart">
+      <button form-type="submit" class="message-push-btn add-cart {{isBuy?'':'grey-btn'}}">加入购物车</button>
+    </form>
+    <form bindsubmit="goToBuy" report-submit="true" class="directorder">
+      <button form-type="submit" class="message-push-btn directorder {{isBuy?'':'grey-btn'}}">立即购买</button>
+    </form>
+  </view>
+</block>
+ -->

@@ -1,0 +1,98 @@
+
+
+<view class="content-body content-page">
+
+  <view class="tip">
+    <view class="title">CountDown 倒计时</view>
+  </view>
+
+  <view class="box">
+    <view class="title">默认</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepCountdown time="104850000" format="HH:MM:SS"></yepCountdown>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">展示天数</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepCountdown time="104850000" format="DD:HH:MM:SS"></yepCountdown>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">展示天数：自定义样式</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepCountdown time="104850000" format="DD:HH:MM:SS"
+                      yepc-countdown="my-countdown"
+                      yepc-countdown-item="my-countdown-item"
+                      yepc-countdown-colon="my-countdown-colon"
+        ></yepCountdown>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">展示中文倒计时</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepCountdown time="104850000" format="XX天XX时XX分XX秒"></yepCountdown>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">展示中文倒计时：自定义样式</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepCountdown time="104850000" format="XX天XX时XX分XX秒"
+                      yepc-countdown="my-countdown"
+        ></yepCountdown>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">展示中文倒计时</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepCountdown time="104850000" format="XX天XX时XX分"></yepCountdown>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">展示中文倒计时</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepCountdown time="104850000" format="XX时XX分"></yepCountdown>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">展示中文倒计时</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepCountdown time="104850000" format="XX时XX分XX秒"></yepCountdown>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">倒计时回调</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepCountdown time="20000" format="HH:MM:SS" bindcallback="cb"></yepCountdown>
+        <view>倒计时：{{myStatus}}</view>
+      </view>
+    </view>
+  </view>
+
+
+</view>

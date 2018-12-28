@@ -1,0 +1,11 @@
+<view style="background:#fefefe;height:1520rpx;">
+  <text>往下滚动</text>
+</view>
+<sticky-header>
+  <view style="background:#efefef;height:120rpx;">
+    <text>sticky header</text>
+  </view>
+</sticky-header>
+<view style="background:#fefefe;height:2120rpx;">
+  <text>content</text>
+</view>

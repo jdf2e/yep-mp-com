@@ -1,0 +1,357 @@
+.yep-queue {
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 100rpx;
+  background: #f33;
+  float: left;
+  margin: 0 10rpx;
+  animation: yep-queue1 linear 1s infinite;
+  -webkit-animation: yep-queue1 linear 1s infinite;
+}
+
+.yep-queue1 {
+  animation-delay: 0s;
+}
+
+.yep-queue2 {
+  animation-delay: 0.15s;
+}
+
+.yep-queue3 {
+  animation-delay: 0.3s;
+}
+
+.yep-queue4 {
+  animation-delay: 0.45s;
+}
+
+.yep-queue5 {
+  animation-delay: 0.6s;
+}
+
+@keyframes yep-queue1 {
+  0%,
+  60%,
+  100% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(2.5);
+  }
+}
+
+.yep-queue-outer {
+  height: 10rpx;
+  clear: both;
+}
+
+.yep-wave-outer {
+  height: 10rpx;
+  clear: both;
+}
+
+.yep-wave {
+  width: 8rpx;
+  height: 12rpx;
+  background: #f33;
+  float: left;
+  margin: 0 6px;
+  animation: yep-wave-am linear 1s infinite;
+  -webkit-animation: yep-wave-am linear 1s infinite;
+}
+
+.yep-wave1 {
+  animation-delay: 0s;
+}
+
+.yep-wave2 {
+  animation-delay: 0.15s;
+}
+
+.yep-wave3 {
+  animation-delay: 0.3s;
+}
+
+.yep-wave4 {
+  animation-delay: 0.45s;
+}
+
+.yep-wave5 {
+  animation-delay: 0.6s;
+}
+
+@keyframes yep-wave-am {
+  0%,
+  60%,
+  100% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scaleY(3);
+  }
+}
+
+.yep-ball-outer {
+  position: relative;
+  width: 100rpx;
+  height: 100rpx;
+  clear: both;
+}
+
+.yep-ball {
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 4rpx;
+  background: #f33;
+  position: absolute;
+  animation: yep-ball-am linear 0.8s infinite;
+  -webkit-animation: yep-ball-am linear 0.8s infinite;
+}
+
+.yep-ball1 {
+  left: 48rpx;
+  top: 4rpx;
+  animation-delay: 0s;
+}
+
+.yep-ball2 {
+  left: 80rpx;
+  top: 16rpx;
+  animation-delay: 0.1s;
+}
+
+.yep-ball3 {
+  left: 94rpx;
+  top: 48rpx;
+  animation-delay: 0.1s;
+}
+
+.yep-ball4 {
+  left: 80rpx;
+  top: 80rpx;
+  animation-delay: 0.2s;
+}
+
+.yep-ball5 {
+  left: 48rpx;
+  top: 94rpx;
+  animation-delay: 0.4s;
+}
+
+.yep-ball6 {
+  left: 16rpx;
+  top: 80rpx;
+  animation-delay: 0.5s;
+}
+
+.yep-ball7 {
+  left: 4rpx;
+  top: 48rpx;
+  animation-delay: 0.6s;
+}
+
+.yep-ball8 {
+  left: 16rpx;
+  top: 16rpx;
+  animation-delay: 0.7s;
+}
+
+@keyframes yep-ball-am {
+  0%,
+  40%,
+  100% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(3);
+  }
+}
+
+.yep-jump-outer {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin: -100rpx 0 0 -20rpx;
+  width: 40rpx;
+  height: 200rpx;
+  border-bottom: 1px solid #f33;
+}
+
+.yep-jump {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+  background: #f33;
+  animation: yep-jump cubic-bezier(0.5, 0.01, 0.9, 1) 0.6s infinite alternate;
+  -webkit-animation: yep-jump cubic-bezier(0.5, 0.01, 0.9, 1) 0.6s infinite alternate;
+}
+
+@keyframes yep-jump {
+  0% {
+    transform: translateY(0rpx);
+    -webkit-transform: translateY(0rpx);
+  }
+  100% {
+    transform: translateY(160rpx);
+    -webkit-transform: translateY(160rpx);
+  }
+}
+
+.yep-loading {
+  position: relative;
+}
+
+.yep-loading-center-absolute {
+  position: absolute;
+  left: 50%;
+  top: 0rpx;
+  height: 20rpx;
+  width: 100rpx;
+  margin-left: -50rpx;
+}
+
+.yep-object {
+  width: 20rpx;
+  height: 20rpx;
+  background-color: #f33;
+  border-radius: 50% 50% 50% 50%;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  position: absolute;
+}
+
+.yep-object_one {
+  animation: object 2s linear infinite;
+}
+
+.yep-object_two {
+  animation: object 2s linear infinite -.4s;
+}
+
+.yep-object_three {
+  animation: object 2s linear infinite -.8s;
+}
+
+.yep-object_four {
+  animation: object 2s linear infinite -1.2s;
+}
+
+.yep-object_five {
+  animation: object 2s linear infinite -1.6s;
+}
+
+@keyframes object {
+  0% {
+    left: 100rpx;
+    top: 0;
+  }
+  80% {
+    left: 0;
+    top: 0;
+  }
+  85% {
+    left: 0;
+    top: -20rpx;
+    width: 20rpx;
+    height: 20rpx;
+  }
+  90% {
+    width: 40rpx;
+    height: 15rpx;
+  }
+  95% {
+    left: 100rpx;
+    top: -20rpx;
+    width: 20rpx;
+    height: 20rpx;
+  }
+  100% {
+    left: 100rpx;
+    top: 0;
+  }
+}
+
+@keyframes yep-spread_one {
+  50% {
+    transform: translate(20px, 20px);
+  }
+}
+
+@keyframes yep-spread_two {
+  50% {
+    transform: translate(-20px, 20px);
+  }
+}
+
+@keyframes yep-spread_three {
+  50% {
+    transform: translate(20px, -20px);
+  }
+}
+
+@keyframes yep-spread_four {
+  50% {
+    transform: translate(-20px, -20px);
+  }
+}
+
+@keyframes yep-center {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.yep-spread-li:nth-child(2n+0) {
+  margin-right: 0px;
+}
+
+.yep-spread_one {
+  animation: yep-spread_one 1s infinite;
+}
+
+.yep-spread_two {
+  animation: yep-spread_two 1s infinite;
+}
+
+.yep-spread_three {
+  animation: yep-spread_three 1s infinite;
+}
+
+.yep-spread_four {
+  animation: yep-spread_four 1s infinite;
+}
+
+.yep-spread {
+  height: 100%;
+  width: 100%;
+  /* position: fixed; */
+  z-index: 1;
+  margin-top: 0px;
+  top: 0px;
+}
+
+.yep-loading-center {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.yep-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  animation: yep-center 1s infinite;
+}
+
+.yep-spread-li {
+  width: 20px;
+  height: 20px;
+  float: left;
+  border-radius: 50% 50% 50% 50%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}

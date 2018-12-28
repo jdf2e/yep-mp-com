@@ -1,0 +1,73 @@
+<view class="content-body">
+
+  <view class="tip">
+    <view class="title">Badge 徽标</view>
+  </view>
+
+  <view class="box">
+    <view class="title">文字+徽标</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepBadge dot>
+          <view class="my-cls">方</view>
+        </yepBadge>
+      </view>
+      <view class="box-body-item">
+        <yepBadge dot count="10">
+          <view class="my-cls" >方</view>
+        </yepBadge>
+      </view>
+      <view class="box-body-item">
+        <yepBadge dot count="100">
+          <view class="my-cls" >方</view>
+        </yepBadge>
+      </view>
+      <view class="box-body-item">
+        <yepBadge dot count="10" text="new">
+          <view class="my-cls" >方</view>
+        </yepBadge>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">图片+徽标</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepBadge dot>
+          <image src="http://img11.360buyimg.com/uba/jfs/t28870/269/267049988/210719/e77e08ea/5bed387eN7b8d5455.png"></image>
+        </yepBadge>
+      </view>
+      <view class="box-body-item">
+        <yepBadge dot count="10">
+          <image src="http://img11.360buyimg.com/uba/jfs/t28870/269/267049988/210719/e77e08ea/5bed387eN7b8d5455.png"></image>
+        </yepBadge>
+      </view>
+      <view class="box-body-item">
+        <yepBadge dot count="100">
+          <image src="http://img11.360buyimg.com/uba/jfs/t28870/269/267049988/210719/e77e08ea/5bed387eN7b8d5455.png"></image>
+        </yepBadge>
+      </view>
+      <view class="box-body-item">
+        <yepBadge dot count="10" text="new">
+          <image src="http://img11.360buyimg.com/uba/jfs/t28870/269/267049988/210719/e77e08ea/5bed387eN7b8d5455.png"></image>
+        </yepBadge>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">独立使用的徽标</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepBadge count="10" alone></yepBadge>
+        <yepBadge count="10" alone text="券" yepc-badge="my-badge" yepc-badge-msg="my-badge-msg-coupon"></yepBadge>
+        <yepBadge count="10" alone text="拼购" yepc-badge="my-badge" yepc-badge-msg="my-badge-msg-tip"></yepBadge>
+        <yepBadge count="10" alone text="new" yepc-badge="my-badge" yepc-badge-msg="my-badge-msg-new"></yepBadge>
+        <yepBadge count="10" alone text="高级定制" yepc-badge="my-badge" yepc-badge-msg="my-badge-msg-btn"></yepBadge>
+      </view>
+    </view>
+  </view>
+
+
+</view>

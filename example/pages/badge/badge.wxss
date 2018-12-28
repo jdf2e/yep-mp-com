@@ -1,0 +1,56 @@
+.box-body{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.box-body-item{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  font-size: 24rpx;
+}
+
+.box-body-item image{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.my-cls{
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: #ccc;
+  border-radius: 20rpx;
+}
+
+.my-badge .my-badge-msg-coupon{
+  background-color: rgb(241, 151, 54);
+  border-radius: 4rpx;
+  padding: 0 6rpx;
+}
+
+.my-badge .my-badge-msg-tip{
+  background-color: #F94c00;
+  border-radius: 4rpx;
+  padding: 0 6rpx;
+}
+.my-badge .my-badge-msg-new{
+  height: 22rpx;
+  width: 48rpx;
+  line-height: 18rpx;
+  background-color: #e4393c;
+  border-radius: 2rpx;
+  padding: 0 4rpx;
+}
+.my-badge .my-badge-msg-btn{
+  background-color: #FFF;
+  border: 1rpx solid rgb(241, 151, 54);
+  color: rgb(241, 151, 54);
+  border-radius: 4rpx;
+  padding: 0 6rpx;
+}
+.my-badge .rec{
+  border-radius: 0;
+}
+

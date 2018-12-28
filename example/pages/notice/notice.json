@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "Notice",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "usingComponents": {
+      "yepNotice": "/yepCom/notice/notice"
+    }
+  }

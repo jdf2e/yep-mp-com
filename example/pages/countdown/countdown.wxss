@@ -1,0 +1,15 @@
+
+.my-countdown{
+    font-size: 24rpx;
+    color: #3CB371;
+}
+.my-countdown-item{
+    padding: 4rpx 8rpx;
+    background-color: #ccc;
+    color: #FFF;
+    border-radius: 4rpx;
+}
+
+.my-countdown-colon{
+    margin: 0 8rpx;
+}

@@ -1,0 +1,60 @@
+
+
+.yep-tabs{
+  /*flex: 1;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 85rpx;
+  line-height: 85rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.yep-tab{
+  min-width: 150rpx;
+  font-size: 28rpx;
+}
+
+.yep-tab-txt{
+  display: inline-block;
+}
+
+.title{
+  display: inline-block;
+}
+
+.curr .title{
+  border-bottom: 4rpx solid #f10e1e;
+}
+
+.yep-tab-message .count{
+  font-size: 20rpx;
+  background-color: #f10e1e;
+  color: #fff;
+  height: 24rpx;
+  line-height: 24rpx;
+  border-radius: 20rpx;
+  padding: 2rpx 4rpx;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -10rpx;
+  margin-top: 4rpx;
+}
+
+.yep-tabs-scroll{
+  width: 100%;
+  white-space: nowrap;
+  line-height: 85rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.yep-tabs-scroll .yep-tab{
+  display: inline-block;
+  padding: 0 40rpx;
+  min-width: 0;
+}
+
+.yep-tabs-scroll .curr .title {
+  border-bottom: 4rpx solid #f10e1e;
+}

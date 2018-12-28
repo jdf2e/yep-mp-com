@@ -1,0 +1,7 @@
+<view id="_observer" style="height:20px; margin-top:-20px; pointer-events:none;"></view>
+<view wx:if="{{pos}}" style="height:{{height}}px"></view>
+<view id="_stickheader" class="{{pos}}">
+  <view>
+    <slot></slot>
+  </view>
+</view>

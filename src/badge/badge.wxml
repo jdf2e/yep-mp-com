@@ -1,0 +1,8 @@
+
+<!-- count和text同时配置时，count优先级高于text
+     count和dot同时配置时，dot优先级高于count和text -->
+
+<view class="yep-badge yepc-badge">
+  <slot></slot>
+  <view class="yep-badge-msg yepc-badge-msg yep-badge-{{_msgCls}} yep-badge-{{_alone}} " >{{text || _count}}</view>
+</view>

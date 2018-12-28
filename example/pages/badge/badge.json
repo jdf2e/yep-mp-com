@@ -1,0 +1,10 @@
+{
+	"navigationBarBackgroundColor": "#ffffff",
+	"navigationBarTextStyle": "black",
+	"navigationBarTitleText": "Badge",
+	"backgroundColor": "#eeeeee",
+	"backgroundTextStyle": "light",
+	"usingComponents": {
+		"yepBadge": "/yepCom/badge/badge"
+	  }
+}
