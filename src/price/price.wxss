@@ -1,0 +1,59 @@
+
+.yep-price{
+  font-size: 24rpx;
+  color: #e4393c;
+  font-weight: 700;
+  line-height: 1.3;
+  display: inline-block;
+  padding: 0 6rpx 0 0;
+}
+
+.common{
+  color: #bbb;
+  font-weight: 400;
+}
+
+.del{
+  color: #bbb;
+  text-decoration: line-through;
+}
+
+.del .sym-val, .del .sym-decimal{
+  text-decoration: line-through;
+}
+
+.sym-sub, .sym-normal, .sym-sup{
+  display: inline-block;
+  font-size: 30rpx;
+}
+
+.sym-sub{
+  font-size: 20rpx;
+  padding: 0 6rpx 0 0;
+  /*vertical-align: bottom;*/
+}
+
+.sym-sup{
+  font-size: 20rpx;
+  padding: 0 6rpx 0 0;
+  vertical-align: top;
+}
+
+.sym-val{
+  display: inline-block;
+  font-size: 30rpx;
+}
+
+.sym-decimal{
+  display: inline-block;
+  font-size: 30rpx;
+}
+
+.sym-decimal-sub{
+  font-size: 20rpx;
+}
+
+.sym-decimal-sup{
+  font-size: 20rpx;
+  vertical-align: top;
+}

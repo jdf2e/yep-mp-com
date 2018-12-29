@@ -1,0 +1,84 @@
+
+<view class="content-body">
+
+  <view class="tip">
+    <view class="title">Avatar 头像</view>
+  </view>
+
+  <view class="box">
+    <view class="title">方形文字</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yep-avatar  shape="square" >方</yep-avatar>
+      </view>
+      <view class="box-body-item">
+        <yep-avatar  shape="square" size="50">方</yep-avatar>
+      </view>
+      <view class="box-body-item">
+        <yep-avatar  shape="square" size="80">方</yep-avatar>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">圆形文字</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yep-avatar  shape="circle" >圆</yep-avatar>
+      </view>
+      <view class="box-body-item">
+        <yep-avatar  shape="circle" size="50">圆</yep-avatar>
+      </view>
+      <view class="box-body-item">
+        <yep-avatar  shape="circle" size="80">圆</yep-avatar>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">方形头像</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yep-avatar  shape="square" src="http://img11.360buyimg.com/uba/jfs/t28870/269/267049988/210719/e77e08ea/5bed387eN7b8d5455.png" ></yep-avatar>
+      </view>
+      <view class="box-body-item">
+        <yep-avatar  shape="square" size="50" src="http://img11.360buyimg.com/uba/jfs/t28870/269/267049988/210719/e77e08ea/5bed387eN7b8d5455.png" ></yep-avatar>
+      </view>
+      <view class="box-body-item">
+        <yep-avatar  shape="square" size="80" src="http://img11.360buyimg.com/uba/jfs/t28870/269/267049988/210719/e77e08ea/5bed387eN7b8d5455.png" ></yep-avatar>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="box">
+    <view class="title">圆形头像</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yep-avatar  shape="circle" src="http://img11.360buyimg.com/uba/jfs/t28870/269/267049988/210719/e77e08ea/5bed387eN7b8d5455.png" ></yep-avatar>
+      </view>
+      <view class="box-body-item">
+        <yep-avatar  shape="circle" size="50" src="http://img11.360buyimg.com/uba/jfs/t28870/269/267049988/210719/e77e08ea/5bed387eN7b8d5455.png" ></yep-avatar>
+      </view>
+      <view class="box-body-item">
+        <yep-avatar  shape="circle" size="80" src="http://img11.360buyimg.com/uba/jfs/t28870/269/267049988/210719/e77e08ea/5bed387eN7b8d5455.png" ></yep-avatar>
+      </view>
+    </view>
+  </view>
+
+  <view  class="box">
+    <view class="title">含消息提示头像</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yep-avatar  shape="square" src="http://img11.360buyimg.com/uba/jfs/t28870/269/267049988/210719/e77e08ea/5bed387eN7b8d5455.png" count="{{5}}"></yep-avatar>
+      </view>
+      <view class="box-body-item">
+        <yep-avatar  shape="circle" size="50" src="http://img11.360buyimg.com/uba/jfs/t28870/269/267049988/210719/e77e08ea/5bed387eN7b8d5455.png" count="{{50}}"></yep-avatar>
+      </view>
+      <view class="box-body-item">
+        <yep-avatar  shape="square" size="80" src="http://img11.360buyimg.com/uba/jfs/t28870/269/267049988/210719/e77e08ea/5bed387eN7b8d5455.png" count="{{100}}"></yep-avatar>
+      </view>
+    </view>
+  </view>
+
+</view>

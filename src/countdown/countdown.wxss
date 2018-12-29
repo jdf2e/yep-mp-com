@@ -1,0 +1,13 @@
+.yep-countdown{
+  /*!*width:300rpx;*!*/
+  /*height: 56rpx;*/
+  /*background-color: #fff;*/
+  /*color: black;*/
+  /*font-size: 36rpx;*/
+  /*line-height: 56rpx;*/
+}
+
+.yep-countdown {
+  display: flex;
+  align-items: center;
+}

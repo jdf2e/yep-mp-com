@@ -1,0 +1,51 @@
+.yep-badge{
+  display: inline-block;
+  position: relative;
+}
+
+/*dot临时方案*/
+.yep-true{
+  width:20rpx;
+  max-width: 20rpx !important;
+  min-width: 20rpx !important;
+  height:20rpx;
+  border-radius:60%;
+  top:-7rpx;
+  right:-1rpx;
+  padding: 0;
+}
+
+.yep-badge-msg {
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  background: #f23030;
+  border: 2rpx solid #FFF;
+  text-align:center;
+  font-size:24rpx;
+  color:#fff;
+}
+
+.yep-badge-circle{
+  height: 40rpx;
+  width: 40rpx;
+  line-height: 40rpx;
+  border-radius: 50%;
+}
+
+.yep-badge-rec{
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 0 10rpx;
+  border-radius: 20rpx;
+}
+
+.yep-badge-dot{
+  height: 20rpx;
+  width: 20rpx;
+  border-radius: 50%;
+}
+
+.yep-badge-alone{
+  position: relative;
+}

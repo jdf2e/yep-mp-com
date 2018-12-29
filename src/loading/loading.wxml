@@ -1,0 +1,58 @@
+<block wx:if="{{type == 'queue'}}">
+    <view class='yep-queue-outer' style="transform:scale({{scale}});">
+        <view class="yep-queue yep-queue1" style='background:{{color}}'></view>
+        <view class="yep-queue yep-queue2" style='background:{{color}}'></view>
+        <view class="yep-queue yep-queue3" style='background:{{color}}'></view>
+        <view class="yep-queue yep-queue4" style='background:{{color}}'></view>
+        <view class="yep-queue yep-queue5" style='background:{{color}}'></view>
+    </view>
+</block>
+<block wx:if="{{type == 'wave'}}">
+    <view class='yep-wave-outer' style="transform:scale({{scale}});">
+        <view class="yep-wave yep-wave1" style='background:{{color}}'></view>
+        <view class="yep-wave yep-wave2" style='background:{{color}}'></view>
+        <view class="yep-wave yep-wave3" style='background:{{color}}'></view>
+        <view class="yep-wave yep-wave4" style='background:{{color}}'></view>
+        <view class="yep-wave yep-wave5" style='background:{{color}}'></view>
+    </view>
+</block>
+<block wx:if="{{type == 'ball'}}">
+    <view class='yep-ball-outer' style="transform:scale({{scale}});">
+        <view class="yep-ball yep-ball1" style='background:{{color}}'></view>
+        <view class="yep-ball yep-ball2" style='background:{{color}}'></view>
+        <view class="yep-ball yep-ball3" style='background:{{color}}'></view>
+        <view class="yep-ball yep-ball4" style='background:{{color}}'></view>
+        <view class="yep-ball yep-ball5" style='background:{{color}}'></view>
+        <view class="yep-ball yep-ball6" style='background:{{color}}'></view>
+        <view class="yep-ball yep-ball7" style='background:{{color}}'></view>
+        <view class="yep-ball yep-ball8" style='background:{{color}}'></view>
+    </view>
+</block>
+<block wx:if="{{type == 'jump'}}">
+    <view class='yep-jump-outer' style="transform:scale({{scale}});border-color:{{color}}">
+        <view class="yep-jump" style='background:{{color}}'></view>
+    </view>
+</block>
+<block wx:if="{{type == 'lineup'}}">
+    <view class="yep-loading" style="transform:scale({{scale}})">
+        <view class="yep-loading-center-absolute">
+            <view class="yep-object yep-object_one" style='background:{{color}}'></view>
+            <view class="yep-object yep-object_two" style='background:{{color}}'></view>
+            <view class="yep-object yep-object_three" style='background:{{color}}'></view>
+            <view class="yep-object yep-object_four" style='background:{{color}}'></view>
+            <view class="yep-object yep-object_five" style='background:{{color}}'></view>
+        </view>
+    </view>
+</block>
+<block wx:if="{{type == 'spread'}}">
+    <view class="yep-spread" style="transform:scale({{scale}})">
+        <view class="yep-loading-center">
+            <view class="yep-center">
+                <view class="yep-spread-li yep-spread_one" style='background:{{color}}'></view>
+                <view class="yep-spread-li yep-spread_two" style='background:{{color}}'></view>
+                <view class="yep-spread-li yep-spread_three" style='background:{{color}}'></view>
+                <view class="yep-spread-li yep-spread_four" style='background:{{color}}'></view>
+            </view>
+        </view>
+    </view>
+</block>

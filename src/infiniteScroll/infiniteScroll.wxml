@@ -1,0 +1,33 @@
+<!--yepCom/infiniteScroll/infiniteScroll.wxml-->
+<scroll-view 
+  id="inScroll"
+  scroll-y="{{true}}"
+  scroll-top="{{refreshHeight}}"
+  scroll-into-view="{{toView}}"
+  bindscrolltolower="scrollEnd"
+  bindtouchstart="_onScrollStart"
+  bindscroll="_onScroll"
+  bindtouchend="_onScrollEnd"
+  scroll-with-animation="true"
+  class="yep-scroll yepc-scroll"
+  style="position:relative;">
+
+  <view class="refresh-wrap" style="height:{{INDICATOR_MAX_SIZE}}px;">
+    <text>{{currentTitle}}</text>
+  </view>
+  <view id="refreshLine" style="height: 0;"></view>
+
+  <view wx:if="{{loading}}" class="ldw">
+    <text wx:if="{{!loadingSlot}}">加载中...</text>
+    <slot name="loading"></slot>
+  </view>
+
+  <!-- <text>下拉loading</text> -->
+  <block wx:if="{{!loading}}">
+    <slot></slot>
+    <slot name="more"></slot>
+    <view class="lw" wx:if="{{!moreSlot}}">
+      <text class="text">{{isEnd?'—— 到底啦 ——':'加载中...'}}</text>
+    </view>
+  </block>
+</scroll-view>

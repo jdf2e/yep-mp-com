@@ -1,0 +1,30 @@
+/* yepCom/infiniteScroll/infiniteScroll.wxss */
+.lw {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx 0;
+}
+.lw .text {
+  font-size: 24rpx;
+  color: #666;
+}
+.ldw {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.refresh-wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.yep-scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

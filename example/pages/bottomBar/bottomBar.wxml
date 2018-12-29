@@ -1,0 +1,7 @@
+<!--pages/bottomBar/bottomBar.wxml-->
+<view style="height: 300rpx; background: hsl({{128+item*20}}, 20%, 20%);" wx:for="{{[1,2,3,4,5,6]}}" wx:key="{{item}}"></view>
+<bottom-bar height="{{100}}" z-index="{{999}}" bg-color="#fefefe">
+  <view style="display:flex; align-items: center; justify-content: center;height: 100%;background: #fefefe;">
+    <text>可以是tabbar/功能栏，兼容iPhoneX</text>
+  </view>
+</bottom-bar>

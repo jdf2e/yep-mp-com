@@ -1,0 +1,6 @@
+{
+	"navigationBarTitleText": "Tabs",
+	"usingComponents": {
+      "yepTab": "/yepCom/tab/tab"
+    }
+}

@@ -1,0 +1,33 @@
+
+<view class="yep-price y-price yepc-price {{_cls}}">
+  <block wx:if="{{_symbol}}">
+    <block wx:if="{{symPos == '' || symPos == 'sub'}}">
+      <view class="sym-sub yepc-price-symbol">{{_symbol}}</view>
+    </block>
+
+    <block wx:if="{{symPos == 'normal'}}">
+      <view class="sym-normal yepc-price-symbol">{{_symbol}}</view>
+    </block>
+
+    <block wx:if="{{symPos == 'sup'}}">
+      <view class="sym-sup yepc-price-symbol">{{_symbol}}</view>
+    </block>
+  </block>
+
+  <block wx:if="{{value}}">
+    <view class="sym-val yepc-price-value">{{_intVal}}</view>
+  </block>
+
+  <block wx:if="{{_floatVal}}">
+    <block wx:if="{{decPos == 'normal'}}">
+      <view class="sym-decimal yepc-price-decimal">.{{_floatVal}}</view>
+    </block>
+    <block wx:if="{{decPos == 'sub' || decPos == ''}}">
+      <view class="sym-decimal sym-decimal-sub yepc-price-decimal">.{{_floatVal}}</view>
+    </block>
+    <block wx:if="{{decPos == 'sup'}}">
+      <view class="sym-decimal sym-decimal-sup yepc-price-decimal">.{{_floatVal}}</view>
+    </block>
+  </block>
+</view>
+

@@ -1,0 +1,5 @@
+<view class="yep-avatar yepc-avatar yep-avatar-{{shape}}" style="width: {{_size}}; height: {{_size}}">
+  <image wx:if="{{src}}" class="yep-avatar-{{shape}}" src="{{src}}" style="width: {{_size}}; height: {{_size}}"></image>
+  <view wx:else class="yep-text"><slot></slot></view>
+  <view wx:if="{{_count}}" class="yep-avatar-msg yepc-avatar-msg {{_msgCls}}" >{{count}}</view>
+</view>

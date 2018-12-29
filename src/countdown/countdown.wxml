@@ -1,0 +1,15 @@
+
+<view class="yep-countdown yepc-countdown">
+  <view wx:if="{{_formatChanged}}">
+    {{_time}}
+  </view>
+  <block wx:else>
+    <view wx:if="{{_hasDay}}" class="yep-countdown-item yepc-countdown-item">{{_hour}}</view>
+    <view wx:if="{{_hasDay}}" class="yep-countdown-colon yepc-countdown-colon">:</view>
+    <view class="yep-countdown-item yepc-countdown-item">{{_hour}}</view>
+    <view class="yep-countdown-colon yepc-countdown-colon">:</view>
+    <view class="yep-countdown-item yepc-countdown-item">{{_minute}}</view>
+    <view class="yep-countdown-colon yepc-countdown-colon">:</view>
+    <view class="yep-countdown-item yepc-countdown-item">{{_second}}</view>
+  </block>
+</view>

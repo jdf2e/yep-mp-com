@@ -1,0 +1,26 @@
+.content-page{
+  padding: 10rpx 0;
+}
+
+.content-page .box{
+  padding: 20rpx 0;
+}
+
+.content-page .title{
+  padding-left: 30rpx;
+}
+
+.my-notice {
+  background-color: #eee!important;
+}
+
+.my-notice .my-notice-icon{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.my-notice-content-wrap view{
+  display: inline-block;
+  margin-right: 100rpx;
+}
+

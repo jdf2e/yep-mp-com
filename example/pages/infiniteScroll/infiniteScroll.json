@@ -1,0 +1,6 @@
+{
+	"navigationBarTitleText": "Infinite Scroll 无限加载",
+  "usingComponents": {
+		"infinite-scroll": "/yepCom/infiniteScroll/infiniteScroll"
+	}
+}

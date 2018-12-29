@@ -1,0 +1,145 @@
+<view class="content-body">
+
+  <view class="tip">
+    <view class="title">Price 价格</view>
+  </view>
+
+  <view class="box">
+    <view class="title">默认</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepPrice value="36.0"></yepPrice>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">默认-人民币</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepPrice value="￥36.0"></yepPrice>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">默认-美元</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepPrice value="$36.0"></yepPrice>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">正常</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepPrice value="36.0" symPos="normal" decPos="normal"></yepPrice>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">小数右上</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepPrice value="36.0" symPos="normal" decPos="sup"></yepPrice>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">货币符号&小数居上</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepPrice value="36.0" symPos="sup" decPos="sup"></yepPrice>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">小数右下</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepPrice value="36.0" symPos="normal" decPos="sub"></yepPrice>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">货币符号居下小数居上</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepPrice value="36.0" symPos="sub" decPos="sup"></yepPrice>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">保留一位小数</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepPrice value="36.0" decimal="1"></yepPrice>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">不要小数</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepPrice value="36.0" decimal="0"></yepPrice>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">不要小数-删除状态</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepPrice value="36.0" decimal="0" status="del"></yepPrice>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">保留一位小数-删除状态</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepPrice value="36.0" decimal="1" status="del"></yepPrice>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">正常-删除状态</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepPrice value="36.0" symPos="normal" decPos="normal" status="del"></yepPrice>
+      </view>
+    </view>
+  </view>
+
+  <view class="box">
+    <view class="title">自定义方式</view>
+    <view class="box-body">
+      <view class="box-body-item">
+        <yepPrice value="36.0"
+                  yepc-price="my-price" yepc-price-symbol="my-price-symbol"
+                  yepc-price-value="my-price-value" yepc-price-decimal="my-price-decimal"></yepPrice>
+
+        <yepPrice value="36.0"
+                  yepc-price="my-price2" yepc-price-symbol="my-price-symbol2"
+                  yepc-price-value="my-price-value2" yepc-price-decimal="my-price-decimal2"></yepPrice>
+
+        <yepPrice value="36.0"
+                  yepc-price="my-price3" yepc-price-symbol="my-price-symbol3"
+                  yepc-price-value="my-price-value3" yepc-price-decimal="my-price-decimal3"></yepPrice>
+      </view>
+    </view>
+  </view>
+
+
+</view>
+

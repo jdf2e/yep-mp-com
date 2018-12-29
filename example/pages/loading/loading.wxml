@@ -1,0 +1,49 @@
+<view class="box">
+  <view class="title">queue</view>
+  <view class="box-body">
+    <view class="box-body-item">
+      <yeploading type="queue" scale="1" color="#f33">queue</yeploading>
+    </view>
+  </view>
+</view>
+
+<view class="box">
+  <view class="title">wave</view>
+  <view class="box-body">
+    <view class="box-body-item">
+      <yeploading type="wave" scale="1" color="#f33">wave</yeploading>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="title">ball</view>
+  <view class="box-body">
+    <view class="box-body-item">
+      <yeploading type="ball" scale=".8" color="#f33"></yeploading>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="title">jump</view>
+  <view class="box-body">
+    <view class="box-body-item">
+      <yeploading type="jump" scale=".8" color="#433">jump</yeploading>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="title">lineup</view>
+  <view class="box-body">
+    <view class="box-body-item">
+      <yeploading type="lineup" scale=".9" color="#f33">lineup</yeploading>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="title">spread</view>
+  <view class="box-body">
+    <view class="box-body-item">
+      <yeploading type="spread" scale="0.8" color="#f33">lineup</yeploading>
+    </view>
+  </view>
+</view>
