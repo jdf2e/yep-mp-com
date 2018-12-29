@@ -1,0 +1,14 @@
+.imglist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.list-img{
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.item-content{
+    font-size: 24rpx;
+    background-color: black;
+}

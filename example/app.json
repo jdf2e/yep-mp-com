@@ -4,7 +4,10 @@
     "pages/mine/mine",
     "pages/demos_ui/demos_ui",
     "pages/dialog/dialog",
-    "pages/drag/drag"
+    "pages/drag/drag",
+    "pages/popup/popup",
+    "pages/counter/counter",
+    "pages/collapse/collapse"
   ],
   "window": {
     "backgroundTextStyle": "light",

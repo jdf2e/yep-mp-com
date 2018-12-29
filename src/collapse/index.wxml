@@ -1,0 +1,11 @@
+<!--collapse折叠面板-->
+<view class="collapse-box">
+    <view class="collapse-title">
+        <view class="title-text">{{title}}</view>
+        <image class="title-img {{isOpen?'show-info':'hide-info'}}" catchtap="toggleInfo" src="https://img12.360buyimg.com/imagetools/jfs/t1/14185/35/3286/352/5c26d971E661dbae4/2874090274cfa1ad.png" />
+    </view>
+    <view class="box-detail" wx:if="{{isOpen}}">
+        <slot></slot>
+    </view>
+</view>
+

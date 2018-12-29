@@ -1,0 +1,15 @@
+<!--collapse折叠组件-->
+<view class="collapse">单列表项</view>
+<collapse title="折叠组件标题" >
+  <view class="imglist">
+    <image class="list-img" src="https://img12.360buyimg.com/imagetools/jfs/t1/10246/2/6903/8409/5c25ca86Eae3d1fb8/08be9be0bc9155a3.png" />
+    <image class="list-img" src="https://img12.360buyimg.com/imagetools/jfs/t1/19474/35/3224/10683/5c25ca86Ecafea625/9b60deef64f89823.png" />
+    <image class="list-img" src="https://img12.360buyimg.com/imagetools/jfs/t1/24991/4/3299/6993/5c25ca86E0393b71a/c39ec6c10cc61ac8.png" />
+    <image class="list-img" src="https://img12.360buyimg.com/imagetools/jfs/t1/27645/38/3328/7866/5c25ca86E773a6d7f/1cf5a0ab85a7d72a.png" />
+  </view>
+</collapse>
+
+<view class="collapse">多列表配合使用</view>
+<collapse title="折叠组件标题" wx:for="{{itemList}}" title="{{item.title}}">
+  <view class="item-content">{{item.content}}</view>
+</collapse>

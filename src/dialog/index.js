@@ -24,6 +24,10 @@ Component({
       type: Boolean,
       value: false
     },
+    hasShade:{//是否有背景遮罩层
+      type:Boolean,
+      value:true
+    }
   },
   /**
    * 组件的内部数据
@@ -39,11 +43,9 @@ Component({
       this.setData({
         isClose: !this.data.isClose
       })
-      // console.log('this.data.isClose', this.data.isClose);
     },
     confirm() { // 确认按钮
       this.triggerEvent('dialogConfirm', {inputValue: this.data.inputValue}, {})
-      // this.toggle();
     },
     cancel() { // 取消按钮
       this.triggerEvent('dialogCancel', {}, {})

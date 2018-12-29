@@ -1,0 +1,14 @@
+<!--counter 计数器组件-->
+<view class="item">
+  <text>标准计数器</text>
+  <counter></counter>  
+</view>
+<view class="item">
+  <text>设定最大最小值（1-5）</text>
+  <counter min="1" max="5"></counter> 
+</view>
+<view class="item">
+  <text>步幅设定（2）</text>
+  <counter step="2"></counter>  
+</view>
+

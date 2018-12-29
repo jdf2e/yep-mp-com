@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -48,7 +48,25 @@
 				{
 					"id": -1,
 					"name": "拖拽排序",
-					"pathName": "pages/drag/drag"
+					"pathName": "pages/drag/drag",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "popup组件",
+					"pathName": "pages/popup/popup",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "计数器组件",
+					"pathName": "pages/counter/counter",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "折叠页面",
+					"pathName": "pages/collapse/collapse"
 				}
 			]
 		}

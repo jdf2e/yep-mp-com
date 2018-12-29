@@ -1,0 +1,5 @@
+.item{
+    font-size: 30rpx;
+    margin-top:80rpx;
+    margin-left:40rpx;
+}

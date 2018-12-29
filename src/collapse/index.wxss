@@ -1,0 +1,45 @@
+.collapse-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border:1px solid #eee;
+    min-height: 60rpx;
+}
+.collapse-title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60rpx;
+    z-index: 2;
+    background-color: #fff;
+}
+.title-text{
+    margin-left: 30rpx;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 28rpx;
+    color: #000;
+}
+.title-img{
+    width:34rpx;
+    height:34rpx;
+    margin-right:30rpx;
+    transition: all .3s ease;
+}
+.show-info{
+    transform: rotate(180deg);
+}
+.hide-info{
+    transform: rotate(0deg);
+}
+.box-detail{
+    z-index: -1;
+    width: 100%;
+}

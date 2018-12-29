@@ -1,0 +1,31 @@
+<!--popup 组件-->
+<view class="pop">
+  <text>点击下方按钮测试 popup </text>
+  <view class="content" bindtap="showPop">
+    <view data-type="center" class="btn cont-cent">标准pop</view>
+    <view data-type="top" class="btn cont-top">上方pop</view>
+    <view data-type="bottom" class="btn cont-bottom">底部pop</view>
+    <view data-type="right" class="btn cont-right">右侧pop</view>
+  </view>
+  <!--标准popup-->
+  <popup id="center">
+    <view class="center-text">标准popUp</view>
+  </popup>
+  <!--上方popup-->
+  <popup id="top" type="top">
+    <view class="top-text">popUp从上方出现</view>
+  </popup>
+  <!--底部popup-->
+  <popup id="bottom" type="bottom">
+    <view class="bottom-text">popup从底部出现</view>
+  </popup>
+  <!--右侧popup-->
+  <popup id="right" type="right">
+    <view class="right-text">
+      <image src="https://img12.360buyimg.com/imagetools/jfs/t1/10246/2/6903/8409/5c25ca86Eae3d1fb8/08be9be0bc9155a3.png" />
+      <image src="https://img12.360buyimg.com/imagetools/jfs/t1/19474/35/3224/10683/5c25ca86Ecafea625/9b60deef64f89823.png" />
+      <image src="https://img12.360buyimg.com/imagetools/jfs/t1/24991/4/3299/6993/5c25ca86E0393b71a/c39ec6c10cc61ac8.png" />
+      <image src="https://img12.360buyimg.com/imagetools/jfs/t1/27645/38/3328/7866/5c25ca86E773a6d7f/1cf5a0ab85a7d72a.png" />
+    </view>
+  </popup>
+</view>

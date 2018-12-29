@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "折叠组件",
+  "usingComponents": {
+    "collapse":"../../components/collapse/index"
+  }
+}

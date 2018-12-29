@@ -1,0 +1,7 @@
+<!--popUp组件 带动画的popUp-->
+<view class="pop-box" wx:if="{{isShowPop}}">
+    <view class="box-container pos-{{type}} {{isShow? typeClass[type] :''}}">
+        <slot></slot>
+    </view>
+    <view class="pop-shade {{isShow?'pop-shade-show':''}}" catchtap="togglePop"></view>
+</view>

@@ -1,0 +1,6 @@
+<!--steppr组件 计步器-->
+<view class="counter-box">
+    <view class="counter-btn {{!valiable.sub?'btn-unvaliable':''}}" catchtap="doCount" data-type="sub">－</view>
+    <view class="counter-num">{{curNum}}</view>
+    <view class="counter-btn {{!valiable.add?'btn-unvaliable':''}}" catchtap="doCount" data-type="add">＋</view>
+</view>

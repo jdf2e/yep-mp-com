@@ -3,6 +3,14 @@
 Page({
   data: {
     pageList: {
+      switch: '../switch/switch',
+      drag:'../drag/drag',
+      popup:'../popup/popup',
+      counter:'../counter/counter',
+      showModelDialog: '../dialog/dialog',
+      swipeAction:'../swipeAction/swipeAction',
+
+
       showButton: '../button/button',
       showPrice: '../price/price',
       showNotice: '../notice/notice',
@@ -10,7 +18,6 @@ Page({
       showBadge: '../badge/badge',
       showAvatar: '../avatar/avatar',
       showLoading: '../loading/loading',
-
       showTab: '../tab/tab',
       showProgress: '../progress/progress',
       showSwiper: '../progress/progress',
@@ -19,29 +26,18 @@ Page({
       bottomBar: '../bottomBar/bottomBar',
       stickyHeader: '../stickyHeader/stickyHeader',
       elevator: '../elevator/elevator',
-
       rate: '../rate/rate',
-
       swipeAction: '../swipeAction/swipeAction',
       showFlex: '../flex/flex',
       showFixed: '../fixed/fixed',
       loadmore: '../loadmore/loadmore',
       infiniteScroll: '../infiniteScroll/infiniteScroll',
-
       list: '../list/list',
-
       showToast: '../toast/toast',
-      showModelDialog: '../dialog/dialog',
       showMask: '../mask/mask',
-      popup: '../popup/popup',
-
       showCoupon: '../coupon/coupon',
       search: '../searchbar/searchbar',
       keyboard: '../keyboard/keyboard',
-
-      switch: '../switch/switch',
-      drag:'../drag/drag'
-      // live: '../../liveplay/pages/index/index',
 
     }
   },

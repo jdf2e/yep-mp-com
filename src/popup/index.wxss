@@ -1,0 +1,68 @@
+.pop-box{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 10;
+}
+.pop-shade{
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    transition: all .3s ease;
+    opacity: 0;
+}
+.pop-shade-show{
+    opacity: 1 !important;
+}
+.box-container{
+    background-color: #fff;
+    z-index: 1;
+}
+.pos-center{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transition: all .3s ease;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+.pos-center-show{
+    opacity: 1 !important;
+}
+.pos-top{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    transition: all .3s ease;
+    transform: translateY(-100%)
+}
+.pos-top-show{
+    transform: translateY(0%) !important;
+}
+.pos-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: all .3s ease; 
+    transform: translateY(100%)  
+}
+.pos-bottom-show{
+    transform: translateY(0%) !important;
+}
+.pos-right{
+    position: fixed;
+    right: 0;
+    top:0;
+    height: 100%;
+    transition: all .3s ease;
+    transform: translateX(100%)  
+}
+.pos-right-show{
+    transform: translateX(0%) !important;
+}

@@ -20,4 +20,5 @@
       </view>
     </view>
   </view>
+  <view wx:if='{{hasShade}}' class="box-shade"></view>
 </view>
