@@ -3,6 +3,6 @@
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "usingComponents": {
-      "yepNotice": "/yepCom/notice/notice"
+      "yepNotice": "../../components/notice/index"
     }
   }

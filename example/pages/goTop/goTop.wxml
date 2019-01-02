@@ -1,0 +1,34 @@
+<view>
+    <yepGoTop setScrollTop="{{setScrollTop}}" width="{{width}}" height="{{height}}">
+        <view slot="cont">
+            <ul>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+                <li style="height: 100rpx;border: solid 1px red;display: block">2</li>
+            </ul>
+        </view>
+    </yepGoTop>
+</view>
+
+
+

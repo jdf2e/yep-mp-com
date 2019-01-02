@@ -5,6 +5,6 @@
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "usingComponents": {
-      "yepCountdown": "/yepCom/countdown/countdown"
+      "yepCountdown": "../../components/countdown/index"
     }
   }

@@ -1,0 +1,22 @@
+page{
+  height: 100%;
+}
+
+.yep-scroll-view-container{
+  height: 100%;
+}
+
+.yep-scroll-container{
+  //height: 2000rpx;
+  text-align: center;
+}
+
+.yep-go-top-icon{
+  width: 74rpx;
+  height: 74rpx;
+  background: url("http://img12.360buyimg.com/uba/jfs/t19813/35/688919273/918/d7cefda2/5b0656a4N46b1d620.png") no-repeat;
+  background-size: 100% auto;
+  position: fixed;
+  bottom: 20rpx;
+  right: 20rpx;
+}

@@ -1,6 +1,6 @@
 {
 	"navigationBarTitleText": "BottomBar",
   "usingComponents": {
-		"bottom-bar": "/yepCom/bottomBar/bottomBar"
+		"bottom-bar": "../../components/bottomBar/index"
 	}
 }

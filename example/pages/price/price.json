@@ -5,6 +5,6 @@
 	"backgroundColor": "#eeeeee",
 	"backgroundTextStyle": "light",
 	"usingComponents": {
-      "yepPrice": "/yepCom/price/price"
+      "yepPrice": "../../components/price/index"
     }
 }

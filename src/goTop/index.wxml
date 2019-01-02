@@ -1,0 +1,8 @@
+<scroll-view class="yep-scroll-view-container"  scroll-y="true"   scroll-top="{{scrollTop}}" bindscroll="scroll">
+    <view class="yep-scroll-container">
+        <slot name="cont"></slot>
+    </view>
+</scroll-view>
+
+<view class="yep-go-top-icon" wx:if="{{isFloor}}" bindtap="goTop" style="height: {{height}}rpx; width: {{width}}rpx"></view>
+

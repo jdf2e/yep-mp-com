@@ -5,6 +5,6 @@
 	"backgroundColor": "#eeeeee",
 	"backgroundTextStyle": "light",
 	"usingComponents": {
-		"yep-avatar": "/yepCom/avatar/avatar"
+		"yep-avatar": "../../components/avatar/index"
 	  }
 }

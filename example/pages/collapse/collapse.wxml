@@ -1,5 +1,5 @@
 <!--collapse折叠组件-->
-<view class="collapse">单列表项</view>
+<view class="collapse">单列表项:</view>
 <collapse title="折叠组件标题" >
   <view class="imglist">
     <image class="list-img" src="https://img12.360buyimg.com/imagetools/jfs/t1/10246/2/6903/8409/5c25ca86Eae3d1fb8/08be9be0bc9155a3.png" />
@@ -9,7 +9,13 @@
   </view>
 </collapse>
 
-<view class="collapse">多列表配合使用</view>
-<collapse title="折叠组件标题" wx:for="{{itemList}}" title="{{item.title}}">
+<view class="collapse">多列表:</view>
+<collapse wx:for="{{itemList}}" title="{{item.title}}" wx:key="{{index.title}}">
+  <view class="item-content">{{item.content}}</view>
+</collapse>
+
+
+<view class="collapse">多列表-手风琴:</view>
+<collapse wx:for="{{itemList}}" title="{{item.title}}" wx:key="{{index.title}}" bindtap="accordion" data-index="{{index}}" id="collapse_{{index}}">
   <view class="item-content">{{item.content}}</view>
 </collapse>

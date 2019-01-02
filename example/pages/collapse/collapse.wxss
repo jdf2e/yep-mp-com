@@ -3,6 +3,11 @@
     flex-direction: row;
     justify-content: space-around;
 }
+.collapse{
+    font-size: 30rpx;
+    margin-top:50rpx;
+    margin-bottom: 5rpx;
+}
 .list-img{
     width: 100rpx;
     height: 100rpx;
@@ -10,5 +15,7 @@
 
 .item-content{
     font-size: 24rpx;
-    background-color: black;
+    color: #666;
+    background-color: #fff;
+    text-indent: 2em;
 }

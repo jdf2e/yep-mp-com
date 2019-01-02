@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "goTop",
+  "usingComponents": {
+    "yepGoTop": "../../components/goTop/index"
+  }
+}

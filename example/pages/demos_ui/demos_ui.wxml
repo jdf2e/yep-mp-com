@@ -4,11 +4,11 @@
       <view>通用</view>
     </view>
     <!--添加实例-->
-    <view class="item ">
+    <view class="item item-ok">
       <view class="name" bindtap="showPage" data-title="showButton">Button 按钮</view>
       <view class="status"></view>
       <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">佟恩</view>
       <image></image>
     </view>
     <view class="item ">
@@ -17,32 +17,32 @@
       <view class="deadline"></view>
       <view class="developer"></view>
     </view>
-    <view class="item ">
+    <view class="item item-ok">
       <view class="name" bindtap="showPage" data-title="showAvatar">Avatar 头像</view>
       <view class="status"></view>
       <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">佟恩</view>
       <image></image>
     </view>
-    <view class="item ">
+    <view class="item item-ok">
       <view class="name" bindtap="showPage" data-title="showBadge">Badge 徽标</view>
       <view class="status"></view>
       <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">佟恩</view>
       <image></image>
     </view>
-    <view class="item ">
+    <view class="item item-ok">
       <view class="name" bindtap="showPage" data-title="showPrice">Price 价格</view>
       <view class="status"></view>
       <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">佟恩</view>
       <image></image>
     </view>
-    <view class="item ">
+    <view class="item item-ok">
       <view class="name" bindtap="showPage" data-title="showLoading">Loading 加载</view>
       <view class="status"></view>
       <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">佟恩</view>
       <image></image>
     </view>
     <view class="item">
@@ -58,18 +58,18 @@
       <view class="developer"></view>
       <image></image>
     </view>
-    <view class="item">
+    <view class="item item-ok">
       <view class="name" bindtap="showPage" data-title="showNotice">Notice 通告栏</view>
-      <view class="status status-ing"></view>
+      <view class="status"></view>
       <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">佟恩</view>
       <image></image>
     </view>
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="countdown">Countdown 倒计时</view>
-      <view class="status status-ing"></view>
+    <view class="item item-ok">
+      <view class="name" bindtap="showPage" data-title="showCountdown">Countdown 倒计时</view>
+      <view class="status"></view>
       <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">佟恩</view>
       <image></image>
     </view>
   </view>
@@ -96,11 +96,11 @@
       <view class="developer"></view>
       <image></image>
     </view>
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="infiniteScroll">无限滚动列表</view>
+    <view class="item item-ok">
+      <view class="name" bindtap="showPage" data-title="showInfiniteScroll">无限滚动列表</view>
       <view class="status"></view>
       <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">佟恩</view>
       <image></image>
     </view>
     <view class="item">
@@ -113,11 +113,11 @@
   </view>
   <view class="view-box">
     <view class="title">导航区</view>
-    <view class="item ">
+    <view class="item item-ok">
       <view class="name" bindtap="showPage" data-title="showTab">Tab 标签页</view>
       <view class="status"></view>
       <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">佟恩</view>
       <image></image>
     </view>
     <view class="item">
@@ -161,25 +161,25 @@
       <view class="developer"></view>
       <image></image>
     </view>
-    <view class="item ">
-      <view class="name" bindtap="showPage" data-title="goTop">GoTop 回到顶部</view>
+    <view class="item item-ok">
+      <view class="name" bindtap="showPage" data-title="showGoTop">GoTop 回到顶部</view>
       <view class="status status-ing"></view>
       <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">周金秀</view>
       <image></image>
     </view>
-    <view class="item ">
-      <view class="name" bindtap="showPage" data-title="bottomBar">BottomBar 底部功能栏</view>
+    <view class="item item-ok">
+      <view class="name" bindtap="showPage" data-title="showBottomBar">BottomBar 底部功能栏</view>
       <view class="status"></view>
       <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">刘佳</view>
       <image></image>
     </view>
-    <view class="item">
+    <view class="item item-ok">
       <view class="name" bindtap="showPage" data-title="stickyHeader">StickyHeader 自动吸顶</view>
       <view class="status"></view>
       <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">刘佳</view>
       <image></image>
     </view>
     <view class="item ">
@@ -249,14 +249,14 @@
       <image></image>
     </view>
     <view class="item item-ok">
-      <view class="name" bindtap="showPage" data-title="switch">Switch 开关</view>
-      <view class="status status-ing"></view>
+      <view class="name" bindtap="showPage" data-title="showSwitch">Switch 开关</view>
+      <view class="status"></view>
       <view class="deadline"></view>
       <view class="developer"></view>
       <image>石文帅</image>
     </view>
     <view class="item item-ok">
-      <view class="name" bindtap="showPage" data-title="counter">counter计数器</view>
+      <view class="name" bindtap="showPage" data-title="showCounter">Counter 计数器</view>
       <view class="status status-ing"></view>
       <view class="deadline"></view>
       <view class="developer"></view>
@@ -287,14 +287,14 @@
   <view class="view-box">
     <view class="title">提示框</view>
     <view class="item item-ok">
-      <view class="name" bindtap="showPage" data-title="showModelDialog">ModalDialog 模态窗口</view>
+      <view class="name" bindtap="showPage" data-title="showDialog">ModalDialog 模态窗口</view>
       <view class="status"></view>
       <view class="deadline"></view>
       <view class="developer">石文帅</view>
       <image></image>
     </view>
     <view class="item item-ok">
-      <view class="name" bindtap="showPage" data-title="popup">popup 弹窗口</view>
+      <view class="name" bindtap="showPage" data-title="showPopup">Popup 弹窗口</view>
       <view class="status"></view>
       <view class="deadline"></view>
       <view class="developer">石文帅</view>
@@ -303,13 +303,6 @@
     <view class="item">
       <view class="name" bindtap="showPage" data-title="showToast">Toast 轻提示</view>
       <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="popup">PopUp 弹出窗口</view>
-      <view class="status status-ing"></view>
       <view class="deadline"></view>
       <view class="developer"></view>
       <image></image>
@@ -332,14 +325,21 @@
       <image></image>
     </view>
     <view class="item item-ok">
-      <view class="name" bindtap="showPage" data-title="swipeAction">SwipeAction 滑动操作</view>
+      <view class="name" bindtap="showPage" data-title="showSwipeAction">SwipeAction 滑动操作</view>
       <view class="status"></view>
       <view class="deadline"></view>
       <view class="developer">卢晶晶</view>
       <image></image>
     </view>
     <view class="item item-ok">
-      <view class="name" bindtap="showPage" data-title="drag">拖拽排序</view>
+      <view class="name" bindtap="showPage" data-title="showDrag">Drag 拖拽排序</view>
+      <view class="status"></view>
+      <view class="deadline"></view>
+      <view class="developer">石文帅</view>
+      <image></image>
+    </view>
+    <view class="item item-ok">
+      <view class="name" bindtap="showPage" data-title="showCollapse">Collapse 折叠面板</view>
       <view class="status"></view>
       <view class="deadline"></view>
       <view class="developer">石文帅</view>
@@ -355,13 +355,6 @@
 
     <view class="item">
       <view class="name" bindtap="showPage" data-title="card">Cards 卡片</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="collapse">折叠</view>
       <view class="status"></view>
       <view class="deadline"></view>
       <view class="developer"></view>

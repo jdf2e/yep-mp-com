@@ -5,6 +5,6 @@
   "backgroundColor": "#eeeeee",
   "backgroundTextStyle": "light",
   "usingComponents": {
-    "yeploading": "../../../yepCom/loading/loading"
+    "yeploading": "../../components/loading/index"
   }
 }

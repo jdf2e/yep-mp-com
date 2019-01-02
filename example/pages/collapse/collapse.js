@@ -7,17 +7,17 @@ Page({
   data: {
     boxType: 'input',
     itemList:[{
-      title:"标题1",
-      content:'内容1'
+      title:"李白",
+      content:'李白（701年－762年）[1]，字太白，号青莲居士，中国唐朝诗人，自言祖籍陇西成纪（今甘肃省天水市秦安县），先世西凉武昭王李嵩之后，与李唐皇室同宗。幼时内迁，寄籍剑南道绵州（今四川省江油昌隆县）。另郭沫若考证李白出生于吉尔吉斯碎叶河上的碎叶城，属唐安西都护府（今楚河州托克马克市）[2]。有“诗仙”、“诗侠”、“酒仙”、“谪仙人”等称呼，活跃于盛唐[3]，为杰出的浪漫主义诗人。与杜甫合称“李杜”[4]。被贺知章惊呼为“天上谪仙”'
     },{
-      title:"标题2",
-      content:'内容2'
+      title:"杜甫",
+      content:'杜甫（712年2月12日－770年），字子美，号少陵野老，一号杜陵野客、杜陵布衣，唐朝现实主义诗人，其著作以弘大的社会写实著称。杜甫家族出于京兆杜氏的分支，唐朝时京兆杜氏都多自称为杜陵人，所以杜甫晚号杜陵。因其曾任左拾遗、检校工部员外郎，因此后世称其杜拾遗、杜工部；又称杜少陵、杜草堂（曾隐居于成都杜甫草堂）'
     },{
-      title:"标题3",
-      content:'内容3'
+      title:"李商隐",
+      content:'李商隐（813年1—约858年），字义山，号玉谿生、樊南生。晚唐诗人，祖籍陇西狄道（今甘肃省临洮县），祖辈迁荥阳（今河南郑州）。诗作文学价值很高，他和杜牧合称“小李杜”，与温庭筠合称为“温李”，与同时期的段成式、温庭筠风格相近，且都在家族里排行十六，故并称为三十六体。在《唐诗三百首》中，李商隐的诗作占廿二首，数量位列第四'
     },{
-      title:"标题4",
-      content:'内容4'
+      title:"白居易",
+      content:'白居易（772年2月28日－846年9月8日）[2]，字乐天，晚号香山居士、醉吟先生，在诗界有广大教化主的称号。祖籍山西太原，生于河南新郑，唐代文学家，文章精切，特别擅长写诗，是中唐最具代表性的诗人之一。作品平易近人，乃至于有“老妪能解”的说法'
     }]
   },
 
@@ -28,23 +28,15 @@ Page({
 
   },
   /**
-   * 展示pop
+   * 手风琴选择
    */
-  showPop:function(e){
-    let type = e.target.dataset.type;
-    switch(type){
-      case 'center':
-        this.selectComponent("#center").togglePop();
-        break;
-      case 'top':
-        this.selectComponent("#top").togglePop();
-        break;
-      case 'bottom':
-        this.selectComponent("#bottom").togglePop();
-        break;
-      case 'right':
-        this.selectComponent("#right").togglePop();
-        break;
-    }
+  accordion:function(e){
+    let _this = this;
+    const curIndex = e.currentTarget.dataset.index;
+    this.data.itemList.map((item,index)=>{
+      if(index !== curIndex){
+        _this.selectComponent("#collapse_"+index).closeInfo();
+      }
+    })
   }
 })

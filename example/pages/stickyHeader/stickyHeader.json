@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "stickyHeader",
   "usingComponents": {
-    "sticky-header": "/yepCom/stickyHeader/stickyHeader"
+    "sticky-header": "../../components/stickyHeader/index"
   }
 }

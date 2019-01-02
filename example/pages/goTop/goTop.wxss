@@ -1,0 +1,21 @@
+/**index.wxss**/
+
+.reportTypeScroll {
+ margin: 40px 0px 20px 0px;
+ white-space: nowrap;
+ display: flex;
+}
+
+.clickSel {
+ color: red;
+}
+
+.removeSel {
+ color: black;
+}
+
+text {
+ height: 150rpx;
+ display: inline-block;
+ text-align: center;
+}

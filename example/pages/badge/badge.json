@@ -5,6 +5,6 @@
 	"backgroundColor": "#eeeeee",
 	"backgroundTextStyle": "light",
 	"usingComponents": {
-		"yepBadge": "/yepCom/badge/badge"
+		"yepBadge": "../../components/badge/index"
 	  }
 }
