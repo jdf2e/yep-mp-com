@@ -1,0 +1,33 @@
+<!--pages/keyboard/keyboard.wxml-->
+<block>
+    <view class='yep-priceFix' hidden='{{!Odata.priceFixFlag}}'>
+        <view class='yep-priceFix-bg' bindtap='keybordEventHide'></view>
+        <view class='yep-priceFix-content'>
+            <view class='yep-priceFix-header'>{{ Odata.keyBoardTitle }}</view>
+            <view class='yep-priceFix-price' >
+                <view class='yep-priceFix-price-li' data-keyboard="{{!pricefocus}}">
+                    <text class='yep-priceFix-price-li-n'>{{ Odata.inputTitle}}</text>
+                    <text class='yep-priceFix-price-li-v {{ pricefocus ? "yep-priceFix-price-li-f" : " " }}'>¥\t{{Odata.dealPayFeeShipping}}</text>
+                </view>
+            </view>
+            <view class='yep-priceFix-keyboard'>
+                <view class='yep-priceFix-keyboard-left'>
+                    <view class='yep-priceFix-keyboard-table'>
+                        <view class='yep-priceFix-keyboard-tr' wx:for="{{keyCode}}">
+                            <view class='yep-priceFix-keyboard-td' hover-class="yep-priceFix-keyboard-td-h"    wx:for="{{item}}"data-keybord="{{item}}" bindtap='keybordEventNum'>{{item}}</view>
+                        </view>
+                    </view>
+                </view>
+                <view class='yep-priceFix-keyboard-right'>
+                    <view class='yep-priceFix-keyboard-delete' hover-class="yep-priceFix-keyboard-td-h" bindtap='keybordEventDele'>
+                        <view class='yep-priceFix-keyboard-delete-icon'></view>
+                    </view>
+                    <view class='yep-priceFix-keyboard-submit' hover-class="yep-priceFix-keyboard-submit-h" bindtap='keybordEventSumb'>确定</view>
+                </view>
+                <view class='yep-clr'></view>
+            </view>
+        </view>
+</view>
+</block>
+
+    

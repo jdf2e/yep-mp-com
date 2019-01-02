@@ -1,0 +1,23 @@
+<!-- <view class="yep-avatar yepc-avatar yep-avatar-{{shape}}" style="width: {{_size}}; height: {{_size}}">
+  <image wx:if="{{src}}" class="yep-avatar-{{shape}}" src="{{src}}" style="width: {{_size}}; height: {{_size}}"></image>
+  <view wx:else class="yep-text"><slot></slot></view>
+  <view wx:if="{{_count}}" class="yep-avatar-msg yepc-avatar-msg {{_msgCls}}" >{{count}}</view>
+</view> -->
+<view class="yep-elevator">
+	 <view class="elevator">
+    <scroll-view scroll-y style="height: {{scrollHeight}}px;" scroll-into-view="{{toView}}" class="elevator-list">
+      <view id="list-{{index}}" wx:for="{{elevatorList}}" wx:key="list-{{index}}" wx:if="{{item.cont.length > 0}}">
+        <view class="title">{{item.title}}</view>
+        <view class="list-cont">
+          <view class="item" bindtap="chooseItem" wx:for="{{item.cont}}" wx:key="cont-{{index}}" data-value="{{item.name}}">{{item.name}}</view>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="elevator-btn">
+      <view class="btn {{tab == index ? 'selected':''}}"
+      wx:for="{{elevatorList}}" wx:key="btn-{{index}}" data-index="{{index}}" bindtap="chooseTab" style="background:{{tab == index ?IndexBgColor:''}}">{{item.title}}
+      </view>
+    </view>
+    <view class="btn-box" wx:if="{{letter!=''}}">{{letter}}</view>
+  </view>
+</view>

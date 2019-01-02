@@ -1,0 +1,13 @@
+page{
+    background: #efefef;
+}
+.example-title {
+    font-size: 28rpx;
+    line-height:60rpx;
+    border-top:1rpx solid #efefef;
+    padding: 20rpx 40rpx;
+    background:#fff;
+}
+.sub-title{
+    padding-left: 80rpx;
+}

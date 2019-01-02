@@ -1,0 +1,39 @@
+<view class="example">
+    <view class="example-title">星星样式一
+        <yepRate types="1" color="red" bgColor="#999" value="2" bindrateChange="rateChange"></yepRate>
+    </view>
+
+    <view class="example-title sub-title">自定义个数
+        <yepRate types="1" color="orange" bgColor="#999" count="8" value="4"></yepRate>
+    </view>
+
+    <view class="example-title sub-title">自定义渐变色
+        <yepRate types="1" colorArr="{{colorArr}}" animate="scale"></yepRate>
+    </view>
+
+    <view class="example-title sub-title">自定义大小
+        <yepRate types="1" color="#FFB6C1" size="60"></yepRate>
+    </view>
+
+
+    <view class="example-title">星星样式二
+        <yepRate types="2" count="5" descArr="{{descArr}}" value="3"></yepRate>
+    </view>
+
+     <view class="example-title sub-title">动画-缩放
+        <yepRate types="2" count="6" animate="scale" ></yepRate>
+    </view>
+
+    <view class="example-title sub-title">动画-跳动
+        <yepRate types="2" count="6" animate="fade"></yepRate>
+    </view>
+
+    <view class="example-title sub-title">动画-旋转
+        <yepRate types="2" count="6" animate="rotate"></yepRate>
+    </view>
+
+    <view class="example-title">星星样式三
+        <yepRate types="3" count="8" value="6" descArr="{{descArr}}"></yepRate>
+    </view>
+
+</view>

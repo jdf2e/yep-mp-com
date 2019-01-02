@@ -1,0 +1,6 @@
+<view>
+	<yepElevator showIndex="{{true}}" elevatorList="{{elevatorList}}" bindchooseItem="chooseItem" IndexBgColor="pink"></yepElevator>
+</view>
+
+
+

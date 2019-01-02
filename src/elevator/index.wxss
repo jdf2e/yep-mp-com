@@ -1,0 +1,54 @@
+.elevator{
+  position: absolute;
+  z-index:20;
+  width: 100%;
+  background: rgb(249,249,249);
+}
+.elevator-list .title{
+  padding-left:32rpx;
+  font-size:36rpx;
+  line-height: 52rpx;
+  color:rgb(51,51,51);
+}
+.elevator-list .list-cont{
+  background:#fff;
+}
+.elevator-list .list-cont .item{
+  margin-left:32rpx;
+  font-size:30rpx;
+  line-height: 104rpx;
+  color:rgb(102,102,102);
+  border-bottom: 1rpx solid rgb(238,238,238);
+}
+.elevator-btn{
+  position: fixed;
+  width:40rpx;
+  top:80rpx;
+  right:24rpx;
+}
+.elevator-btn .btn{
+  width:38rpx;
+  height: 38rpx;
+  border-radius: 19rpx;
+  font-size:24rpx;
+  line-height: 38rpx;
+  color:rgb(153,153,153);
+  text-align: center;
+}
+.elevator-btn .selected{
+  /*background: #e4393c;*/
+  color:#fff;
+}
+.btn-box{
+  position: fixed;
+  top:40%;
+  left:45%;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 50rpx;
+  background: rgba(51,51,51,0.3);
+  text-align: center;
+  border-radius: 10rpx;
+  color:#fff;
+}

@@ -3,19 +3,12 @@
     <view class="title">
       <view>通用</view>
     </view>
-    <!--添加实例-->
     <view class="item item-ok">
       <view class="name" bindtap="showPage" data-title="showButton">Button 按钮</view>
       <view class="status"></view>
       <view class="deadline"></view>
       <view class="developer">佟恩</view>
       <image></image>
-    </view>
-    <view class="item ">
-      <view class="name" bindtap="showPage" data-title="showIcon">Icon 图标</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
     </view>
     <view class="item item-ok">
       <view class="name" bindtap="showPage" data-title="showAvatar">Avatar 头像</view>
@@ -42,20 +35,7 @@
       <view class="name" bindtap="showPage" data-title="showLoading">Loading 加载</view>
       <view class="status"></view>
       <view class="deadline"></view>
-      <view class="developer">佟恩</view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="showPercent">Percent 百分比</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="showTips">Tip 提示框</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">刘新金</view>
       <image></image>
     </view>
     <view class="item item-ok">
@@ -75,39 +55,11 @@
   </view>
   <view class="view-box">
     <view class="title">页面布局</view>
-    <view class="item item-todo">
-      <view class="name" bindtap="showPage" data-title="showFlex">Flex 布局</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item ">
-      <view class="name" bindtap="showPage" data-title="showLayout">Layout 布局</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item item-todo">
-      <view class="name" bindtap="showPage" data-title="showFixed">Fixed</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
     <view class="item item-ok">
       <view class="name" bindtap="showPage" data-title="showInfiniteScroll">无限滚动列表</view>
       <view class="status"></view>
       <view class="deadline"></view>
       <view class="developer">佟恩</view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="loadmore">LoadMore 加载更多</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
       <image></image>
     </view>
   </view>
@@ -120,50 +72,9 @@
       <view class="developer">佟恩</view>
       <image></image>
     </view>
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="dropMenu">DropMenu 下拉菜单</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="">级联菜单</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="">SlideBar 侧边栏</view>
-      <view class="status"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="">截屏导航</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="">分页导航</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item ">
-      <view class="name" bindtap="showPage" data-title="showProgress">Process 进度条</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
     <view class="item item-ok">
       <view class="name" bindtap="showPage" data-title="showGoTop">GoTop 回到顶部</view>
-      <view class="status status-ing"></view>
+      <view class="status"></view>
       <view class="deadline"></view>
       <view class="developer">周金秀</view>
       <image></image>
@@ -176,154 +87,56 @@
       <image></image>
     </view>
     <view class="item item-ok">
-      <view class="name" bindtap="showPage" data-title="stickyHeader">StickyHeader 自动吸顶</view>
+      <view class="name" bindtap="showPage" data-title="showStickyHeader">StickyHeader 自动吸顶</view>
       <view class="status"></view>
       <view class="deadline"></view>
       <view class="developer">刘佳</view>
       <image></image>
     </view>
-    <view class="item ">
-      <view class="name" bindtap="showPage" data-title="elevator">Elevator 电梯</view>
+    <view class="item item-ok">
+      <view class="name" bindtap="showPage" data-title="showElevator">Elevator 电梯</view>
       <view class="status"></view>
       <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">李阳</view>
       <image></image>
     </view>
   </view>
   <view class="view-box">
     <view class="title">表单</view>
-    <view class="item">
-      <view class="name" bindtap="">输入框、自动补齐</view>
+    <view class="item item-ok">
+      <view class="name" bindtap="showPage" data-title="showRate">Rate 评分</view>
       <view class="status"></view>
       <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="">数字输入框</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="select">单选</view>
-      <view class="status status-ing"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="">复选</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="">级联菜单</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="">日历</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="rate">Rate 评分</view>
-      <view class="status "></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="">slider</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">李阳</view>
       <image></image>
     </view>
     <view class="item item-ok">
       <view class="name" bindtap="showPage" data-title="showSwitch">Switch 开关</view>
       <view class="status"></view>
       <view class="deadline"></view>
-      <view class="developer"></view>
-      <image>石文帅</image>
-    </view>
-    <view class="item item-ok">
-      <view class="name" bindtap="showPage" data-title="showCounter">Counter 计数器</view>
-      <view class="status status-ing"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image>石文帅</image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="">Tree 树结构</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="">picker</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="">上传</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">石文帅</view>
       <image></image>
     </view>
   </view>
   <view class="view-box">
     <view class="title">提示框</view>
     <view class="item item-ok">
-      <view class="name" bindtap="showPage" data-title="showDialog">ModalDialog 模态窗口</view>
+      <view class="name" bindtap="showPage" data-title="showModelDialog">ModalDialog 模态窗口</view>
       <view class="status"></view>
       <view class="deadline"></view>
       <view class="developer">石文帅</view>
       <image></image>
     </view>
     <view class="item item-ok">
-      <view class="name" bindtap="showPage" data-title="showPopup">Popup 弹窗口</view>
+      <view class="name" bindtap="showPage" data-title="showPopup">PopUp 弹出窗口</view>
       <view class="status"></view>
       <view class="deadline"></view>
       <view class="developer">石文帅</view>
       <image></image>
     </view>
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="showToast">Toast 轻提示</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="showMask">Mask 遮罩层</view>
-      <view class="status status-ing"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
   </view>
   <view class="view-box">
     <view class="title">复杂数据展示</view>
-    <view class="item ">
-      <view class="name" bindtap="showPage" data-title="showSwiper">Swiper</view>
-      <view class="status status-ing"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
     <view class="item item-ok">
       <view class="name" bindtap="showPage" data-title="showSwipeAction">SwipeAction 滑动操作</view>
       <view class="status"></view>
@@ -339,90 +152,30 @@
       <image></image>
     </view>
     <view class="item item-ok">
-      <view class="name" bindtap="showPage" data-title="showCollapse">Collapse 折叠面板</view>
+      <view class="name" bindtap="showPage" data-title="showCounter">Counter 计步器</view>
       <view class="status"></view>
       <view class="deadline"></view>
       <view class="developer">石文帅</view>
       <image></image>
     </view>
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="steps">步骤</view>
-      <view class="status status-ing">10%</view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="card">Cards 卡片</view>
+    <view class="item item-ok">
+      <view class="name" bindtap="showPage" data-title="showCollapse">Collapse 折叠</view>
       <view class="status"></view>
       <view class="deadline"></view>
-      <view class="developer"></view>
+      <view class="developer">石文帅</view>
       <image></image>
     </view>
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="list">列表</view>
-      <view class="status status-ing">10%</view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="">表格展示</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="">时间轴</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-
   </view>
   <view class="view-box">
     <view class="title">SNS场景</view>
-    <view class="item">
-      <view class="name" bindtap="">抽奖</view>
-      <view class="status"></view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
   </view>
   <view class="view-box">
     <view class="title">其他场景</view>
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="showCoupon">优惠券</view>
-      <view class="status status-ing">10%</view>
-      <view class="deadline">20180531</view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="keyboard">模拟键盘</view>
-      <view class="status status-ing">50%</view>
+    <view class="item item-ok">
+      <view class="name" bindtap="showPage" data-title="showKeyboard">Keyboard 模拟键盘</view>
+      <view class="status"></view>
       <view class="deadline"></view>
       <view class="developer">刘新金</view>
-      <image></image>
-    </view>
-
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="search">搜索</view>
-      <view class="status status-ing">10%</view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
-      <image></image>
-    </view>
-
-    <view class="item">
-      <view class="name" bindtap="showPage" data-title="live">视频通话</view>
-      <view class="status status-ing">10%</view>
-      <view class="deadline"></view>
-      <view class="developer"></view>
       <image></image>
     </view>
   </view>

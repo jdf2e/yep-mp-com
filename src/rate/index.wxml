@@ -1,0 +1,13 @@
+<view class="yep-rate">
+    <view class="type{{types}} {{index <= value ? animate:''}} {{index <= value ? (types == 2?'curr2':types == 3?(value < count/2-1?'curr3':'curr3_'):''):''}}"
+      wx:for="{{count}}"
+      data-id="{{index}}"
+      bindtap="yep_rate_click"
+      style="color:{{index <= value ? ((colorArr.length > 0 ? (colorArr[value] ? colorArr[value]: colorArr[colorArr.length-1]):color)): bgColor}}; {{freeStyle}}">
+        {{types == 1?'★':''}}
+    </view>
+
+    <view class="yep-rate-text" wx-if="{{descArr}}" style="color:{{descColor}}">
+      {{descArr[value] ? descArr[value]:descArr[descArr.length-1]}}
+    </view>
+</view>

@@ -1,0 +1,10 @@
+{
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Rate",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "usingComponents": {
+      "yepRate": "../../components/rate/index"
+    }
+  }

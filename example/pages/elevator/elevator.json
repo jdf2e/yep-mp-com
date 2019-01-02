@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "elevator",
+  "usingComponents": {
+    "yepElevator": "../../components/elevator/index"
+  }
+}

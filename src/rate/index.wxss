@@ -1,0 +1,99 @@
+.yep-rate{
+  display: flex;
+  align-items: center;
+  font-size:30rpx;
+}
+.type1{
+  font-size: 45rpx;
+  margin-right: 6rpx;
+}
+.type2 {
+  margin-right: 6rpx;
+  width:40rpx;
+  height:38rpx;
+  background: url('http://img11.360buyimg.com/uba/jfs/t1/258/29/16035/15335/5be022bfE2b2a009c/a7fc19235efdd31c.png');
+  background-size: 40rpx 38rpx;
+}
+.curr2 {
+  background: url('http://img14.360buyimg.com/uba/jfs/t1/10969/23/2054/15380/5be022bfEfb37d788/f62884661338e220.png');
+  background-size: 40rpx 38rpx;
+}
+.type3 {
+  margin-right: 6rpx;
+  width:40rpx;
+  height:40rpx;
+  background:url('http://img10.360buyimg.com/uba/jfs/t1/3561/17/15880/1341/5be11dfeE56c27f4b/301f9a121c775592.png');
+  background-size:40rpx 40rpx;
+}
+.curr3{
+  background:url('http://img10.360buyimg.com/uba/jfs/t1/10211/27/2423/1338/5be11dfeEc3aa8b60/eab631059c66c2a3.png');
+  background-size:40rpx 40rpx;
+}
+.curr3_{
+  background:url('http://img20.360buyimg.com/uba/jfs/t1/10872/10/2360/1499/5be11d06E64a9465c/4ce8e8e2c9b551d9.png');
+  background-size:40rpx 40rpx;
+}
+.scale{
+  -webkit-animation-name: scale; 
+  -webkit-animation-timing-function: ease-in-out; 
+  -webkit-animation-iteration-count: 1; 
+  -webkit-animation-duration: 1.5s; 
+}
+.fade{
+  -webkit-animation-name: fade; 
+  -webkit-animation-timing-function: ease-in-out; 
+  -webkit-animation-iteration-count: 1; 
+  -webkit-animation-duration: 1.5s; 
+}
+.rotate{
+  -webkit-animation-name: rotate; 
+  -webkit-animation-timing-function: ease-in-out; 
+  -webkit-animation-iteration-count: 1; 
+  -webkit-animation-duration: 2s; 
+}
+@keyframes scale {  
+  0%{
+      transform: scale(1);  
+  }
+  50%{
+      transform: scale(1.15); 
+  }
+  100%{
+      transform: scale(1);
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 100%;
+  }
+  80% {
+    transform: translateY(-3.5px);
+  }
+  100% {
+    transform: none;
+    opacity: 10%;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: scale(1, 1) rotate(0);
+  }
+  99% {
+    transform: scale(2, 2) rotate(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1) rotate(0);
+    opacity: 0;
+  }
+}
+.yep-rate-text {
+  margin-left: 20rpx;
+  color: red;
+}
+
+
+
+
+
+

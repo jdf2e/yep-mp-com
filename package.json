@@ -1,6 +1,6 @@
 {
   "name": "@jdcfe/yep-mp-com",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "yep-mp小程序组件库",
   "main": "miniprogram_dist/index.js",
   "scripts": {

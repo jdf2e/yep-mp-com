@@ -1,0 +1,10 @@
+{
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "keyboard",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "usingComponents": {
+        "yepKeyboard": "../../components/keyboard/index"
+    }
+}
