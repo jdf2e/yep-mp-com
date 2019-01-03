@@ -24,7 +24,7 @@ Component({
    */
   methods: {
     /**
-     * 获取当前的状态
+     * 开启关闭折叠内容
      */
     toggleInfo:function(){
       this.setData({
