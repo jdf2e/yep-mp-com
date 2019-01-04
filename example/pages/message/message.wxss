@@ -1,0 +1,22 @@
+page{
+    background-color: #fff;
+}
+.content{
+    width: 100%;
+    margin-top: 200rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    width: 90%;
+    height: 60rpx;
+    margin-bottom: 30rpx;
+    font-size: 30rpx;
+    line-height: 30rpx;
+    color: #000;
+    background-color: #eee;
+    text-align: center;
+    line-height: 60rpx;
+    border-radius: 8rpx;
+}

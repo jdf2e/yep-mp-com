@@ -1,0 +1,12 @@
+<message info="这是一条消息" level="info" id="info"></message>
+<message info="这是一条成功消息" level="suc" id="suc"></message>
+<message info="这是一条警告消息" level="warn" id="warn"></message>
+<message info="这是一条错误消息" level="err" id="err"></message>
+<message info="信息展示时间为 4 秒钟" level="info" time="4000" id="time"></message>
+<view class="content" bindtap="showMsg">
+    <view class="btn" data-level="info">普通提示</view>
+    <view class="btn" data-level="suc">成功提示</view>
+    <view class="btn" data-level="warn">警告提示</view>
+    <view class="btn" data-level="err">错误提示</view>
+    <view class="btn" data-level="time">自定义持续时间</view>
+</view>

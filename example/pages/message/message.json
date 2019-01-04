@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Message",
+  "usingComponents": {
+    "message":"../../components/message/index"
+  }
+}

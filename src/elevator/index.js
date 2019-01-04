@@ -45,38 +45,26 @@ Component({
         }
       }
     },
-
     showIndex:{ //是否显示索引toast
       type:Boolean,
       value:true
     },
-
     IndexBgColor:{ //索引选中背景色
       type:String,
       value:'#e4393c'
     },
-
-    initIndex:{ //初始化定位到该索引
-       type:Number,
-       value:null
-    }
-
-
   },
   data:{
     scrollHeight:0,
     toView:'',
     elevatorArray:[],
-
     letter:'', //提示字母
     tab:-1,
   },
-  attached() {
-
-    console.log(this.properties)
-  },
   methods: {
-    //根据首字母 滚动页面
+    /**
+     * 根据首字母 滚动页面某一位置
+     */
     chooseTab: function(e) {
         let index = e.currentTarget.dataset.index;
         this.setData({
@@ -89,7 +77,6 @@ Component({
             tab:-1,
           })
         }, 500);
-
         //是否显示索引
         if(this.properties.showIndex) {
             this.setData({
@@ -103,7 +90,9 @@ Component({
         }
 
     },
-
+    /**
+     * 获取当前选中项的值
+     */
     chooseItem:function(e) {
       this.triggerEvent('chooseItem',e.currentTarget.dataset.value)
     }

@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -66,7 +66,13 @@
 				{
 					"id": -1,
 					"name": "折叠页面",
-					"pathName": "pages/collapse/collapse"
+					"pathName": "pages/collapse/collapse",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "全局消息弹框",
+					"pathName": "pages/message/message"
 				}
 			]
 		}

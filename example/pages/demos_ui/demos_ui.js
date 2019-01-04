@@ -28,7 +28,8 @@ Page({
       showCollapse:'../collapse/collapse',
       showKeyboard: '../keyboard/keyboard',
       showSearch: '../searchbar/searchbar',
-      showCoupon: '../coupon/coupon'
+      showCoupon: '../coupon/coupon',
+      showMessage:'../message/message'
     }
   },
   showPage(event) {

@@ -127,6 +127,13 @@
       <view class="developer">石文帅</view>
       <image></image>
     </view>
+     <view class="item item-ok">
+      <view class="name" bindtap="showPage" data-title="showMessage">Message 全局消息</view>
+      <view class="status"></view>
+      <view class="deadline"></view>
+      <view class="developer">石文帅</view>
+      <image></image>
+    </view>
     <view class="item item-ok">
       <view class="name" bindtap="showPage" data-title="showPopup">PopUp 弹出窗口</view>
       <view class="status"></view>

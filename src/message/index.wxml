@@ -1,0 +1,4 @@
+<!--message 全局消息组件-->
+<view class="message"  animation="{{animationData}}" style="background-color:{{bgColors[level]}}">
+    <view >{{msg}}</view>
+</view>

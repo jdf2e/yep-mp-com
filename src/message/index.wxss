@@ -1,0 +1,15 @@
+.message{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:999;
+    width: 100%;
+    height: 0rpx;
+    font-size: 26rpx;
+    text-align: center;
+    line-height: 60rpx;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

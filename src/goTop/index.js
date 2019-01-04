@@ -32,7 +32,7 @@ Component({
     methods: {
         //这里是一个自定义方法
         scroll: function (e) {
-            // 触发回到顶部按钮显示的条件
+            // 触发回到顶部按钮显示的条件·
             if (e.detail.scrollTop > this.data.setScrollTop) {
                 this.setData({
                     isFloor: true
