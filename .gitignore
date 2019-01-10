@@ -2,7 +2,7 @@
 .DS_Store
 package-lock.json
 .vscode
-
+project.config.json
 logs
 *.log
 npm-debug.log*
