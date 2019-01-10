@@ -1,0 +1,4 @@
+.cell-title{
+  font-size: 28rpx;
+  margin-left:32rpx;
+}

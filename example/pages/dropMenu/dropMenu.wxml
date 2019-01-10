@@ -1,0 +1,2 @@
+<yepDropMenu wx:if="isDropMenu" labelTxt="{{labelTxt}}" dropMenuData="{{dropMenuData}}"></yepDropMenu>
+

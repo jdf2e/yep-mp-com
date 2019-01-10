@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
     "pages/avatar/avatar",
     "pages/badge/badge",
     "pages/bottomBar/bottomBar",
@@ -12,12 +14,10 @@
     "pages/drag/drag",
     "pages/elevator/elevator",
     "pages/goTop/goTop",
-    "pages/index/index",
     "pages/infiniteScroll/infiniteScroll",
     "pages/keyboard/keyboard",
     "pages/loading/loading",
     "pages/message/message",
-    "pages/mine/mine",
     "pages/notice/notice",
     "pages/popup/popup",
     "pages/price/price",
@@ -25,7 +25,9 @@
     "pages/stickyHeader/stickyHeader",
     "pages/swipeAction/swipeAction",
     "pages/switch/switch",
-    "pages/tab/tab"
+    "pages/tab/tab",
+    "pages/cell/cell",
+    "pages/dropMenu/dropMenu"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,12 @@
+<view>
+  <div class="cell-title">只有标题：</div>
+   <cell title="这是标题"></cell>
+  <div class="cell-title">标题与描述：</div>
+   <cell title="这是标题"  desc="这是描述内容啊"></cell>
+  <div class="cell-title">标题与子标题：</div>
+  <cell title="这是标题" subTitle="这是子标题" desc="这是描述内容啊"></cell>
+  <div class="cell-title">自定义右侧内容：</div>
+  <cell title="这是标题">
+     <switch checked="false" />
+  </cell>
+</view>

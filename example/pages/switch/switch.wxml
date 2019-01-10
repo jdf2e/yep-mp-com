@@ -2,8 +2,17 @@
 <view class="con">
     <!--demo 1-->
     <view class="item">
-        <view class="title">普通按钮</view>
+        <view class="title">普通按钮（小）</view>
+        <switch bind:statusChange="_statusChange" size="small"></switch>
+    </view>
+    <view class="item">
+        <view class="title">普通按钮(中等)</view>
         <switch bind:statusChange="_statusChange"></switch>
+    </view>
+    
+     <view class="item">
+        <view class="title">普通按钮（大）</view>
+        <switch bind:statusChange="_statusChange" size="large"></switch>
     </view>
     <!--demo 2-->
     <view class="item">

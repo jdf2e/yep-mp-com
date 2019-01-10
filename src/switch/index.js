@@ -9,6 +9,10 @@ Component({
     contType:{//开关内容类型：'number':0/1 'char':'开/关' 'sign':'√/×'
       type:String,
       value:''
+    },
+    size:{//按钮尺寸 small middle large
+      type:String,
+      value:'middle'
     }
   },
   data: {

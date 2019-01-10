@@ -29,7 +29,9 @@ Page({
       showKeyboard: '../keyboard/keyboard',
       showSearch: '../searchbar/searchbar',
       showCoupon: '../coupon/coupon',
-      showMessage:'../message/message'
+      showMessage:'../message/message',
+      showCell:'../cell/cell',
+      showDrapMenu:'../dropMenu/dropMenu'
     }
   },
   showPage(event) {

@@ -1,0 +1,26 @@
+.cell{
+    padding: 14rpx 32rpx;
+    font-size: 28rpx;
+    color: #515a6e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fff;
+}
+.cell-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.main-title{
+    height: 48rpx;
+    line-height: 48rpx;
+}
+.sub-title{
+    color: #808695;
+    font-size: 24rpx;
+    height: 30rpx;
+    line-height: 30rpx;
+}

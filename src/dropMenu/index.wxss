@@ -1,0 +1,72 @@
+view{
+  box-sizing: border-box;
+}
+
+.label {
+  font-size: 30rpx;
+  float: left;
+  width: 100rpx;
+  text-align: right;
+  margin-right: 20rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+}
+
+.yep-drop-box {
+  float: left;
+}
+
+.yep-select-box {
+  width: 240rpx;
+  height: 60rpx;
+  line-height: 38rpx;
+  border: solid 1rpx #e3e5e9;
+  font-size: 30rpx;
+  padding: 10rpx;
+  position: relative;
+}
+
+.yep-drop-list{
+  border: solid 1rpx #e3e5e9;
+  border-top: none;
+  width: 240rpx;
+}
+
+.yep-drop-item {
+  width: 238rpx;
+  padding: 10rpx;
+  font-size: 30rpx;
+}
+
+.yep-drop-item.curr{
+  background-color: #f23030;
+  color: #fff;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.border-bottom-none{
+  border-bottom: none;
+}
+
+.drop-icon{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 18rpx;
+  height: 10rpx;
+  top: 50%;
+  right: 10rpx;
+}
+
+.drop-reverse{
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+
+

@@ -1,0 +1,11 @@
+<!--cell组件-->
+<view class='cell' >
+    <div class="cell-left">
+        <div class="main-title">{{title}}</div>
+        <div class="sub-title" wx:if="{{!!subTitle}}">{{subTitle}}</div>
+    </div>
+    <div class="cell-right">
+        <block wx:if="{{!!desc}}">{{desc}}</block>
+        <slot  wx:else/>
+    </div>
+</view>

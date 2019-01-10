@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "DropMenu",
+	"usingComponents": {
+      "yepDropMenu": "../../components/dropMenu/index"
+    }
+}

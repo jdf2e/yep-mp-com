@@ -1,0 +1,21 @@
+<view class="container">
+    <view class="clearfix">
+        <view class="label">{{labelTxt}}</view>
+        <view class="yep-drop-box">
+            <view class="yep-select-box" bindtap="isDropMenuShow">
+                {{selVal}}
+                <image src="{{icon}}" class="drop-icon {{isDropMenu?'drop-reverse':''}}"></image>
+            </view>
+            <view class="yep-drop-list {{isDropMenu?'':'border-bottom-none'}}">
+                <block wx:if="{{isDropMenu}}" wx:for="{{dropMenuData}}">
+                    <view wx:key="{{index}}" bindtap="select" data-item="{{item}}" data-index="{{index}}"  hover-ckass="red"
+                          class="yep-drop-item {{curIndex == index?'curr':''}}">
+                        {{item.val}}
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+</view>
+
+
