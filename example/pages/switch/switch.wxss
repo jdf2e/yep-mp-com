@@ -5,3 +5,6 @@
     padding:40rpx;
     border-bottom:1rpx solid #ddd;
 }
+.switch-bg{
+    background-color: red !important;
+}

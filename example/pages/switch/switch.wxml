@@ -35,4 +35,9 @@
         <view class="title">内容类型3</view>
         <switch id="switchEnable" contType="sign"></switch>
     </view>
+
+    <view class="item">
+        <view class="title">自定义switch样式</view>
+        <switch bind:statusChange="_statusChange" size="large" switch-box="switch-bg"></switch>
+    </view>
 </view>
