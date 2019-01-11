@@ -1,0 +1,4 @@
+<!--断行组件-->
+<view class="elip {{line_number}}" style="-webkit-line-clamp:{{line}}">
+  <slot/>
+</view>

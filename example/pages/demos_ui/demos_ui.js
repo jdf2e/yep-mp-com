@@ -31,7 +31,9 @@ Page({
       showCoupon: '../coupon/coupon',
       showMessage:'../message/message',
       showCell:'../cell/cell',
-      showDrapMenu:'../dropMenu/dropMenu'
+      showDrapMenu:'../dropMenu/dropMenu',
+      showElip:'../elip/elip',
+
     }
   },
   showPage(event) {

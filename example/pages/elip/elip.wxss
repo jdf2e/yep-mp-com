@@ -1,0 +1,9 @@
+.elip{
+    font-size:28rpx;
+    color: #111;
+}
+.elip_title{
+    font-size: 30rpx;
+    color: #000;
+    padding: 50rpx 0 20rpx 0rpx;
+}
