@@ -12,12 +12,16 @@
 ```
 # 下载并安装依赖
 npm install 
+
 # 将 src 组件更新到 example 目录下，可用小程序开发工具打开 example 目录。
 npm run dev
+
 # 打生产包
 npm run build
+
 # 修复脚本语法错误
 npm run lint
+
 ```
 
 ### 发版
