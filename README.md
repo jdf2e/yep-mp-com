@@ -9,11 +9,16 @@
 
 ### 常用指令
 
-(1) npm run dev : 将 src 组件更新到 example 目录下，可用小程序开发工具打开 example 目录。
-
-(2) npm run build : 打生产包
-
-(3) npm run lint : 修复脚本语法错误
+``
+# 下载并安装依赖
+npm install 
+# 将 src 组件更新到 example 目录下，可用小程序开发工具打开 example 目录。
+npm run dev
+# 打生产包
+npm run build
+# 修复脚本语法错误
+npm run lint
+``
 
 ### 发版
 
@@ -29,7 +34,9 @@
 
 - 安装：
 
-  > npm install @jdcfe/yep-mp-com
+  ``
+  npm install @jdcfe/yep-mp-com
+  ``
 
 - 引用
   在相应页面的 .json 文件中引入次组件，以 dialog 弹框组件为例：
