@@ -41,6 +41,10 @@ npm run lint
   ```
   npm install @jdcfe/yep-mp-com
   ```
+  
+- 构建
+
+  在小程序开发工具里，点击“工具”->“构建npm”，构建完毕后，在文件夹中会出现“miniprogram_npm”文件夹，则表示构建成功。
 
 - 引用
   在相应页面的 .json 文件中引入次组件，以 dialog 弹框组件为例：
