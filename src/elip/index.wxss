@@ -1,0 +1,15 @@
+.elip{
+  width: 100%;
+  height: auto;
+}
+.single_line{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mult_line{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}

@@ -27,7 +27,8 @@
     "pages/switch/switch",
     "pages/tab/tab",
     "pages/cell/cell",
-    "pages/dropMenu/dropMenu"
+    "pages/dropMenu/dropMenu",
+    "pages/elip/elip"
   ],
   "window": {
     "backgroundTextStyle": "light",

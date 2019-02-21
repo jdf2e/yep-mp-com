@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "elip",
+  "usingComponents": {
+    "elip":"../../components/elip/index"
+  }
+}
