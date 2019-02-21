@@ -27,7 +27,7 @@ Component({
   },
   methods: {
     //这里是一个自定义方法
-    scroll: function (e) {
+    scroll: function(e) {
       let isFloor;
       // 触发回到顶部按钮显示的条件
       if (e.detail.scrollTop > this.data.setScrollTop) {
@@ -39,7 +39,7 @@ Component({
         isFloor: isFloor
       });
     },
-    goTop: function () {
+    goTop: function() {
       this.setData({
         scrollTop: 0
       });

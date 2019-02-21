@@ -15,7 +15,10 @@ function getJsonPathInfo(jsonPath) {
   const fileBase = path.join(relative, fileName)
 
   return {
-    dirPath, fileName, relative, fileBase
+    dirPath,
+    fileName,
+    relative,
+    fileBase
   }
 }
 
@@ -27,7 +30,7 @@ async function checkIncludedComponents(jsonPath, componentListMap) {
   const json = _.readJson(jsonPath)
   if (!json) throw new Error(`json is not valid: "${jsonPath}"`)
 
-  const {dirPath, fileName, fileBase} = getJsonPathInfo(jsonPath)
+  const { dirPath, fileName, fileBase } = getJsonPathInfo(jsonPath)
 
   for (let i = 0, len = checkProps.length; i < len; i++) {
     const checkProp = checkProps[i]
@@ -43,7 +46,7 @@ async function checkIncludedComponents(jsonPath, componentListMap) {
 
       // check relative path
       const componentPath = `${path.join(dirPath, value)}.json`
-      // eslint-disable-next-line no-await-in-loop
+        // eslint-disable-next-line no-await-in-loop
       const isExists = await _.checkFileExists(componentPath)
       if (isExists) {
         // eslint-disable-next-line no-await-in-loop
@@ -61,19 +64,18 @@ async function checkIncludedComponents(jsonPath, componentListMap) {
   componentListMap.jsFileMap[fileBase] = `${path.join(dirPath, fileName)}.js`
 }
 
-module.exports = async function (entry) {
+module.exports = async function(entry) {
   const componentListMap = {
     wxmlFileList: [],
     wxssFileList: [],
     jsonFileList: [],
     jsFileList: [],
-
     jsFileMap: {}, // for webpack entry
   }
 
   const isExists = await _.checkFileExists(entry)
   if (!isExists) {
-    const {dirPath, fileName, fileBase} = getJsonPathInfo(entry)
+    const { dirPath, fileName, fileBase } = getJsonPathInfo(entry)
 
     componentListMap.jsFileList.push(`${fileBase}.js`)
     componentListMap.jsFileMap[fileBase] = `${path.join(dirPath, fileName)}.js`
