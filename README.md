@@ -40,6 +40,14 @@ npm run lint
 
   ```
   npm install @jdcfe/yep-mp-com
+  
+  ```
+  或者
+  
+  ```
+  
+  npm install @jdcfe/yep-mp-com --registry=https://registry.npmjs.org/
+  
   ```
   
 - 构建
