@@ -21,6 +21,7 @@
     "pages/notice/notice",
     "pages/popup/popup",
     "pages/price/price",
+    "pages/password/password",
     "pages/rate/rate",
     "pages/stickyHeader/stickyHeader",
     "pages/swipeAction/swipeAction",

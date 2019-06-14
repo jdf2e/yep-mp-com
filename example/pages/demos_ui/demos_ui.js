@@ -33,7 +33,7 @@ Page({
       showCell:'../cell/cell',
       showDrapMenu:'../dropMenu/dropMenu',
       showElip:'../elip/elip',
-
+      showPassword:'../password/password',
     }
   },
   showPage(event) {

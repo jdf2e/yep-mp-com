@@ -66,6 +66,13 @@
       <view class="developer">石文帅</view>
       <image></image>
     </view>
+    <view class="item item-ok" bindtap="showPage" data-title="showPassword">
+      <view class="name">password 密码</view>
+      <view class="status"></view>
+      <view class="deadline"></view>
+      <view class="developer">孙印凤</view>
+      <image></image>
+    </view>
   </view>
   <view class="view-box">
     <view class="title">页面布局</view>
