@@ -1,0 +1,96 @@
+page{
+  background: #010412;
+}
+.luck-turntable{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 1356rpx;
+  background: url('https://img20.360buyimg.com/uba/jfs/t1/14465/20/1668/626471/5c149f4cE4d7d4340/7b6287f39a2f23ab.png') no-repeat;
+  background-size:750rpx 1356rpx;
+  background-position: 0 30rpx;
+}
+.luck-turn{
+  width:626rpx;
+  height:626rpx;
+  margin-top:130rpx;
+  background: url('https://m.360buyimg.com/uba/jfs/t1/29171/7/13791/44522/5ca33590E5f88bc78/509dbe696d5a1d19.png') no-repeat;
+  background-size: 626rpx 626rpx;
+}
+.luck-circle{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.luck-btn{
+  position:absolute;
+  top:140rpx;
+  left:222rpx;
+  z-index:10;
+  width:186rpx;
+  height:223rpx;
+  background:url('https://m.360buyimg.com/uba/jfs/t1/24372/38/1725/53906/5c151becE6909169a/e3fb137ee69f4219.png') no-repeat;
+  background-size:186rpx 223rpx;
+}
+.luck-introduce{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-top:170rpx;
+  width:100%;
+  background:#323CCB;
+}
+.introduce-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 284rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 36rpx;
+  color: #FFFFFF;
+}
+.introduce-icon{
+  width:36rpx;
+  height: 23rpx;
+  background: url('//m.360buyimg.com/uba/jfs/t1/6794/17/9835/1212/5c14a817E1d537170/89cc9bf0f35e6864.png') no-repeat;
+  background-size: 36rpx 23rpx;
+}
+.introduce-line{
+  width:736rpx;
+  height:66rpx;
+  margin-top:18rpx;
+  background:url('//img20.360buyimg.com/uba/jfs/t1/10519/32/5485/43000/5c14ad2bE21f13707/1b60c14152db36b9.png') no-repeat;
+  background-size:736rpx 66rpx;
+}
+.introduce-paper{
+  width:616rpx;
+  height:300rpx;
+  background:url('//img20.360buyimg.com/uba/jfs/t1/26152/15/1713/11375/5c14aa6bE1c9e486f/933735f1dce1fcfb.png') no-repeat;
+  background-size:670rpx 300rpx;
+  margin:-30rpx 0 50rpx 0;
+  padding:40rpx 0 0 54rpx;
+  font-size:28rpx;
+  color:#586278;
+  line-height:52rpx;
+}
+.canvas-to-image{
+  margin:50rpx 0 0 51rpx;
+}
+@keyframes rotateStart{
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
+}
+.rotateEnd{
+  transition: all 2s linear;
+  transform: rotate(2000deg);
+}
+@keyframes rotateEnd{
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
+}
+
+

@@ -1,0 +1,3 @@
+<view class="calendar">
+  <yepCalendar bind:dateConfirm="dateConfirm"></yepCalendar>
+</view>

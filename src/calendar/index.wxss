@@ -1,0 +1,62 @@
+
+.yep-calendar{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  border-radius: 16rpx;
+  box-shadow:0 10px 20px 1px rgba(54, 54, 54, 0.05);
+  background: #fff;
+  padding-bottom: 20rpx;
+}
+.yep-calendar-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35px;
+  font-size: 24rpx;
+}
+.yep-calendar-title-text{
+  margin:0 240rpx;
+}
+.yepicon-calendar-title{
+  width:30rpx;
+  height: 40rpx;
+}
+.yepicon-calendar-left{
+  background: url('https://img14.360buyimg.com/uba/jfs/t1/27938/30/5818/501/5c42fb2eE0b2508a0/65bf84c89d7238de.png') no-repeat;
+  background-size: 11rpx 19rpx;
+  background-position: 40% 40%;
+}
+.yepicon-calendar-right{
+  background: url('https://img20.360buyimg.com/uba/jfs/t1/20852/20/5852/514/5c42fb30E6e206892/7d7234255e50b091.png') no-repeat;
+  background-size: 11rpx 19rpx;
+  background-position: 40% 40%;
+}
+.yep-calendar-item{
+  position: relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:77rpx;
+  font-size:24rpx;
+  line-height: 77rpx;
+  text-align: center;
+}
+.yep-calendar-stamp{
+  display: none;
+  position:absolute;
+  top:70rpx;
+  left:52%;
+  margin-left:-6rpx;
+  background:#e64340;
+  width:8rpx;
+  height:8rpx;
+  border-radius:8rpx;
+}
+.yep-calendar-on{
+  border-radius: 50%;
+  background: #ffeb00;
+  color: #fff;
+}
+

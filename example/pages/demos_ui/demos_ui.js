@@ -34,6 +34,10 @@ Page({
       showDrapMenu:'../dropMenu/dropMenu',
       showElip:'../elip/elip',
       showPassword:'../password/password',
+      showCalendar:'../calendar/calendar',
+      showUpload:'../upload/upload',
+      showClipper: '../clipper/clipper',
+      showTurntable: '../turntable/turntable'
     }
   },
   showPage(event) {

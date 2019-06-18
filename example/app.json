@@ -29,7 +29,11 @@
     "pages/tab/tab",
     "pages/cell/cell",
     "pages/dropMenu/dropMenu",
-    "pages/elip/elip"
+    "pages/elip/elip",
+    "pages/calendar/calendar",
+    "pages/upload/upload",
+    "pages/clipper/clipper",
+    "pages/turntable/turntable"
   ],
   "window": {
     "backgroundTextStyle": "light",

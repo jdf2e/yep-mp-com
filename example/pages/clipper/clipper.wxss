@@ -1,0 +1,26 @@
+.clipper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 160rpx;
+}
+.clip-title {
+  margin-bottom: 30rpx;
+}
+.clip-img {
+  width: 600rpx;
+  height: 600rpx;
+  background-color:#ccc;
+}
+.clipper-btn {
+  height: 64rpx;
+  padding: 0 20rpx;
+  margin: 50rpx 0;
+  line-height: 64rpx;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #ddd;
+}
+.disable-btn{
+  color: #666;
+}

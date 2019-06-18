@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "裁剪组件",
+  "usingComponents": {
+    "yepClipper": "../../components/clipper/index"
+  }
+}
+

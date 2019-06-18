@@ -1,0 +1,27 @@
+<view class="yep-upload">
+  <view
+    wx:if="{{ imgList.length > 0 }}"
+    wx:for="{{ imgList }}"
+    wx:for-index="idx"
+    wx:key="idx"
+    class="yep-img-block"
+    style="width: {{ size }}rpx;height: {{ size }}rpx;"
+  >
+    <image src="{{ item }}" class="yep-img-block-pic" mode="aspectFill"></image>
+    <view
+      class="yep-img-close"
+      catchtap="deleteImg"
+      data-index="{{ idx }}"
+    ></view>
+  </view>
+  <!-- 选择图片 -->
+  <view
+    wx:if="{{ imgList.length < maxImgCount }}"
+    class="yep-img-list"
+    style="width: {{ size }}rpx;height: {{ size }}rpx;"
+    catchtap="choicePic"
+  >
+    <view class="yep-icon-w"></view>
+    <view class="yep-icon-h"></view>
+  </view>
+</view>

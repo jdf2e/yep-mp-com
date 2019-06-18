@@ -12,7 +12,7 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.4.2",
+	"libVersion": "2.7.1",
 	"appid": "wx6b455a756cd0a489",
 	"projectname": "yep-mp-com-demo",
 	"debugOptions": {
@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 8,
+			"current": 9,
 			"list": [
 				{
 					"id": -1,
@@ -92,6 +92,12 @@
 					"name": "断行组件",
 					"pathName": "pages/elip/elip",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "转盘",
+					"pathName": "pages/turntable/turntable",
+					"scene": null
 				}
 			]
 		}

@@ -1,0 +1,1 @@
+<yepTurntable awardInfo='{{awardInfo}}' awardId='{{id}}' bind:rotateConfirm='rotateConfirm' bind:rotateEnd='rotateEnd'></yepTurntable>

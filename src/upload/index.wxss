@@ -1,0 +1,62 @@
+.yep-upload {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -6rpx;
+  padding: 10rpx 0;
+  background: #fff;
+  border: 1rpx solid #efefef;
+  border-radius: 10rpx;
+}
+.yep-img-block {
+  position: relative;
+  margin-left: 6rpx;
+  margin-bottom: 6rpx;
+}
+.yep-img-block-pic {
+  width: 100%;
+  height: 100%;
+}
+.yep-img-close {
+  position: absolute;
+  top: 15rpx;
+  right: 15rpx;
+  width: 32rpx;
+  height: 32rpx;
+  opacity: 0.6;
+  background: url(data:image/png;base64,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);
+  background-size: 32rpx 32rpx;
+  border-radius: 50%;
+}
+.yep-upload .yep-img-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border: dashed 1px #999999;
+  margin-bottom: 6rpx;
+  margin-left: 6rpx;
+  box-sizing: border-box;
+}
+.yep-img-list .yep-icon-w {
+  position: absolute;
+  width: 90rpx;
+  height: 6rpx;
+  border-radius: 5rpx;
+  background-color: #bfbfbf;
+  top: 50%;
+  left: 50%;
+  margin-top: -3rpx;
+  margin-left: -45rpx;
+}
+.yep-img-list .yep-icon-h {
+  position: absolute;
+  width: 6rpx;
+  height: 90rpx;
+  border-radius: 4rpx;
+  background-color: #bfbfbf;
+  top: 50%;
+  left: 50%;
+  margin-top: -45rpx;
+  margin-left: -3rpx;
+}

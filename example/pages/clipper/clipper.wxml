@@ -1,0 +1,7 @@
+<view class='clipper' wx:if='{{!isClipper}}'>
+	<view class='clip-title'>示例图片</view>
+	<image mode='aspectFit' src='{{templatePath ? templatePath : imgSrc}}' class='clip-img'></image>
+	<view class='clipper-btn {{templatePath !== ""?"disable-btn":""}}' bindtap='Imgclip'>灰色为图片显示区域，点击可进行裁剪</view>
+</view>
+
+<yepClipper wx:if='{{isClipper}}' imgSrc='{{imgSrc}}' bindclipConfirm='clipConfirm' bindclipConsole='clipConsole'></yepClipper>

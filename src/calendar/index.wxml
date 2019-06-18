@@ -1,0 +1,17 @@
+
+<view class='yep-calendar' style='width: {{sysW * 7}}px'>
+  <view class='yep-calendar-title'>
+    <view class='yepicon-calendar-title yepicon-calendar-left' bindtap='monthReduce'></view>
+    <view class='yep-calendar-title-text'>{{year}}年{{ month}}月</view>
+    <view class='yepicon-calendar-title yepicon-calendar-right' bindtap='monthAdd'></view>
+  </view>
+  <block wx:for='{{weekArr}}' wx:key="*this">
+    <view class='yep-calendar-item yep-calendar-item-weeks' style='width:{{sysW}}px'>{{item}}</view>
+  </block>
+  <block wx:for='{{dateArr}}' wx:key="*this">
+    <view bindtap='dateChoose' data-index='{{index}}' style='{{index == 0 ? "margin-left:" + sysW * firstDay + "px;" : ""}}width: {{sysW}}px' class='yep-calendar-item'>
+      <view class='{{item.index == currDay ? "yep-calendar-on" : ""}}' style='width: {{sysW/2}}px;height: {{sysW/2}}px;line-height: {{sysW/2}}px'>{{item.index}}</view>
+      <icon class='yep-calendar-stamp' style='{{item.icon? "display: block" : ""}}'></icon>
+    </view>
+  </block>
+</view>

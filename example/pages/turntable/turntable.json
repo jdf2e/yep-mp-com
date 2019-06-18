@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "转盘组件",
+  "usingComponents": {
+    "yepTurntable": "../../components/turntable/index"
+  }
+}

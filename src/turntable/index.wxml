@@ -1,0 +1,23 @@
+<view class="luck-body">
+  <view class='luck-turntable'>
+    <view class="luck-turn">
+      <view class="luck-circle">
+        <canvas id="canvasId" class="canvas" style="position:fixed;left: -10000rpx;width:{{canvasSize}}px;height:{{canvasSize}}px" canvas-id="turntableCanvas" disable-scroll="true"></canvas>
+        <image class="canvas-to-image" src="{{tableImg}}" style="display:block;width:{{canvasSize}}px;height: {{canvasSize}}px;{{rotateAnimate}}"></image>
+        <view class="luck-btn" bindtap="rotateConfirm"></view>
+      </view>
+    </view>
+    <view class='luck-introduce'>
+      <view class='introduce-title'>
+        <icon class='introduce-icon'></icon>抽奖介绍<icon class='introduce-icon'></icon>
+      </view>
+      <view class='introduce-line'></view>
+      <view class='introduce-paper'>
+        <view>1、每次抽奖花费2京粒，抽奖次数不限；</view>
+        <view>2、活动持续到2019年5月份；</view>
+        <view>3、京粒不够可以去做任务或首页领取京粒；</view>
+        <view>4、奖品最终解释权归京东租房。</view>
+      </view>
+    </view>
+  </view>
+</view>

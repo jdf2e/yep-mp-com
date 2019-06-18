@@ -1,0 +1,6 @@
+<view class="content-body">
+  <view class="tip">
+    <view class="title">Upload 上传图片</view>
+  </view>
+  <yepUpload bind:addImg="addImg" bind:deleteImg="deleteImg"></yepUpload>
+</view>
