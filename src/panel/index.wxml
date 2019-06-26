@@ -1,0 +1,6 @@
+<!--components/panel/panel.wxml-->
+<view class="yep-class yep-panel">
+    <view wx:if="{{ title }}" class="yep-panel-title {{ hideTop ? 'yep-panel-title-hide-top' : '' }}">{{ title }}</view>
+    <view class="yep-panel-content {{ hideBorder ? 'yep-panel-without-border' : '' }}"><slot></slot></view>
+</view>
+
