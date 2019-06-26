@@ -29,7 +29,8 @@
     "pages/tab/tab",
     "pages/cell/cell",
     "pages/dropMenu/dropMenu",
-    "pages/elip/elip"
+    "pages/elip/elip",
+    "pages/panel/panel"  
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -42,7 +43,8 @@
     "selectedColor": "#f04848",
     "backgroundColor": "#ffffff",
     "borderStyle": "black",
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "images/index.png",
@@ -56,5 +58,6 @@
       }
     ],
     "position": "bottom"
-  }
+  },
+  "sitemapLocation": "sitemap15.json"
 }

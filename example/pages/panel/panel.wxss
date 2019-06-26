@@ -1,0 +1,9 @@
+/* pages/panel/panel.wxss */
+.content {
+  padding: 20px;
+  font-size: 16px;
+}
+
+.footer {
+  text-align: right;
+}

@@ -34,6 +34,7 @@ Page({
       showDrapMenu:'../dropMenu/dropMenu',
       showElip:'../elip/elip',
       showPassword:'../password/password',
+      showPanel:"../panel/panel"
     }
   },
   showPage(event) {
