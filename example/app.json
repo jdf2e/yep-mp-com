@@ -30,7 +30,8 @@
     "pages/cell/cell",
     "pages/dropMenu/dropMenu",
     "pages/elip/elip",
-    "pages/panel/panel"  
+    "pages/panel/panel",
+    "pages/divider/divider" 
   ],
   "window": {
     "backgroundTextStyle": "light",

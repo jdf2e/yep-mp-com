@@ -34,7 +34,8 @@ Page({
       showDrapMenu:'../dropMenu/dropMenu',
       showElip:'../elip/elip',
       showPassword:'../password/password',
-      showPanel:"../panel/panel"
+      showPanel:"../panel/panel",
+      showDivider:"../divider/divider"
     }
   },
   showPage(event) {
