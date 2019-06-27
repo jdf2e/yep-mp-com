@@ -35,7 +35,8 @@ Page({
       showElip:'../elip/elip',
       showPassword:'../password/password',
       showPanel:"../panel/panel",
-      showDivider:"../divider/divider"
+      showDivider:"../divider/divider",
+      showProgress:"../progress/progress"
     }
   },
   showPage(event) {

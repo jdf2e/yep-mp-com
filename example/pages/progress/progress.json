@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Progress 进度条",
+  "usingComponents": {
+    "yepProgress": "../../components/progress/index"
+  }
+}

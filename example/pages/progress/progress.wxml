@@ -1,0 +1,13 @@
+<!--pages/progress/progress.wxml-->
+<view class="progress-item">
+    <yepProgress percent="25"></yepProgress>
+    <yepProgress percent="45" status="active"></yepProgress>
+    <yepProgress percent="65" status="wrong"></yepProgress>
+    <yepProgress percent="100" status="success"></yepProgress>
+    <yepProgress percent="25" hide-info></yepProgress>
+</view>
+<view class="progress-item">
+    <yepProgress percent="{{ percent }}" status="{{ status }}"></yepProgress>
+    <button bindtap="handleAdd" type="ghost">增加</button>
+    <button bindtap="handleReduce" type="ghost">减少</button>
+</view>

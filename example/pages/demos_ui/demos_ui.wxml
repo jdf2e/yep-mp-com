@@ -87,6 +87,13 @@
       <view class="developer">刘新金</view>
       <image></image>
     </view>
+    <view class="item item-ok" bindtap="showPage" data-title="showProgress">
+      <view class="name">progress 进度条</view>
+      <view class="status"></view>
+      <view class="deadline"></view>
+      <view class="developer">刘新金</view>
+      <image></image>
+    </view>
   </view>
   <view class="view-box">
     <view class="title">页面布局</view>

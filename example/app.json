@@ -31,7 +31,8 @@
     "pages/dropMenu/dropMenu",
     "pages/elip/elip",
     "pages/panel/panel",
-    "pages/divider/divider" 
+    "pages/divider/divider",
+    "pages/progress/progress"      
   ],
   "window": {
     "backgroundTextStyle": "light",

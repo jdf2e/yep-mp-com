@@ -1,0 +1,11 @@
+<!--components/progress/progress.wxml-->
+<view class="yep-class yep-progress yep-progress-{{ status }} {{ !hideInfo ? 'yep-progress-show-info' : '' }}">
+    <view class="yep-progress-outer">
+        <view class="yep-progress-inner">
+            <view class="yep-progress-bg" style="width: {{percent}}%;height: {{strokeWidth}}px"></view>
+        </view>
+    </view>
+    <view class="yep-progress-text" wx:if="{{ !hideInfo }}">
+        <view class="yep-progress-text-inner">{{ percent }}%</view>
+    </view>
+</view>

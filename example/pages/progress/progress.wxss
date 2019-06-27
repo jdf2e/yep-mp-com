@@ -1,0 +1,4 @@
+/* pages/progress/progress.wxss */
+.progress-item{
+    padding: 12px;
+}
