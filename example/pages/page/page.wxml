@@ -1,0 +1,16 @@
+<!--pages/page/page.wxml-->
+
+
+<view style="padding:30rpx 0 10px 0;text-align:center">带有文字的按钮</view>
+<yep-page current="{{ current }}" total="5" bind:change="handleChange">
+  <view slot="prev">Prev</view>
+  <view slot="next">Next</view>
+</yep-page> 
+
+
+<view style="padding:30rpx 0 10px 0;text-align:center">只显示数字</view>
+<yep-page current="{{ current }}" total="5" mode="number" bind:change="handleChange"></yep-page>
+
+
+<view style="padding: 30rpx 0 10px 0;text-align:center">显示点</view>
+<yep-page current="{{ current }}" total="5" mode="pointer" bind:change="handleChange"></yep-page>

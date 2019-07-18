@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "yep-page": "../../components/page/index"
+  }
+}

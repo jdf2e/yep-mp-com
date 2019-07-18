@@ -36,7 +36,8 @@ Page({
       showPassword:'../password/password',
       showPanel:"../panel/panel",
       showDivider:"../divider/divider",
-      showProgress:"../progress/progress"
+      showProgress:"../progress/progress",
+      showPage:"../page/page"
     }
   },
   showPage(event) {

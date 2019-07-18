@@ -32,7 +32,8 @@
     "pages/elip/elip",
     "pages/panel/panel",
     "pages/divider/divider",
-    "pages/progress/progress"      
+    "pages/progress/progress",
+    "pages/page/page"    
   ],
   "window": {
     "backgroundTextStyle": "light",
