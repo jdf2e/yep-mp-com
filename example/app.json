@@ -33,7 +33,7 @@
     "pages/panel/panel",
     "pages/divider/divider",
     "pages/progress/progress",
-    "pages/page/page"    
+    "pages/page/page"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -62,5 +62,5 @@
     ],
     "position": "bottom"
   },
-  "sitemapLocation": "sitemap15.json"
+  "sitemapLocation": "sitemap.json"
 }
