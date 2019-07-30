@@ -27,7 +27,6 @@ function getJsonPathInfo(jsonPath) {
 async function isExistTSFile(dirPath) {
   let compTSFilePath = `${path.join(dirPath, "index.ts")}`;
   let isTsExists = await _.checkFileExists(compTSFilePath);
-  console.log(`compTSFilePath:${compTSFilePath},isTsExists:${isTsExists}`);
   return isTsExists;
 }
 /**
@@ -39,14 +38,6 @@ async function checkIncludedComponents(jsonPath, componentListMap) {
   if (!json) throw new Error(`json is not valid: "${jsonPath}"`);
 
   const { dirPath, fileName, fileBase } = getJsonPathInfo(jsonPath);
-  console.log(
-    "dirPath:",
-    dirPath,
-    "fileName:",
-    fileName,
-    "fileBase:",
-    fileBase
-  );
   for (let i = 0, len = checkProps.length; i < len; i++) {
     const checkProp = checkProps[i];
     const checkPropValue = json[checkProp] || {};
@@ -99,8 +90,9 @@ module.exports = async function(entry) {
   };
 
   const isExists = await _.checkFileExists(entry);
+  const { dirPath, fileName, fileBase } = getJsonPathInfo(entry);
   if (!isExists) {
-    const { dirPath, fileName, fileBase } = getJsonPathInfo(entry);
+    //  const { dirPath, fileName, fileBase } = getJsonPathInfo(entry);
     //判断是否有ts文件，如果有读取ts文件，没有读取js文件
     if (await isExistTSFile(dirPath)) {
       componentListMap.tsFileList.push(`${fileBase}.ts`);
@@ -115,7 +107,6 @@ module.exports = async function(entry) {
         fileName
       )}.js`;
     }
-    console.log("componentListMap:", componentListMap);
     return componentListMap;
   }
 

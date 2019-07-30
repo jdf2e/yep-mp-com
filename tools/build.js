@@ -15,6 +15,7 @@ const _ = require("./utils");
 
 const wxssConfig = config.wxss || {};
 const srcPath = config.srcPath;
+const staticPath = config.staticPath;
 const distPath = config.distPath;
 
 /**
@@ -131,13 +132,12 @@ function ts(tsFileMap, scope) {
  */
 function copy(copyFileList) {
   if (!copyFileList.length) return false;
-
+  console.log("copy", copyFileList, srcPath);
   return gulp
     .src(copyFileList, { cwd: srcPath, base: srcPath })
     .pipe(_.logger())
     .pipe(gulp.dest(distPath)); // 放到某个路径下面
 }
-
 /**
  * install packages
  */
@@ -231,10 +231,8 @@ class BuildTask {
       const entries = this.entries;
       const mergeComponentListMap = {};
       const folders = _.getFolders(srcPath);
-      console.log("folders:", folders);
       for (let i = 0, len = folders.length; i < len; i++) {
         const entry = path.join(srcPath, folders[i], `${entries[0]}.json`);
-        console.log("entry:", entry);
         const newComponentListMap = await checkComponents(entry);
         _.merge(mergeComponentListMap, newComponentListMap);
       }
@@ -258,7 +256,6 @@ class BuildTask {
      */
     gulp.task(`${id}-component-wxml`, done => {
       const wxmlFileList = this.componentListMap.wxmlFileList;
-
       if (
         wxmlFileList &&
         wxmlFileList.length &&
@@ -307,7 +304,6 @@ class BuildTask {
      */
     gulp.task(`${id}-component-ts`, done => {
       const tsFileList = this.componentListMap.tsFileList;
-      console.log("task-component-ts", tsFileList);
       if (
         tsFileList &&
         tsFileList.length &&
@@ -329,7 +325,6 @@ class BuildTask {
           const copyFileList = copyList.map(dir =>
             path.join(dir, "**/*.!(wxss)")
           );
-
           if (copyFileList.length) return copy(copyFileList);
 
           return done();
@@ -369,8 +364,6 @@ class BuildTask {
      */
     gulp.task(`${id}-watch-wxml`, () => {
       this.cachedComponentListMap.wxmlFileList = null;
-      console.log("wxmlFileList", this.componentListMap.wxmlFileList);
-      console.log("srcPath", srcPath);
       return gulp.watch(
         this.componentListMap.wxmlFileList,
         { cwd: srcPath, base: srcPath },

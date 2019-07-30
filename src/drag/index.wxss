@@ -1,5 +1,5 @@
 /* components/drag.wxss */
-@import "/template/dragTemp/dragTemp.wxss";
+@import "../dragTemp/index.wxss";
 .border{
   border:1px solid #eee;
   position: relative;
