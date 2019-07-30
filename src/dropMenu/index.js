@@ -26,16 +26,16 @@ Component({
     }
   },
   methods: {
-    select: function (e) {
-      let selValue = e.currentTarget.dataset.item.val;
-      let curIndex = e.currentTarget.dataset.index;
+    select(e) {
+      const selValue = e.currentTarget.dataset.item.val
+      const curIndex = e.currentTarget.dataset.index
       this.setData({
         selVal: selValue,
-        curIndex: curIndex,
+        curIndex,
         isDropMenu: false
-      });
+      })
     },
-    isDropMenuShow: function () {
+    isDropMenuShow() {
       this.setData({
         isDropMenu: !this.data.isDropMenu
       })

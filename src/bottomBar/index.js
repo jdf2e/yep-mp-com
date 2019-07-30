@@ -33,13 +33,13 @@ Component({
   attached() {
     wx.getSystemInfo({
       success: res => {
-        let modelmes = res.model;
+        const modelmes = res.model
         if (modelmes.search('iPhone X') !== -1) {
           this.setData({
             isIPhoneX: true
-          });
+          })
         }
       }
-    });
+    })
   }
 })

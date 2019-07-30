@@ -81,7 +81,51 @@ function js(jsFileMap, scope) {
     webpack(webpackConfig).run(webpackCallback);
   }
 }
+/**
+ * 获取ts文件流
+ */
+function ts(tsFileMap, scope) {
+  const webpackConfig = config.webpack;
+  const webpackCallback = (err, stats) => {
+    if (!err) {
+      // eslint-disable-next-line no-console
+      console.log(
+        stats.toString({
+          assets: true,
+          cached: false,
+          colors: true,
+          children: false,
+          errors: true,
+          warnings: true,
+          version: true,
+          modules: false,
+          publicPath: true
+        })
+      );
+    } else {
+      // eslint-disable-next-line no-console
+      console.log(err);
+    }
+  };
+  webpackConfig.entry = tsFileMap;
+  webpackConfig.output.path = distPath;
 
+  if (scope.webpackWatcher) {
+    scope.webpackWatcher.close();
+    scope.webpackWatcher = null;
+  }
+
+  if (config.isWatch) {
+    scope.webpackWatcher = webpack(webpackConfig).watch(
+      {
+        ignored: /node_modules/
+      },
+      webpackCallback
+    );
+  } else {
+    webpack(webpackConfig).run(webpackCallback);
+  }
+}
 /**
  * copy file
  */
@@ -187,8 +231,10 @@ class BuildTask {
       const entries = this.entries;
       const mergeComponentListMap = {};
       const folders = _.getFolders(srcPath);
+      console.log("folders:", folders);
       for (let i = 0, len = folders.length; i < len; i++) {
         const entry = path.join(srcPath, folders[i], `${entries[0]}.json`);
+        console.log("entry:", entry);
         const newComponentListMap = await checkComponents(entry);
         _.merge(mergeComponentListMap, newComponentListMap);
       }
@@ -197,7 +243,7 @@ class BuildTask {
     });
 
     /**
-     * write json to the dist folder
+     * 复制json文件到文件夹
      */
     gulp.task(`${id}-component-json`, done => {
       const jsonFileList = this.componentListMap.jsonFileList;
@@ -208,7 +254,7 @@ class BuildTask {
     });
 
     /**
-     * copy wxml to the dist folder
+     * 复制wxml文件到dist文件夹
      */
     gulp.task(`${id}-component-wxml`, done => {
       const wxmlFileList = this.componentListMap.wxmlFileList;
@@ -226,7 +272,7 @@ class BuildTask {
     });
 
     /**
-     * generate wxss to the dist folder
+     * 监听wxss文件到dist文件夹
      */
     gulp.task(`${id}-component-wxss`, done => {
       const wxssFileList = this.componentListMap.wxssFileList;
@@ -243,11 +289,10 @@ class BuildTask {
     });
 
     /**
-     * generate js to the dist folder
+     * 拷贝js文件到dist文件夹
      */
     gulp.task(`${id}-component-js`, done => {
       const jsFileList = this.componentListMap.jsFileList;
-
       if (
         jsFileList &&
         jsFileList.length &&
@@ -255,12 +300,26 @@ class BuildTask {
       ) {
         js(this.componentListMap.jsFileMap, this);
       }
+      return done();
+    });
+    /**
+     * generate ts to the dist folder
+     */
+    gulp.task(`${id}-component-ts`, done => {
+      const tsFileList = this.componentListMap.tsFileList;
+      console.log("task-component-ts", tsFileList);
+      if (
+        tsFileList &&
+        tsFileList.length &&
+        !_.compareArray(this.cachedComponentListMap.tsFileList, tsFileList)
+      ) {
+        ts(this.componentListMap.tsFileMap, this);
+      }
 
       return done();
     });
-
     /**
-     * copy resources to dist folder
+     * 拷贝资源文件到dist文件夹中
      */
     gulp.task(
       `${id}-copy`,
@@ -278,9 +337,7 @@ class BuildTask {
         done => {
           const copyList = this.copyList;
           const copyFileList = copyList.map(dir => path.join(dir, "**/*.wxss"));
-
           if (copyFileList.length) return wxss(copyFileList, srcPath, distPath);
-
           return done();
         }
       )
@@ -298,8 +355,10 @@ class BuildTask {
           gulp.parallel(
             `${id}-component-wxml`,
             `${id}-component-wxss`,
+            `${id}-component-ts`,
             `${id}-component-js`,
-            `${id}-component-json`
+            `${id}-component-json`,
+            `${id}-component-check`
           )
         )
       )
@@ -310,6 +369,8 @@ class BuildTask {
      */
     gulp.task(`${id}-watch-wxml`, () => {
       this.cachedComponentListMap.wxmlFileList = null;
+      console.log("wxmlFileList", this.componentListMap.wxmlFileList);
+      console.log("srcPath", srcPath);
       return gulp.watch(
         this.componentListMap.wxmlFileList,
         { cwd: srcPath, base: srcPath },
@@ -328,15 +389,35 @@ class BuildTask {
         gulp.series(`${id}-component-wxss`)
       );
     });
-
     /**
-     * watch resources
+     * watch ts
+     */
+    gulp.task(`${id}-watch-ts`, () => {
+      this.cachedComponentListMap.wxssFileList = null;
+      return gulp.watch(
+        "**/*.ts",
+        { cwd: srcPath, base: srcPath },
+        gulp.series(`${id}-component-ts`)
+      );
+    });
+    /**
+     * watch js
+     */
+    gulp.task(`${id}-watch-js`, () => {
+      this.cachedComponentListMap.wxssFileList = null;
+      return gulp.watch(
+        "**/*.js",
+        { cwd: srcPath, base: srcPath },
+        gulp.series(`${id}-component-js`)
+      );
+    });
+    /**
+     * 拷贝资源文件到文件夹中
      */
     gulp.task(`${id}-watch-copy`, () => {
       const copyList = this.copyList;
       const copyFileList = copyList.map(dir => path.join(dir, "**/*"));
       const watchCallback = filePath => copy([filePath]);
-
       return gulp
         .watch(copyFileList, { cwd: srcPath, base: srcPath })
         .on("change", watchCallback)
@@ -380,14 +461,13 @@ class BuildTask {
         gulp.parallel(
           `${id}-component-wxml`,
           `${id}-component-wxss`,
+          `${id}-component-ts`,
           `${id}-component-js`,
           `${id}-component-json`,
           `${id}-copy`
         )
       )
     );
-
-    //gulp.task(`${id}-watch`, gulp.series(`${id}-build`, `${id}-demo`, `${id}-install`, gulp.parallel(`${id}-watch-wxml`, `${id}-watch-wxss`, `${id}-watch-json`, `${id}-watch-copy`, `${id}-watch-install`, `${id}-watch-demo`)))
     gulp.task(
       `${id}-watch`,
       gulp.series(
@@ -396,15 +476,14 @@ class BuildTask {
         gulp.parallel(
           `${id}-watch-wxml`,
           `${id}-watch-wxss`,
+          `${id}-watch-ts`,
+          `${id}-watch-js`,
           `${id}-watch-json`,
           `${id}-watch-copy`
         )
       )
     );
-
-    //gulp.task(`${id}-dev`, gulp.series(`${id}-build`, `${id}-demo`, `${id}-install`))
     gulp.task(`${id}-dev`, gulp.series(`${id}-build`));
-
     gulp.task(`${id}-default`, gulp.series(`${id}-build`));
   }
 }

@@ -1,6 +1,6 @@
 
 Component({
-    /* 数据格式
+  /* 数据格式
        elevatorList:[
         {
           title:"A",
@@ -20,23 +20,23 @@ Component({
   externalClasses: [],
   properties: {
     elevatorList: {
-      type:Array,
-      value:[]
+      type: Array,
+      value: []
     },
-    scrollHeight:{ //可视区域高度
-      type:Number,
-      value:667,
-      observer:function(newVal, oldVal){
-        console.log("observer",newVal, oldVal)
-        if(newVal != null) {
-           this.setData({
+    scrollHeight: { // 可视区域高度
+      type: Number,
+      value: 667,
+      observer(newVal, oldVal) {
+        console.log('observer', newVal, oldVal)
+        if (newVal != null) {
+          this.setData({
             scrollHeight: newVal
-           })
+          })
         } else {
-          //获取屏幕高度
-          let _this = this;
+          // 获取屏幕高度
+          const _this = this
           wx.getSystemInfo({
-            success: function (res) {
+            success(res) {
               _this.setData({
                 scrollHeight: res.screenHeight
               })
@@ -45,56 +45,55 @@ Component({
         }
       }
     },
-    showIndex:{ //是否显示索引toast
-      type:Boolean,
-      value:true
+    showIndex: { // 是否显示索引toast
+      type: Boolean,
+      value: true
     },
-    IndexBgColor:{ //索引选中背景色
-      type:String,
-      value:'#e4393c'
+    IndexBgColor: { // 索引选中背景色
+      type: String,
+      value: '#e4393c'
     },
   },
-  data:{
-    scrollHeight:0,
-    toView:'',
-    elevatorArray:[],
-    letter:'', //提示字母
-    tab:-1,
+  data: {
+    scrollHeight: 0,
+    toView: '',
+    elevatorArray: [],
+    letter: '', // 提示字母
+    tab: -1,
   },
   methods: {
     /**
      * 根据首字母 滚动页面某一位置
      */
-    chooseTab: function(e) {
-        let index = e.currentTarget.dataset.index;
-        this.setData({
-          toView: 'list-'+index,
-          tab: index,
+    chooseTab(e) {
+      const index = e.currentTarget.dataset.index
+      this.setData({
+        toView: 'list-' + index,
+        tab: index,
+      })
+      const _this = this
+      setTimeout(function () {
+        _this.setData({
+          tab: -1,
         })
-        let _this = this;
+      }, 500)
+      // 是否显示索引
+      if (this.properties.showIndex) {
+        this.setData({
+          letter: this.data.elevatorList[index].title,
+        })
         setTimeout(function () {
           _this.setData({
-            tab:-1,
+            letter: ''
           })
-        }, 500);
-        //是否显示索引
-        if(this.properties.showIndex) {
-            this.setData({
-              letter: this.data.elevatorList[index].title,
-            })
-            setTimeout(function () {
-              _this.setData({
-                letter: ''
-              })
-            }, 500);
-        }
-
+        }, 500)
+      }
     },
     /**
      * 获取当前选中项的值
      */
-    chooseItem:function(e) {
-      this.triggerEvent('chooseItem',e.currentTarget.dataset.value)
+    chooseItem(e) {
+      this.triggerEvent('chooseItem', e.currentTarget.dataset.value)
     }
   }
-});
+})

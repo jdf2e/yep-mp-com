@@ -38,6 +38,19 @@ module.exports = {
     module: {
       rules: [
         {
+          test: /\.ts?$/,
+          use: [
+            {
+              loader: "ts-loader",
+              options: {
+                // 指定特定的ts编译配置，为了区分脚本的ts配置
+                configFile: path.resolve(__dirname, "../tsconfig.json")
+              }
+            }
+          ],
+          exclude: /node_modules/
+        },
+        {
           test: /\.js$/i,
           use: [
             //         'eslint-loader',
@@ -49,7 +62,7 @@ module.exports = {
     },
     resolve: {
       modules: [src, "node_modules"],
-      extensions: [".js", ".json"]
+      extensions: [".js", ".ts", ".json"]
     },
     plugins: [
       new webpack.DefinePlugin({}),
@@ -58,7 +71,6 @@ module.exports = {
     optimization: {
       minimize: false
     },
-    // devtool: 'nosources-source-map', // source map for js
     performance: {
       hints: "warning",
       assetFilter: assetFilename => assetFilename.endsWith(".js")

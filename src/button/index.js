@@ -1,7 +1,7 @@
 // var WXBizDataCrypt = require('../../utils/WXBizDataCrypt')
 
-//获取应用实例
-var app = getApp();
+// 获取应用实例
+const app = getApp()
 
 /* 按钮type:
  * normal\primary\disabled\ghost\small\large\
@@ -32,11 +32,11 @@ Component({
   },
   methods: {
     // 这里是一个自定义方法
-    onTap: function(){
-      console.log('onTap');
-      var myEventDetail = {} // detail对象，提供给事件监听函数
-      var myEventOption = {} // 触发事件的选项
+    onTap() {
+      console.log('onTap')
+      const myEventDetail = {} // detail对象，提供给事件监听函数
+      const myEventOption = {} // 触发事件的选项
       this.triggerEvent('btnEvent', myEventDetail, myEventOption)
     }
   }
-});
+})

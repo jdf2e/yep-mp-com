@@ -13,10 +13,10 @@ Component({
     }
   },
   lifetimes: {
-    ready(){
-      let line = this.data.line <= 1 ? 1: this.data.line;
+    ready() {
+      const line = this.data.line <= 1 ? 1 : this.data.line
       this.setData({
-        line_number:line > 1 ?'mult_line':'single_line'
+        line_number: line > 1 ? 'mult_line' : 'single_line'
       })
     }
   },

@@ -3,8 +3,8 @@
  * updated date: 20180523
  */
 
-//获取应用实例
-var app = getApp();
+// 获取应用实例
+const app = getApp()
 
 /* price type:
  * normal/sub/del
@@ -14,7 +14,7 @@ var app = getApp();
  *
  */
 Component({
-  externalClasses: ['yepc-price', 'yepc-price-symbol', 'yepc-price-value', 'yepc-price-decimal'],//拓展样式
+  externalClasses: ['yepc-price', 'yepc-price-symbol', 'yepc-price-value', 'yepc-price-decimal'], // 拓展样式
   properties: {
     type: {
       type: String,
@@ -35,19 +35,19 @@ Component({
     value: {
       type: String,
       value: '',
-      observer: function (newVal) {
-        this._resetValue(newVal, this.data.decimal);
+      observer(newVal) {
+        this._resetValue(newVal, this.data.decimal)
       }
     },
     // del 为删除状态
     status: {
       type: String,
       value: '',
-      observer: function (newVal) {
+      observer(newVal) {
         // 状态为del时，增加className=del
         this.setData({
           _cls: newVal
-        });
+        })
       }
     },
     // 小数部分展示的位数，默认为2;
@@ -55,9 +55,9 @@ Component({
     decimal: {
       type: Number,
       value: 2,
-      observer: function (newVal) {
+      observer(newVal) {
         // 对当前value的值重置
-        this._resetValue(this.data.value, newVal);
+        this._resetValue(this.data.value, newVal)
       }
     },
     // 小数部分展示的位置，默认是右下：sub; 右上为sup；正常为normal
@@ -77,39 +77,39 @@ Component({
   // created: function (options) {
   //   // console.log('price created', this.data.type, options);
   // },
-  attached: function (options) {
-    if(this.data.iconImage) {
+  attached(options) {
+    if (this.data.iconImage) {
       this.setData({
         iconType: ''
-      });
+      })
     }
   },
   methods: {
     // 这里是一个自定义方法
-    _resetValue: function (value, decimal) {
+    _resetValue(value, decimal) {
       // 判断value的第一位是否是非数字，即货币符号
-      let symbol = '￥';
-      if(!/^[0-9]*$/.test(value.substring(0, 1))){
-        symbol = value.substring(0, 1);
-        value = value.substring(1);
+      let symbol = '￥'
+      if (!/^[0-9]*$/.test(value.substring(0, 1))) {
+        symbol = value.substring(0, 1)
+        value = value.substring(1)
       }
-      if(decimal == 0) {
-        value = parseInt(value);
+      if (decimal == 0) {
+        value = parseInt(value)
       } else {
-        value = parseFloat(value).toFixed(decimal);
+        value = parseFloat(value).toFixed(decimal)
       }
-      let vals = (value + '') .split('.');
+      const vals = (value + '').split('.')
       this.setData({
         _symbol: symbol,
         _intVal: vals[0],
         _floatVal: vals[1] || null
-      });
+      })
     },
-    onTap: function(){
+    onTap() {
       // console.log('onTap');
-      let myEventDetail = {}; // detail对象，提供给事件监听函数
-      let myEventOption = {}; // 触发事件的选项
-      this.triggerEvent('btnEvent', myEventDetail, myEventOption);
+      const myEventDetail = {} // detail对象，提供给事件监听函数
+      const myEventOption = {} // 触发事件的选项
+      this.triggerEvent('btnEvent', myEventDetail, myEventOption)
     }
   }
-});
+})

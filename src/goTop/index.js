@@ -26,23 +26,23 @@ Component({
     isFloor: false
   },
   methods: {
-    //这里是一个自定义方法
-    scroll: function(e) {
-      let isFloor;
+    // 这里是一个自定义方法
+    scroll(e) {
+      let isFloor
       // 触发回到顶部按钮显示的条件
       if (e.detail.scrollTop > this.data.setScrollTop) {
-        isFloor = true;
+        isFloor = true
       } else {
-        isFloor = false;
+        isFloor = false
       }
       this.setData({
-        isFloor: isFloor
-      });
+        isFloor
+      })
     },
-    goTop: function() {
+    goTop() {
       this.setData({
         scrollTop: 0
-      });
+      })
     }
   }
 })

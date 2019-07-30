@@ -1,67 +1,90 @@
-const path = require('path')
+const path = require("path");
 
-const _ = require('./utils')
-const config = require('./config')
+const _ = require("./utils");
+const config = require("./config");
 
-const srcPath = config.srcPath
+const srcPath = config.srcPath;
 
 /**
  * get json path's info
  */
 function getJsonPathInfo(jsonPath) {
-  const dirPath = path.dirname(jsonPath)
-  const fileName = path.basename(jsonPath, '.json')
-  const relative = path.relative(srcPath, dirPath)
-  const fileBase = path.join(relative, fileName)
+  const dirPath = path.dirname(jsonPath);
+  const fileName = path.basename(jsonPath, ".json");
+  const relative = path.relative(srcPath, dirPath);
+  const fileBase = path.join(relative, fileName);
 
   return {
     dirPath,
     fileName,
     relative,
     fileBase
-  }
+  };
 }
-
+/**
+ * 判断是否存在ts文件
+ */
+async function isExistTSFile(dirPath) {
+  let compTSFilePath = `${path.join(dirPath, "index.ts")}`;
+  let isTsExists = await _.checkFileExists(compTSFilePath);
+  console.log(`compTSFilePath:${compTSFilePath},isTsExists:${isTsExists}`);
+  return isTsExists;
+}
 /**
  * check included components
  */
-const checkProps = ['usingComponents', 'componentGenerics']
+const checkProps = ["usingComponents", "componentGenerics"];
 async function checkIncludedComponents(jsonPath, componentListMap) {
-  const json = _.readJson(jsonPath)
-  if (!json) throw new Error(`json is not valid: "${jsonPath}"`)
+  const json = _.readJson(jsonPath);
+  if (!json) throw new Error(`json is not valid: "${jsonPath}"`);
 
-  const { dirPath, fileName, fileBase } = getJsonPathInfo(jsonPath)
-
+  const { dirPath, fileName, fileBase } = getJsonPathInfo(jsonPath);
+  console.log(
+    "dirPath:",
+    dirPath,
+    "fileName:",
+    fileName,
+    "fileBase:",
+    fileBase
+  );
   for (let i = 0, len = checkProps.length; i < len; i++) {
-    const checkProp = checkProps[i]
-    const checkPropValue = json[checkProp] || {}
-    const keys = Object.keys(checkPropValue)
+    const checkProp = checkProps[i];
+    const checkPropValue = json[checkProp] || {};
+    const keys = Object.keys(checkPropValue);
 
     for (let j = 0, jlen = keys.length; j < jlen; j++) {
-      const key = keys[j]
-      let value = typeof checkPropValue[key] === 'object' ? checkPropValue[key].default : checkPropValue[key]
-      if (!value) continue
+      const key = keys[j];
+      let value =
+        typeof checkPropValue[key] === "object"
+          ? checkPropValue[key].default
+          : checkPropValue[key];
+      if (!value) continue;
 
-      value = _.transformPath(value, path.sep)
+      value = _.transformPath(value, path.sep);
 
       // check relative path
-      const componentPath = `${path.join(dirPath, value)}.json`
-        // eslint-disable-next-line no-await-in-loop
-      const isExists = await _.checkFileExists(componentPath)
+      const componentPath = `${path.join(dirPath, value)}.json`;
+      // eslint-disable-next-line no-await-in-loop
+      const isExists = await _.checkFileExists(componentPath);
       if (isExists) {
         // eslint-disable-next-line no-await-in-loop
-        await checkIncludedComponents(componentPath, componentListMap)
+        await checkIncludedComponents(componentPath, componentListMap);
       }
     }
   }
 
   // checked
-  componentListMap.wxmlFileList.push(`${fileBase}.wxml`)
-  componentListMap.wxssFileList.push(`${fileBase}.wxss`)
-  componentListMap.jsonFileList.push(`${fileBase}.json`)
-  componentListMap.jsFileList.push(`${fileBase}.js`)
-
-  componentListMap.jsFileMap[fileBase] = `${path.join(dirPath, fileName)}.js`
+  componentListMap.wxmlFileList.push(`${fileBase}.wxml`);
+  componentListMap.wxssFileList.push(`${fileBase}.wxss`);
+  componentListMap.jsonFileList.push(`${fileBase}.json`);
+  //判断是否有ts文件，如果有读取ts文件，没有读取js文件
+  if (await isExistTSFile(dirPath)) {
+    componentListMap.tsFileList.push(`${fileBase}.ts`);
+    componentListMap.tsFileMap[fileBase] = `${path.join(dirPath, fileName)}.ts`;
+  } else {
+    componentListMap.jsFileList.push(`${fileBase}.js`);
+    componentListMap.jsFileMap[fileBase] = `${path.join(dirPath, fileName)}.js`;
+  }
 }
 
 module.exports = async function(entry) {
@@ -69,21 +92,34 @@ module.exports = async function(entry) {
     wxmlFileList: [],
     wxssFileList: [],
     jsonFileList: [],
+    tsFileList: [],
     jsFileList: [],
-    jsFileMap: {}, // for webpack entry
-  }
+    tsFileMap: {}, // for webpack entry
+    jsFileMap: {}
+  };
 
-  const isExists = await _.checkFileExists(entry)
+  const isExists = await _.checkFileExists(entry);
   if (!isExists) {
-    const { dirPath, fileName, fileBase } = getJsonPathInfo(entry)
-
-    componentListMap.jsFileList.push(`${fileBase}.js`)
-    componentListMap.jsFileMap[fileBase] = `${path.join(dirPath, fileName)}.js`
-
-    return componentListMap
+    const { dirPath, fileName, fileBase } = getJsonPathInfo(entry);
+    //判断是否有ts文件，如果有读取ts文件，没有读取js文件
+    if (await isExistTSFile(dirPath)) {
+      componentListMap.tsFileList.push(`${fileBase}.ts`);
+      componentListMap.tsFileMap[fileBase] = `${path.join(
+        dirPath,
+        fileName
+      )}.ts`;
+    } else {
+      componentListMap.jsFileList.push(`${fileBase}.js`);
+      componentListMap.jsFileMap[fileBase] = `${path.join(
+        dirPath,
+        fileName
+      )}.js`;
+    }
+    console.log("componentListMap:", componentListMap);
+    return componentListMap;
   }
 
-  await checkIncludedComponents(entry, componentListMap)
+  await checkIncludedComponents(entry, componentListMap);
 
-  return componentListMap
-}
+  return componentListMap;
+};

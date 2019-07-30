@@ -4,17 +4,17 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    title:{
-      type:String,
-      value:''
+    title: {
+      type: String,
+      value: ''
     },
-    subTitle:{
-      type:String,
-      value:''
+    subTitle: {
+      type: String,
+      value: ''
     },
-    desc:{
-      type:String,
-      value:''
+    desc: {
+      type: String,
+      value: ''
     }
   },
   /**
@@ -26,6 +26,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-   
+
   }
 })

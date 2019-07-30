@@ -4,22 +4,22 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    //信息级别：info（普通）,err（错误）,suc（成功）,warn（警告）
-    level:{
-      type:String,
-      value:'info'
+    // 信息级别：info（普通）,err（错误）,suc（成功）,warn（警告）
+    level: {
+      type: String,
+      value: 'info'
     },
-    info:{
-      type:String,
-      value:''
+    info: {
+      type: String,
+      value: ''
     },
-    time:{
-      type:Number,
-      value:1500
+    time: {
+      type: Number,
+      value: 1500
     }
   },
   lifetimes: {
-    ready(){
+    ready() {
       this.animation = wx.createAnimation({
         duration: 600,
         timingFunction: 'ease',
@@ -30,11 +30,11 @@ Component({
    * 组件的内部数据
    */
   data: {
-    bgColors:{
-      info:"#2d8cf0",
-      err:"#ed3f14",
-      suc:"#1abe6d",
-      warn:"#ff9900"
+    bgColors: {
+      info: '#2d8cf0',
+      err: '#ed3f14',
+      suc: '#1abe6d',
+      warn: '#ff9900'
     }
   },
   /**
@@ -44,32 +44,32 @@ Component({
     /**
      * 开始动画
      */
-    startAnimation:function(){
-        this.animation.height('60rpx').step();
-        this.setData({
-          msg:this.data.info,
-          animationData: this.animation.export()
-        })
+    startAnimation() {
+      this.animation.height('60rpx').step()
+      this.setData({
+        msg: this.data.info,
+        animationData: this.animation.export()
+      })
     },
     /**
      * 结束动画
      */
-    endAnimation:function(){
-      this.animation.height('0rpx').step();
+    endAnimation() {
+      this.animation.height('0rpx').step()
       this.setData({
-        msg:'',
+        msg: '',
         animationData: this.animation.export()
       })
     },
     /**
      * 展示信息
      */
-    showMsg:function(){
-      let _this = this;
-      this.startAnimation();
-      setTimeout(()=>{
-        _this.endAnimation();
-      },_this.data.time);
+    showMsg() {
+      const _this = this
+      this.startAnimation()
+      setTimeout(() => {
+        _this.endAnimation()
+      }, _this.data.time)
     }
   }
 })
