@@ -50,7 +50,7 @@
 }
 
 .item .name{
-  width: 300rpx;
+  width: 360rpx;
 }
 
 .item image{
@@ -65,7 +65,7 @@
 }
 
 .status{
-  display: none;
+  /* display: none; */
   font-size: 20rpx;
   height: 30rpx;
   line-height: 30rpx;

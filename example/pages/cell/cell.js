@@ -1,4 +1,4 @@
-// pages/dialog/dialog.js
+// pages/cell/cell.js
 Page({
 
   /**
