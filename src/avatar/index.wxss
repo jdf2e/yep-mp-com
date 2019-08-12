@@ -1,4 +1,3 @@
-
 .yep-avatar {
   width: 100rpx;
   height: 100rpx;
@@ -6,7 +5,7 @@
   justify-content: center;
   align-items: center;
   background-color: #ccc;
-  color: #FFF;
+  color: #fff;
   position: relative;
 }
 
@@ -16,7 +15,7 @@
   border-radius: 10%;
 }
 
-.yep-avatar-circle{
+.yep-avatar-circle {
   width: 100rpx;
   height: 100rpx;
   border-radius: 50%;
@@ -27,22 +26,23 @@
   top: -10%;
   right: -10%;
   background: #f23030;
-  border: 2rpx solid #FFF;
-  text-align:center;
-  font-size:24rpx;
-  color:#fff;
+  border: 2rpx solid #fff;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+
+  &.circle {
+    height: 40rpx;
+    width: 40rpx;
+    line-height: 40rpx;
+    border-radius: 50%;
+  }
+
+  &.rec {
+    height: 40rpx;
+    line-height: 40rpx;
+    padding: 0 10rpx;
+    border-radius: 20rpx;
+  }
 }
 
-.yep-avatar-msg.circle{
-  height: 40rpx;
-  width: 40rpx;
-  line-height: 40rpx;
-  border-radius: 50%;
-}
-
-.yep-avatar-msg.rec{
-  height: 40rpx;
-  line-height: 40rpx;
-  padding: 0 10rpx;
-  border-radius: 20rpx;
-}

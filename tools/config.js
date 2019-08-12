@@ -25,8 +25,8 @@ module.exports = {
   demoDist,
 
   wxss: {
-    less: false, // compile wxss with less
-    sourcemap: false // source map for less
+    sass: true, // compile wxss with sass
+    sourcemap: false // source map for sass
   },
 
   webpack: {
@@ -55,8 +55,17 @@ module.exports = {
         {
           test: /\.js$/i,
           use: [
-            //         'eslint-loader',
+            // 'eslint-loader',
             "babel-loader"
+          ],
+          exclude: /node_modules/
+        },
+        {
+          test: /\.scss?$/,
+          use: [
+            {
+              loader: "sass-loader"
+            }
           ],
           exclude: /node_modules/
         }
@@ -64,7 +73,7 @@ module.exports = {
     },
     resolve: {
       modules: [src, "node_modules"],
-      extensions: [".js", ".ts", ".json"]
+      extensions: [".js", ".ts", ".wxss", ".json"]
     },
     plugins: [
       new webpack.DefinePlugin({}),

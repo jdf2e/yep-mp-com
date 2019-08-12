@@ -64,5 +64,7 @@
     "webpack": "^4.39.1",
     "webpack-node-externals": "^1.7.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-sass": "^4.0.2"
+  }
 }

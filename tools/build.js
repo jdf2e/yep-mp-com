@@ -2,7 +2,7 @@ const path = require("path");
 
 const gulp = require("gulp");
 const clean = require("gulp-clean");
-const less = require("gulp-less");
+const sass = require("gulp-sass");
 const rename = require("gulp-rename");
 const gulpif = require("gulp-if");
 const sourcemaps = require("gulp-sourcemaps");
@@ -26,13 +26,13 @@ function wxss(wxssFileList) {
 
   return gulp
     .src(wxssFileList, { cwd: srcPath, base: srcPath })
-    .pipe(gulpif(wxssConfig.less && wxssConfig.sourcemap, sourcemaps.init()))
-    .pipe(gulpif(wxssConfig.less, less({ paths: [srcPath] })))
+    .pipe(gulpif(wxssConfig.sass && wxssConfig.sourcemap, sourcemaps.init()))
+    .pipe(gulpif(wxssConfig.sass, sass({ paths: [srcPath] })))
     .pipe(rename({ extname: ".wxss" }))
     .pipe(
-      gulpif(wxssConfig.less && wxssConfig.sourcemap, sourcemaps.write("./"))
+      gulpif(wxssConfig.sass && wxssConfig.sourcemap, sourcemaps.write("./"))
     )
-    .pipe(_.logger(wxssConfig.less ? "generate" : undefined))
+    .pipe(_.logger(wxssConfig.sass ? "generate" : undefined))
     .pipe(gulp.dest(distPath));
 }
 
@@ -269,7 +269,7 @@ class BuildTask {
     });
 
     /**
-     * 监听wxss文件到dist文件夹
+     * 拷贝wxss文件到dist文件夹
      */
     gulp.task(`${id}-component-wxss`, done => {
       const wxssFileList = this.componentListMap.wxssFileList;
@@ -332,6 +332,7 @@ class BuildTask {
         done => {
           const copyList = this.copyList;
           const copyFileList = copyList.map(dir => path.join(dir, "**/*.wxss"));
+          console.log('copyfilelist', copyFileList.length, copyFileList);
           if (copyFileList.length) return wxss(copyFileList, srcPath, distPath);
           return done();
         }

@@ -1,4 +1,4 @@
-.yep-btn{
+.yep-btn {
   font-size: 26rpx;
   height: 56rpx;
   line-height: 56rpx;
@@ -13,71 +13,71 @@
   border-radius: 10rpx;
   background-color: #fff;
   color: #000;
+
+  .hover-class {
+    background-color: #f23030;
+    color: #fff;
+  }
 }
 
-.normal{
+.normal {
   height: 56rpx;
   line-height: 56rpx;
   font-size: 26rpx;
 }
 
-.large{
+.large {
   height: 65rpx;
   line-height: 65rpx;
   padding: 0 60rpx;
   font-size: 30rpx;
 }
 
-.small{
+.small {
   height: 40rpx;
   line-height: 40rpx;
   padding: 0 20rpx;
   font-size: 20rpx;
 }
 
-.yep-btn .hover-class{
-  background-color: #f23030;
-  color: #FFF;
-}
-
-.yep-btn-primary{
+.yep-btn-primary {
   border: 1rpx solid #f23030;
   background-color: #f23030;
-  color: #FFF;
+  color: #fff;
 }
 
-.yep-btn-disabled{
+.yep-btn-disabled {
   border: 1rpx solid #f5f5f5;
   background-color: #f5f5f5;
   color: #bbb;
 }
 
-.yep-btn-ghost{
+.yep-btn-ghost {
   background: transparent;
   color: #fff;
 }
 
-.yep-btn-search{
+.yep-btn-search {
   /*background-color: #ccc;*/
 }
 
-.yepicon-search{
+.yepicon-search {
   display: inline-block;
   width: 32rpx;
   height: 32rpx;
   vertical-align: middle;
   margin-right: 10rpx;
-  background-image: url('http://img20.360buyimg.com/uba/jfs/t20203/353/214397736/1784/ec282c48/5b03d51dNc8449dcd.png');
+  background-image: url("http://img20.360buyimg.com/uba/jfs/t20203/353/214397736/1784/ec282c48/5b03d51dNc8449dcd.png");
   background-repeat: no-repeat;
   background-size: 120rpx 30rpx;
 }
 
-.yep-txt{
+.yep-txt {
   display: inline-block;
   vertical-align: middle;
 }
 
-.yep-btn-cart{
+.yep-btn-cart {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -86,46 +86,52 @@
   height: 106rpx;
   background-color: #fff;
   z-index: 100;
+  .btn-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 30rpx;
+    border-top: 1rpx solid #e3e5e9;
+  }
+
+  .btn-info-hd {
+    margin-bottom: 10rpx;
+    font-size: 24rpx;
+    color: #999;
+  }
+
+  .btn-info-bd {
+    font-size: 28rpx;
+
+    .emphaz {
+      display: inline-block;
+      font-size: 36rpx;
+    }
+  }
+
+  .btn-box {
+    width: 250rpx;
+    line-height: 106rpx;
+    text-align: center;
+    background-color: #bfbfbf;
+    font-size: 36rpx;
+    color: #fff;
+    font-family: "PingFangSC-Medium";
+  }
+
+  .btn-box-active {
+    background-color: #f23030;
+  }
 }
 
-.yep-btn-cart .btn-info {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  padding: 0 30rpx;
-  border-top: 1rpx solid #e3e5e9;
-}
-
-.yep-btn-cart .btn-info-hd {
-  margin-bottom: 10rpx;
-  font-size: 24rpx;
-  color: #999;
-}
-
-.yep-btn-cart .btn-info-bd {
-  font-size: 28rpx;
-}
-
-.yep-btn-cart .btn-info-bd .emphaz {
-  display: inline-block;
-  font-size: 36rpx;
-}
-
-.yep-btn-cart .btn-box {
-  width: 250rpx;
-  line-height: 106rpx;
+.go-to-cart,
+.go-to-customer-service {
+  width: 120rpx;
+  height: 100%;
+  background-color: #fff;
   text-align: center;
-  background-color: #bfbfbf;
-  font-size: 36rpx;
-  color: #fff;
-  font-family: 'PingFangSC-Medium';
+  position: relative;
 }
-
-.yep-btn-cart .btn-box-active {
-  background-color: #f23030;
-}
-
-
 
 .go-to-customer-service .cart-icon {
   background: url(http://commonst.360buyimg.com/common/wx-images/item/chat.jpg);
@@ -135,14 +141,6 @@
   width: 36rpx;
   height: 36rpx;
   margin: 20rpx auto 8rpx;
-}
-
-.go-to-cart,.go-to-customer-service {
-  width: 120rpx;
-  height: 100%;
-  background-color: #fff;
-  text-align: center;
-  position: relative;
 }
 
 .cart-icon {
@@ -178,7 +176,8 @@
   line-height: 18rpx;
 }
 
-.add-cart, .directorder {
+.add-cart,
+.directorder {
   flex: 1;
   font-size: 36rpx;
   line-height: 100rpx;
@@ -189,21 +188,23 @@
 
 .add-cart {
   background-color: #febf14;
+  &:active {
+    background-color: #e8ac07;
+  }
 }
-.add-cart:active {
-  background-color: #E8AC07;
-}
-.directorder:active {
-  background-color: #CE2727;
-}
+
 .directorder {
   background-color: #f23030;
+
+  &:active {
+    background-color: #ce2727;
+  }
 }
 
 .grey-btn {
   background-color: #bfbfbf;
   border-left: 1px solid #fff;
-}
-.grey-btn:active{
-  background-color: #bfbfbf;
+  &:active {
+    background-color: #bfbfbf;
+  }
 }
