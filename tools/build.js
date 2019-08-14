@@ -15,7 +15,6 @@ const _ = require("./utils");
 
 const wxssConfig = config.wxss || {};
 const srcPath = config.srcPath;
-const staticPath = config.staticPath;
 const distPath = config.distPath;
 
 /**

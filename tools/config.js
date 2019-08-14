@@ -8,7 +8,6 @@ const isWatch = process.argv.indexOf("--watch") >= 0;
 const demoSrc = path.resolve(__dirname, "./demo");
 const demoDist = path.resolve(__dirname, "../example");
 const src = path.resolve(__dirname, "../src");
-const static = path.resolve(__dirname, "../static");
 const dev = path.join(demoDist, "components");
 const dist = path.resolve(__dirname, "../miniprogram_dist");
 
@@ -18,7 +17,7 @@ module.exports = {
   isDev,
   isWatch,
   srcPath: src,
-  staticPath: static,
+
   distPath: isDev ? dev : dist,
 
   demoSrc,
